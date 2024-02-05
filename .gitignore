@@ -31,4 +31,6 @@
 *.out
 *.app
 
+.DS_store
+
 jgraph/
