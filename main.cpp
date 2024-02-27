@@ -1,101 +1,109 @@
 #include <iostream>
-#include <vector>
-#include <string>
 #include <sstream>
+#include <string>
+#include <vector>
 
 using namespace std;
 
-class File{
-  public:
-    bool isDir;
-    int size; //size is init to -1 if it is a dir, is default in bytes?
-    string name;
-    File* parent; //for now the root will point to NULL
-    vector <File*> children; //should always be of size 0 when isDir is false
-    int depth;
+class File {
+public:
+  bool isDir;
+  int size; // size is init to -1 if it is a dir, is default in bytes?
+  string name;
+  File *parent;            // for now the root will point to NULL
+  vector<File *> children; // should always be of size 0 when isDir is false
+  int childrenPrinted;
+  int x, y;
+  int depth;
 };
 
-string getNthWord(int n, string s){ //if n is longer than the words in s, returns the last word
+string getNthWord(
+    int n,
+    string s) { // if n is longer than the words in s, returns the last word
   istringstream sin(s);
   int i = 1;
-  while(sin >> s){
-    if(i >= n) return s;
+  while (sin >> s) {
+    if (i >= n)
+      return s;
     i++;
   }
   return s;
 }
 
-int countChars(string s, char c){ //counts the amount of c in s
+int countChars(string s, char c) { // counts the amount of c in s
   int i;
   int ret = 0;
-  for(i = 0; i < s.size(); i++){
-    if(s[i] == c) ret++;
+  for (i = 0; i < s.size(); i++) {
+    if (s[i] == c)
+      ret++;
   }
   return ret;
 }
 
-int main(int argc, char **argv){
+int main(int argc, char **argv) {
   string s;
-  vector<string> v; 
-  vector<File*> files;
-  vector<File*> parentTrace;
-  File* currParent;
-  File* f;
-  File* senti = new File;
+  vector<string> v;
+  vector<File *> files;
+  vector<File *> parentTrace;
+  File *currParent;
+  File *f;
+  File *senti = new File;
   senti->name = "///SENTI///";
-  int i, j, pn, pos, rootDepth, currDepth, lastDepth;
+  int i, j, pn, pos, rootDepth, currDepth, lastDepth, x, y;
   currDepth = 0;
   /* these params effect the sizes and styling of the graph */
   int linesPerPage = 30;
   int linePadding = 8;
-  int fontSize = 8;
+  double fontSize = 1;
   int offset;
   pn = 0;
-  int yMax = (i*linePadding+1) + ( (linesPerPage*linePadding) );
-  string graphDef = "yaxis max 5 min -" + to_string(yMax) + " size 10 \nxaxis min 0 max 20 size 8.5 \n";
+  int yMax = (i * linePadding + 1) + ((linesPerPage * linePadding));
+  string graphDef = "yaxis max 5 min -" + to_string(yMax) +
+                    " size 10 \nxaxis min 0 max 20 size 8.5 \n";
 
   currParent = new File;
   currParent->name = argv[1];
   currParent->depth = 0;
   currParent->isDir = true;
+  currParent->childrenPrinted = 0;
   currParent->parent = senti;
-  currParent->size = -1; 
+  currParent->size = -1;
   files.push_back(currParent);
   parentTrace.push_back(currParent);
 
   rootDepth = countChars(currParent->name, '/');
-  lastDepth = rootDepth-1;
+  lastDepth = rootDepth - 1;
 
   cerr << files[0]->name << endl;
 
-  while(getline(cin, s)){
-    if(s[0] == '-'){
+  while (getline(cin, s)) {
+    if (s[0] == '-') {
       f = new File;
-      f->name = getNthWord(9,s);
+      f->name = getNthWord(9, s);
       // cerr << getNthWord(5,s) << endl;
-      f->size = stol(getNthWord(5,s));
+      f->size = stol(getNthWord(5, s));
       f->isDir = false;
       f->depth = currDepth;
-      if(parentTrace.size() > 0){
-        f->parent = parentTrace[parentTrace.size()-1];
-      }else{
+      if (parentTrace.size() > 0) {
+        f->parent = parentTrace[parentTrace.size() - 1];
+      } else {
         f->parent = senti;
       }
       files.push_back(f);
     }
-    if(s[0] == 't'){
+    if (s[0] == 't') {
       // do nothing with this for now
     }
-    if(s[s.size()-1] == ':'){
+    if (s[s.size() - 1] == ':') {
       currDepth = countChars(s, '/') - rootDepth;
-      while(lastDepth >= currDepth && parentTrace.size() > 0){
+      while (lastDepth >= currDepth && parentTrace.size() > 0) {
         parentTrace.pop_back();
         lastDepth--;
       }
       currParent = new File;
-      if(parentTrace.size() > 0){
-        currParent->parent = parentTrace[parentTrace.size()-1];
-      }else{
+      if (parentTrace.size() > 0) {
+        currParent->parent = parentTrace[parentTrace.size() - 1];
+      } else {
         currParent->parent = senti;
       }
       currParent->isDir = true;
@@ -108,14 +116,46 @@ int main(int argc, char **argv){
       currDepth++;
     }
   }
-  for(i = 1; i < files.size(); i++){
+  for (i = 1; i < files.size(); i++) {
     files[i]->parent->children.push_back(files[i]);
   }
+  printf("newgraph xaxis size 7 yaxis size 7\n");
 
-  /*mostly for debugging now, should be obsolete*//*
+
+  x = 0;
+  y = 0;
   for(i = 0; i < files.size(); i++){
-    if(i == linesPerPage*pn){
-      if(i) printf("newpage\n");
+    if(files[i]->isDir){
+      if(files[i]->parent != NULL){
+        y = files[i]->parent->y - 10;
+      }
+      printf("newcurve cfill 1 0 0 marktype circle pts %d %d\n", x, y);
+      files[i]->x = x;
+      files[i]->y = y;
+      if(files[i]->parent != NULL){
+        printf("newline pts %d %d %d %d\n", x, y, files[i]->parent->x, files[i]->parent->y);
+      }
+    }else{
+      y = files[i]->parent->y - 10;
+      if(files[i]->parent->childrenPrinted < files[i]->parent->children.size()/2){
+        x = files[i]->parent->x - (5 * files[i]->parent->childrenPrinted);
+      }else{
+        x = files[i]->parent->x + (5 * (files[i]->parent->childrenPrinted - (files[i]->parent->children.size()/2)));
+      }
+      files[i]->parent->childrenPrinted += 1;
+      printf("newcurve cfill 0 1 0 marktype circle pts %d %d\n", x, y);
+      files[i]->x = x;
+      files[i]->y = y;
+      printf("newline pts %d %d %d %d\n", x, y, files[i]->parent->x, files[i]->parent->y);
+    }
+
+  }
+
+  /*mostly for debugging now, should be obsolete
+  for (i = 0; i < files.size(); i++) {
+    if (i == linesPerPage * pn) {
+      if (i)
+        printf("newpage\n");
       printf("newgraph\n");
       cout << graphDef;
       pn++;
@@ -123,16 +163,21 @@ int main(int argc, char **argv){
     offset = files[i]->depth;
     string tmpName = files[i]->name;
     tmpName += "     ";
-    if(files[i]->parent != NULL) tmpName += files[i]->parent->name;
-    int yPos = (-1)*((i*linePadding)-((linesPerPage*linePadding)*(pn-1)));
+    if (files[i]->parent != NULL)
+      tmpName += files[i]->parent->name;
+    int yPos =
+        (-1) * ((i * linePadding) - ((linesPerPage * linePadding) * (pn - 1)));
     string color;
     color = "0 1 0";
-    if(files[i]->isDir) color = "1 0 0";
-    printf("newcurve cfill %s marktype box marksize 0.5 2 pts %d %d\n", color.c_str(), offset, yPos);
-    printf("newstring hjl vjc rotate 0 fontsize %d x %d y %d : %s\n",
-        fontSize, offset, yPos, tmpName.c_str());
-  }*/
-  
+    if (files[i]->isDir)
+      color = "1 0 0";
+    printf("newcurve cfill %s marktype box marksize 0.5 2 pts %d %d\n",
+           color.c_str(), offset, yPos);
+    printf("newstring hjl vjc rotate 0 fontsize %lf x %d y %d : %s\n", fontSize,
+           offset, yPos, tmpName.c_str());
+  }
+
+
   for(i = 0; i < senti->children.size(); i++){
     files[0]->children.push_back(senti->children[i]);
   }
@@ -176,7 +221,7 @@ int main(int argc, char **argv){
         printf("newline pts %d %d %lf 5\n", j, 3, xPos);
       }
     }
-  }
-  
+  }*/
+
   return 0;
 }
