@@ -1,0 +1,2526 @@
+newgraph xaxis size 7 nodraw yaxis size 7 nodraw 
+newcurve cfill 1 0 0 marktype circle pts 0 0
+newcurve cfill 1 0 0 marktype circle pts -1122 -80
+newcurve cfill 0 1 0 marktype circle pts -2055 -160
+newline pts -1122 -80 -2055 -160
+newcurve cfill 1 0 0 marktype circle pts -1789 -161
+newcurve cfill 0 1 0 marktype circle pts -1816 -241
+newline pts -1789 -161 -1816 -241
+newcurve cfill 0 1 0 marktype circle pts -1814 -242
+newline pts -1789 -161 -1814 -242
+newcurve cfill 0 1 0 marktype circle pts -1812 -243
+newline pts -1789 -161 -1812 -243
+newcurve cfill 0 1 0 marktype circle pts -1810 -244
+newline pts -1789 -161 -1810 -244
+newcurve cfill 0 1 0 marktype circle pts -1808 -245
+newline pts -1789 -161 -1808 -245
+newcurve cfill 0 1 0 marktype circle pts -1806 -246
+newline pts -1789 -161 -1806 -246
+newcurve cfill 0 1 0 marktype circle pts -1804 -247
+newline pts -1789 -161 -1804 -247
+newcurve cfill 0 1 0 marktype circle pts -1802 -248
+newline pts -1789 -161 -1802 -248
+newcurve cfill 0 1 0 marktype circle pts -1800 -249
+newline pts -1789 -161 -1800 -249
+newcurve cfill 0 1 0 marktype circle pts -1798 -250
+newline pts -1789 -161 -1798 -250
+newcurve cfill 0 1 0 marktype circle pts -1796 -251
+newline pts -1789 -161 -1796 -251
+newcurve cfill 0 1 0 marktype circle pts -1794 -252
+newline pts -1789 -161 -1794 -252
+newcurve cfill 0 1 0 marktype circle pts -1792 -253
+newline pts -1789 -161 -1792 -253
+newcurve cfill 0 1 0 marktype circle pts -1790 -254
+newline pts -1789 -161 -1790 -254
+newcurve cfill 0 1 0 marktype circle pts -1788 -255
+newline pts -1789 -161 -1788 -255
+newcurve cfill 0 1 0 marktype circle pts -1786 -256
+newline pts -1789 -161 -1786 -256
+newcurve cfill 0 1 0 marktype circle pts -1784 -257
+newline pts -1789 -161 -1784 -257
+newcurve cfill 0 1 0 marktype circle pts -1782 -258
+newline pts -1789 -161 -1782 -258
+newcurve cfill 0 1 0 marktype circle pts -1780 -259
+newline pts -1789 -161 -1780 -259
+newcurve cfill 0 1 0 marktype circle pts -1778 -260
+newline pts -1789 -161 -1778 -260
+newcurve cfill 0 1 0 marktype circle pts -1776 -261
+newline pts -1789 -161 -1776 -261
+newcurve cfill 0 1 0 marktype circle pts -1774 -262
+newline pts -1789 -161 -1774 -262
+newcurve cfill 0 1 0 marktype circle pts -1772 -263
+newline pts -1789 -161 -1772 -263
+newcurve cfill 0 1 0 marktype circle pts -1770 -264
+newline pts -1789 -161 -1770 -264
+newcurve cfill 0 1 0 marktype circle pts -1768 -265
+newline pts -1789 -161 -1768 -265
+newcurve cfill 0 1 0 marktype circle pts -1766 -266
+newline pts -1789 -161 -1766 -266
+newcurve cfill 0 1 0 marktype circle pts -1764 -267
+newline pts -1789 -161 -1764 -267
+newline pts -1122 -80 -1789 -161
+newcurve cfill 1 0 0 marktype circle pts -1523 -162
+newcurve cfill 1 0 0 marktype circle pts -1611 -242
+newcurve cfill 0 1 0 marktype circle pts -1698 -322
+newline pts -1611 -242 -1698 -322
+newcurve cfill 0 1 0 marktype circle pts -1693 -323
+newline pts -1611 -242 -1693 -323
+newcurve cfill 0 1 0 marktype circle pts -1688 -324
+newline pts -1611 -242 -1688 -324
+newcurve cfill 0 1 0 marktype circle pts -1683 -325
+newline pts -1611 -242 -1683 -325
+newcurve cfill 0 1 0 marktype circle pts -1678 -326
+newline pts -1611 -242 -1678 -326
+newcurve cfill 0 1 0 marktype circle pts -1673 -327
+newline pts -1611 -242 -1673 -327
+newcurve cfill 0 1 0 marktype circle pts -1668 -328
+newline pts -1611 -242 -1668 -328
+newcurve cfill 0 1 0 marktype circle pts -1663 -329
+newline pts -1611 -242 -1663 -329
+newcurve cfill 0 1 0 marktype circle pts -1658 -330
+newline pts -1611 -242 -1658 -330
+newcurve cfill 0 1 0 marktype circle pts -1653 -331
+newline pts -1611 -242 -1653 -331
+newcurve cfill 0 1 0 marktype circle pts -1648 -332
+newline pts -1611 -242 -1648 -332
+newcurve cfill 0 1 0 marktype circle pts -1643 -333
+newline pts -1611 -242 -1643 -333
+newcurve cfill 0 1 0 marktype circle pts -1638 -334
+newline pts -1611 -242 -1638 -334
+newcurve cfill 0 1 0 marktype circle pts -1633 -335
+newline pts -1611 -242 -1633 -335
+newcurve cfill 0 1 0 marktype circle pts -1628 -336
+newline pts -1611 -242 -1628 -336
+newcurve cfill 0 1 0 marktype circle pts -1623 -337
+newline pts -1611 -242 -1623 -337
+newcurve cfill 0 1 0 marktype circle pts -1618 -338
+newline pts -1611 -242 -1618 -338
+newcurve cfill 0 1 0 marktype circle pts -1613 -339
+newline pts -1611 -242 -1613 -339
+newcurve cfill 0 1 0 marktype circle pts -1608 -340
+newline pts -1611 -242 -1608 -340
+newcurve cfill 0 1 0 marktype circle pts -1603 -341
+newline pts -1611 -242 -1603 -341
+newcurve cfill 0 1 0 marktype circle pts -1598 -342
+newline pts -1611 -242 -1598 -342
+newcurve cfill 0 1 0 marktype circle pts -1593 -343
+newline pts -1611 -242 -1593 -343
+newcurve cfill 0 1 0 marktype circle pts -1588 -344
+newline pts -1611 -242 -1588 -344
+newcurve cfill 0 1 0 marktype circle pts -1583 -345
+newline pts -1611 -242 -1583 -345
+newcurve cfill 0 1 0 marktype circle pts -1578 -346
+newline pts -1611 -242 -1578 -346
+newcurve cfill 1 0 0 marktype circle pts -1573 -347
+newcurve cfill 0 1 0 marktype circle pts -1592 -427
+newline pts -1573 -347 -1592 -427
+newcurve cfill 0 1 0 marktype circle pts -1590 -428
+newline pts -1573 -347 -1590 -428
+newcurve cfill 0 1 0 marktype circle pts -1588 -429
+newline pts -1573 -347 -1588 -429
+newcurve cfill 0 1 0 marktype circle pts -1586 -430
+newline pts -1573 -347 -1586 -430
+newcurve cfill 0 1 0 marktype circle pts -1584 -431
+newline pts -1573 -347 -1584 -431
+newcurve cfill 0 1 0 marktype circle pts -1582 -432
+newline pts -1573 -347 -1582 -432
+newcurve cfill 0 1 0 marktype circle pts -1580 -433
+newline pts -1573 -347 -1580 -433
+newcurve cfill 0 1 0 marktype circle pts -1578 -434
+newline pts -1573 -347 -1578 -434
+newcurve cfill 0 1 0 marktype circle pts -1576 -435
+newline pts -1573 -347 -1576 -435
+newcurve cfill 0 1 0 marktype circle pts -1574 -436
+newline pts -1573 -347 -1574 -436
+newcurve cfill 0 1 0 marktype circle pts -1572 -437
+newline pts -1573 -347 -1572 -437
+newcurve cfill 0 1 0 marktype circle pts -1570 -438
+newline pts -1573 -347 -1570 -438
+newcurve cfill 0 1 0 marktype circle pts -1568 -439
+newline pts -1573 -347 -1568 -439
+newcurve cfill 0 1 0 marktype circle pts -1566 -440
+newline pts -1573 -347 -1566 -440
+newcurve cfill 0 1 0 marktype circle pts -1564 -441
+newline pts -1573 -347 -1564 -441
+newcurve cfill 0 1 0 marktype circle pts -1562 -442
+newline pts -1573 -347 -1562 -442
+newcurve cfill 0 1 0 marktype circle pts -1560 -443
+newline pts -1573 -347 -1560 -443
+newcurve cfill 0 1 0 marktype circle pts -1558 -444
+newline pts -1573 -347 -1558 -444
+newcurve cfill 0 1 0 marktype circle pts -1556 -445
+newline pts -1573 -347 -1556 -445
+newline pts -1611 -242 -1573 -347
+newcurve cfill 1 0 0 marktype circle pts -1568 -348
+newcurve cfill 1 0 0 marktype circle pts -1570 -428
+newcurve cfill 0 1 0 marktype circle pts -1572 -508
+newline pts -1570 -428 -1572 -508
+newcurve cfill 1 0 0 marktype circle pts -1570 -509
+newcurve cfill 1 0 0 marktype circle pts -1571 -589
+newcurve cfill 0 1 0 marktype circle pts -1572 -669
+newline pts -1571 -589 -1572 -669
+newline pts -1570 -509 -1571 -589
+newline pts -1570 -428 -1570 -509
+newline pts -1568 -348 -1570 -428
+newline pts -1611 -242 -1568 -348
+newcurve cfill 1 0 0 marktype circle pts -1563 -349
+newcurve cfill 0 1 0 marktype circle pts -1596 -429
+newline pts -1563 -349 -1596 -429
+newcurve cfill 0 1 0 marktype circle pts -1594 -430
+newline pts -1563 -349 -1594 -430
+newcurve cfill 0 1 0 marktype circle pts -1592 -431
+newline pts -1563 -349 -1592 -431
+newcurve cfill 0 1 0 marktype circle pts -1590 -432
+newline pts -1563 -349 -1590 -432
+newcurve cfill 0 1 0 marktype circle pts -1588 -433
+newline pts -1563 -349 -1588 -433
+newcurve cfill 0 1 0 marktype circle pts -1586 -434
+newline pts -1563 -349 -1586 -434
+newcurve cfill 0 1 0 marktype circle pts -1584 -435
+newline pts -1563 -349 -1584 -435
+newcurve cfill 0 1 0 marktype circle pts -1582 -436
+newline pts -1563 -349 -1582 -436
+newcurve cfill 0 1 0 marktype circle pts -1580 -437
+newline pts -1563 -349 -1580 -437
+newcurve cfill 0 1 0 marktype circle pts -1578 -438
+newline pts -1563 -349 -1578 -438
+newcurve cfill 0 1 0 marktype circle pts -1576 -439
+newline pts -1563 -349 -1576 -439
+newcurve cfill 0 1 0 marktype circle pts -1574 -440
+newline pts -1563 -349 -1574 -440
+newcurve cfill 0 1 0 marktype circle pts -1572 -441
+newline pts -1563 -349 -1572 -441
+newcurve cfill 0 1 0 marktype circle pts -1570 -442
+newline pts -1563 -349 -1570 -442
+newcurve cfill 0 1 0 marktype circle pts -1568 -443
+newline pts -1563 -349 -1568 -443
+newcurve cfill 0 1 0 marktype circle pts -1566 -444
+newline pts -1563 -349 -1566 -444
+newcurve cfill 0 1 0 marktype circle pts -1564 -445
+newline pts -1563 -349 -1564 -445
+newcurve cfill 0 1 0 marktype circle pts -1562 -446
+newline pts -1563 -349 -1562 -446
+newcurve cfill 0 1 0 marktype circle pts -1560 -447
+newline pts -1563 -349 -1560 -447
+newcurve cfill 0 1 0 marktype circle pts -1558 -448
+newline pts -1563 -349 -1558 -448
+newcurve cfill 0 1 0 marktype circle pts -1556 -449
+newline pts -1563 -349 -1556 -449
+newcurve cfill 0 1 0 marktype circle pts -1554 -450
+newline pts -1563 -349 -1554 -450
+newcurve cfill 0 1 0 marktype circle pts -1552 -451
+newline pts -1563 -349 -1552 -451
+newcurve cfill 0 1 0 marktype circle pts -1550 -452
+newline pts -1563 -349 -1550 -452
+newcurve cfill 0 1 0 marktype circle pts -1548 -453
+newline pts -1563 -349 -1548 -453
+newcurve cfill 0 1 0 marktype circle pts -1546 -454
+newline pts -1563 -349 -1546 -454
+newcurve cfill 0 1 0 marktype circle pts -1544 -455
+newline pts -1563 -349 -1544 -455
+newcurve cfill 1 0 0 marktype circle pts -1542 -456
+newcurve cfill 1 0 0 marktype circle pts -1544 -536
+newcurve cfill 0 1 0 marktype circle pts -1546 -616
+newline pts -1544 -536 -1546 -616
+newcurve cfill 1 0 0 marktype circle pts -1544 -617
+newcurve cfill 1 0 0 marktype circle pts -1545 -697
+newcurve cfill 0 1 0 marktype circle pts -1546 -777
+newline pts -1545 -697 -1546 -777
+newline pts -1544 -617 -1545 -697
+newline pts -1544 -536 -1544 -617
+newline pts -1542 -456 -1544 -536
+newline pts -1563 -349 -1542 -456
+newcurve cfill 1 0 0 marktype circle pts -1540 -457
+newcurve cfill 1 0 0 marktype circle pts -1542 -537
+newcurve cfill 0 1 0 marktype circle pts -1544 -617
+newline pts -1542 -537 -1544 -617
+newcurve cfill 1 0 0 marktype circle pts -1542 -618
+newcurve cfill 1 0 0 marktype circle pts -1543 -698
+newcurve cfill 0 1 0 marktype circle pts -1544 -778
+newline pts -1543 -698 -1544 -778
+newline pts -1542 -618 -1543 -698
+newline pts -1542 -537 -1542 -618
+newline pts -1540 -457 -1542 -537
+newline pts -1563 -349 -1540 -457
+newcurve cfill 1 0 0 marktype circle pts -1538 -458
+newcurve cfill 1 0 0 marktype circle pts -1540 -538
+newcurve cfill 0 1 0 marktype circle pts -1542 -618
+newline pts -1540 -538 -1542 -618
+newcurve cfill 1 0 0 marktype circle pts -1540 -619
+newcurve cfill 1 0 0 marktype circle pts -1541 -699
+newcurve cfill 0 1 0 marktype circle pts -1542 -779
+newline pts -1541 -699 -1542 -779
+newline pts -1540 -619 -1541 -699
+newline pts -1540 -538 -1540 -619
+newline pts -1538 -458 -1540 -538
+newline pts -1563 -349 -1538 -458
+newline pts -1611 -242 -1563 -349
+newcurve cfill 1 0 0 marktype circle pts -1558 -350
+newcurve cfill 1 0 0 marktype circle pts -1560 -430
+newcurve cfill 0 1 0 marktype circle pts -1562 -510
+newline pts -1560 -430 -1562 -510
+newcurve cfill 1 0 0 marktype circle pts -1560 -511
+newcurve cfill 1 0 0 marktype circle pts -1561 -591
+newcurve cfill 0 1 0 marktype circle pts -1562 -671
+newline pts -1561 -591 -1562 -671
+newline pts -1560 -511 -1561 -591
+newline pts -1560 -430 -1560 -511
+newline pts -1558 -350 -1560 -430
+newline pts -1611 -242 -1558 -350
+newcurve cfill 1 0 0 marktype circle pts -1553 -351
+newcurve cfill 0 1 0 marktype circle pts -1559 -431
+newline pts -1553 -351 -1559 -431
+newcurve cfill 0 1 0 marktype circle pts -1557 -432
+newline pts -1553 -351 -1557 -432
+newcurve cfill 0 1 0 marktype circle pts -1555 -433
+newline pts -1553 -351 -1555 -433
+newcurve cfill 0 1 0 marktype circle pts -1553 -434
+newline pts -1553 -351 -1553 -434
+newcurve cfill 0 1 0 marktype circle pts -1551 -435
+newline pts -1553 -351 -1551 -435
+newcurve cfill 0 1 0 marktype circle pts -1549 -436
+newline pts -1553 -351 -1549 -436
+newline pts -1611 -242 -1553 -351
+newline pts -1523 -162 -1611 -242
+newcurve cfill 1 0 0 marktype circle pts -1523 -243
+newcurve cfill 0 1 0 marktype circle pts -1524 -323
+newline pts -1523 -243 -1524 -323
+newline pts -1523 -162 -1523 -243
+newline pts -1122 -80 -1523 -162
+newcurve cfill 1 0 0 marktype circle pts -1257 -163
+newcurve cfill 0 1 0 marktype circle pts -1368 -243
+newline pts -1257 -163 -1368 -243
+newcurve cfill 0 1 0 marktype circle pts -1353 -244
+newline pts -1257 -163 -1353 -244
+newcurve cfill 1 0 0 marktype circle pts -1338 -245
+newcurve cfill 0 1 0 marktype circle pts -1341 -325
+newline pts -1338 -245 -1341 -325
+newcurve cfill 1 0 0 marktype circle pts -1339 -326
+newcurve cfill 0 1 0 marktype circle pts -1340 -406
+newline pts -1339 -326 -1340 -406
+newline pts -1338 -245 -1339 -326
+newcurve cfill 1 0 0 marktype circle pts -1337 -327
+newcurve cfill 0 1 0 marktype circle pts -1338 -407
+newline pts -1337 -327 -1338 -407
+newline pts -1338 -245 -1337 -327
+newline pts -1257 -163 -1338 -245
+newcurve cfill 1 0 0 marktype circle pts -1323 -246
+newcurve cfill 0 1 0 marktype circle pts -1326 -326
+newline pts -1323 -246 -1326 -326
+newcurve cfill 1 0 0 marktype circle pts -1323 -327
+newcurve cfill 0 1 0 marktype circle pts -1325 -407
+newline pts -1323 -327 -1325 -407
+newcurve cfill 0 1 0 marktype circle pts -1323 -408
+newline pts -1323 -327 -1323 -408
+newline pts -1323 -246 -1323 -327
+newline pts -1257 -163 -1323 -246
+newcurve cfill 1 0 0 marktype circle pts -1308 -247
+newcurve cfill 0 1 0 marktype circle pts -1316 -327
+newline pts -1308 -247 -1316 -327
+newcurve cfill 1 0 0 marktype circle pts -1311 -328
+newcurve cfill 0 1 0 marktype circle pts -1313 -408
+newline pts -1311 -328 -1313 -408
+newcurve cfill 0 1 0 marktype circle pts -1311 -409
+newline pts -1311 -328 -1311 -409
+newline pts -1308 -247 -1311 -328
+newcurve cfill 1 0 0 marktype circle pts -1306 -329
+newcurve cfill 0 1 0 marktype circle pts -1311 -409
+newline pts -1306 -329 -1311 -409
+newcurve cfill 0 1 0 marktype circle pts -1309 -410
+newline pts -1306 -329 -1309 -410
+newcurve cfill 0 1 0 marktype circle pts -1307 -411
+newline pts -1306 -329 -1307 -411
+newcurve cfill 0 1 0 marktype circle pts -1305 -412
+newline pts -1306 -329 -1305 -412
+newcurve cfill 0 1 0 marktype circle pts -1303 -413
+newline pts -1306 -329 -1303 -413
+newline pts -1308 -247 -1306 -329
+newline pts -1257 -163 -1308 -247
+newcurve cfill 1 0 0 marktype circle pts -1293 -248
+newcurve cfill 1 0 0 marktype circle pts -1322 -328
+newcurve cfill 0 1 0 marktype circle pts -1323 -408
+newline pts -1322 -328 -1323 -408
+newline pts -1293 -248 -1322 -328
+newcurve cfill 1 0 0 marktype circle pts -1308 -329
+newcurve cfill 0 1 0 marktype circle pts -1310 -409
+newline pts -1308 -329 -1310 -409
+newcurve cfill 0 1 0 marktype circle pts -1308 -410
+newline pts -1308 -329 -1308 -410
+newline pts -1293 -248 -1308 -329
+newcurve cfill 1 0 0 marktype circle pts -1294 -330
+newcurve cfill 0 1 0 marktype circle pts -1318 -410
+newline pts -1294 -330 -1318 -410
+newcurve cfill 0 1 0 marktype circle pts -1316 -411
+newline pts -1294 -330 -1316 -411
+newcurve cfill 0 1 0 marktype circle pts -1314 -412
+newline pts -1294 -330 -1314 -412
+newcurve cfill 0 1 0 marktype circle pts -1312 -413
+newline pts -1294 -330 -1312 -413
+newcurve cfill 0 1 0 marktype circle pts -1310 -414
+newline pts -1294 -330 -1310 -414
+newcurve cfill 0 1 0 marktype circle pts -1308 -415
+newline pts -1294 -330 -1308 -415
+newcurve cfill 0 1 0 marktype circle pts -1306 -416
+newline pts -1294 -330 -1306 -416
+newcurve cfill 0 1 0 marktype circle pts -1304 -417
+newline pts -1294 -330 -1304 -417
+newcurve cfill 0 1 0 marktype circle pts -1302 -418
+newline pts -1294 -330 -1302 -418
+newcurve cfill 0 1 0 marktype circle pts -1300 -419
+newline pts -1294 -330 -1300 -419
+newcurve cfill 0 1 0 marktype circle pts -1298 -420
+newline pts -1294 -330 -1298 -420
+newcurve cfill 0 1 0 marktype circle pts -1296 -421
+newline pts -1294 -330 -1296 -421
+newcurve cfill 0 1 0 marktype circle pts -1294 -422
+newline pts -1294 -330 -1294 -422
+newcurve cfill 0 1 0 marktype circle pts -1292 -423
+newline pts -1294 -330 -1292 -423
+newcurve cfill 0 1 0 marktype circle pts -1290 -424
+newline pts -1294 -330 -1290 -424
+newcurve cfill 0 1 0 marktype circle pts -1288 -425
+newline pts -1294 -330 -1288 -425
+newcurve cfill 0 1 0 marktype circle pts -1286 -426
+newline pts -1294 -330 -1286 -426
+newcurve cfill 0 1 0 marktype circle pts -1284 -427
+newline pts -1294 -330 -1284 -427
+newcurve cfill 0 1 0 marktype circle pts -1282 -428
+newline pts -1294 -330 -1282 -428
+newcurve cfill 0 1 0 marktype circle pts -1280 -429
+newline pts -1294 -330 -1280 -429
+newcurve cfill 0 1 0 marktype circle pts -1278 -430
+newline pts -1294 -330 -1278 -430
+newcurve cfill 0 1 0 marktype circle pts -1276 -431
+newline pts -1294 -330 -1276 -431
+newcurve cfill 0 1 0 marktype circle pts -1274 -432
+newline pts -1294 -330 -1274 -432
+newcurve cfill 0 1 0 marktype circle pts -1272 -433
+newline pts -1294 -330 -1272 -433
+newline pts -1293 -248 -1294 -330
+newcurve cfill 1 0 0 marktype circle pts -1280 -331
+newcurve cfill 0 1 0 marktype circle pts -1282 -411
+newline pts -1280 -331 -1282 -411
+newcurve cfill 0 1 0 marktype circle pts -1280 -412
+newline pts -1280 -331 -1280 -412
+newline pts -1293 -248 -1280 -331
+newline pts -1257 -163 -1293 -248
+newcurve cfill 1 0 0 marktype circle pts -1278 -249
+newcurve cfill 1 0 0 marktype circle pts -1284 -329
+newcurve cfill 0 1 0 marktype circle pts -1285 -409
+newline pts -1284 -329 -1285 -409
+newline pts -1278 -249 -1284 -329
+newcurve cfill 1 0 0 marktype circle pts -1280 -330
+newcurve cfill 0 1 0 marktype circle pts -1282 -410
+newline pts -1280 -330 -1282 -410
+newcurve cfill 0 1 0 marktype circle pts -1280 -411
+newline pts -1280 -330 -1280 -411
+newline pts -1278 -249 -1280 -330
+newcurve cfill 1 0 0 marktype circle pts -1276 -331
+newcurve cfill 0 1 0 marktype circle pts -1279 -411
+newline pts -1276 -331 -1279 -411
+newcurve cfill 0 1 0 marktype circle pts -1277 -412
+newline pts -1276 -331 -1277 -412
+newcurve cfill 0 1 0 marktype circle pts -1275 -413
+newline pts -1276 -331 -1275 -413
+newline pts -1278 -249 -1276 -331
+newline pts -1257 -163 -1278 -249
+newcurve cfill 1 0 0 marktype circle pts -1263 -250
+newcurve cfill 1 0 0 marktype circle pts -1279 -330
+newcurve cfill 0 1 0 marktype circle pts -1290 -410
+newline pts -1279 -330 -1290 -410
+newcurve cfill 0 1 0 marktype circle pts -1288 -411
+newline pts -1279 -330 -1288 -411
+newcurve cfill 0 1 0 marktype circle pts -1286 -412
+newline pts -1279 -330 -1286 -412
+newcurve cfill 0 1 0 marktype circle pts -1284 -413
+newline pts -1279 -330 -1284 -413
+newcurve cfill 0 1 0 marktype circle pts -1282 -414
+newline pts -1279 -330 -1282 -414
+newcurve cfill 0 1 0 marktype circle pts -1280 -415
+newline pts -1279 -330 -1280 -415
+newcurve cfill 0 1 0 marktype circle pts -1278 -416
+newline pts -1279 -330 -1278 -416
+newcurve cfill 0 1 0 marktype circle pts -1276 -417
+newline pts -1279 -330 -1276 -417
+newcurve cfill 0 1 0 marktype circle pts -1274 -418
+newline pts -1279 -330 -1274 -418
+newcurve cfill 0 1 0 marktype circle pts -1272 -419
+newline pts -1279 -330 -1272 -419
+newcurve cfill 0 1 0 marktype circle pts -1270 -420
+newline pts -1279 -330 -1270 -420
+newline pts -1263 -250 -1279 -330
+newcurve cfill 1 0 0 marktype circle pts -1271 -331
+newcurve cfill 0 1 0 marktype circle pts -1272 -411
+newline pts -1271 -331 -1272 -411
+newline pts -1263 -250 -1271 -331
+newcurve cfill 1 0 0 marktype circle pts -1263 -332
+newcurve cfill 0 1 0 marktype circle pts -1265 -412
+newline pts -1263 -332 -1265 -412
+newcurve cfill 0 1 0 marktype circle pts -1263 -413
+newline pts -1263 -332 -1263 -413
+newline pts -1263 -250 -1263 -332
+newcurve cfill 1 0 0 marktype circle pts -1255 -333
+newcurve cfill 0 1 0 marktype circle pts -1257 -413
+newline pts -1255 -333 -1257 -413
+newcurve cfill 0 1 0 marktype circle pts -1255 -414
+newline pts -1255 -333 -1255 -414
+newline pts -1263 -250 -1255 -333
+newline pts -1257 -163 -1263 -250
+newcurve cfill 1 0 0 marktype circle pts -1248 -251
+newcurve cfill 0 1 0 marktype circle pts -1257 -331
+newline pts -1248 -251 -1257 -331
+newcurve cfill 1 0 0 marktype circle pts -1253 -332
+newcurve cfill 0 1 0 marktype circle pts -1254 -412
+newline pts -1253 -332 -1254 -412
+newline pts -1248 -251 -1253 -332
+newcurve cfill 1 0 0 marktype circle pts -1249 -333
+newcurve cfill 0 1 0 marktype circle pts -1252 -413
+newline pts -1249 -333 -1252 -413
+newcurve cfill 0 1 0 marktype circle pts -1250 -414
+newline pts -1249 -333 -1250 -414
+newcurve cfill 0 1 0 marktype circle pts -1248 -415
+newline pts -1249 -333 -1248 -415
+newline pts -1248 -251 -1249 -333
+newcurve cfill 1 0 0 marktype circle pts -1245 -334
+newcurve cfill 0 1 0 marktype circle pts -1249 -414
+newline pts -1245 -334 -1249 -414
+newcurve cfill 0 1 0 marktype circle pts -1247 -415
+newline pts -1245 -334 -1247 -415
+newcurve cfill 0 1 0 marktype circle pts -1245 -416
+newline pts -1245 -334 -1245 -416
+newcurve cfill 0 1 0 marktype circle pts -1243 -417
+newline pts -1245 -334 -1243 -417
+newline pts -1248 -251 -1245 -334
+newline pts -1257 -163 -1248 -251
+newcurve cfill 1 0 0 marktype circle pts -1233 -252
+newcurve cfill 1 0 0 marktype circle pts -1241 -332
+newcurve cfill 0 1 0 marktype circle pts -1242 -412
+newline pts -1241 -332 -1242 -412
+newline pts -1233 -252 -1241 -332
+newcurve cfill 1 0 0 marktype circle pts -1236 -333
+newcurve cfill 0 1 0 marktype circle pts -1239 -413
+newline pts -1236 -333 -1239 -413
+newcurve cfill 0 1 0 marktype circle pts -1237 -414
+newline pts -1236 -333 -1237 -414
+newcurve cfill 0 1 0 marktype circle pts -1235 -415
+newline pts -1236 -333 -1235 -415
+newline pts -1233 -252 -1236 -333
+newcurve cfill 1 0 0 marktype circle pts -1231 -334
+newcurve cfill 0 1 0 marktype circle pts -1235 -414
+newline pts -1231 -334 -1235 -414
+newcurve cfill 0 1 0 marktype circle pts -1233 -415
+newline pts -1231 -334 -1233 -415
+newcurve cfill 0 1 0 marktype circle pts -1231 -416
+newline pts -1231 -334 -1231 -416
+newcurve cfill 0 1 0 marktype circle pts -1229 -417
+newline pts -1231 -334 -1229 -417
+newline pts -1233 -252 -1231 -334
+newline pts -1257 -163 -1233 -252
+newcurve cfill 1 0 0 marktype circle pts -1218 -253
+newcurve cfill 1 0 0 marktype circle pts -1235 -333
+newcurve cfill 0 1 0 marktype circle pts -1236 -413
+newline pts -1235 -333 -1236 -413
+newline pts -1218 -253 -1235 -333
+newcurve cfill 1 0 0 marktype circle pts -1224 -334
+newcurve cfill 0 1 0 marktype circle pts -1232 -414
+newline pts -1224 -334 -1232 -414
+newcurve cfill 0 1 0 marktype circle pts -1230 -415
+newline pts -1224 -334 -1230 -415
+newcurve cfill 0 1 0 marktype circle pts -1228 -416
+newline pts -1224 -334 -1228 -416
+newcurve cfill 0 1 0 marktype circle pts -1226 -417
+newline pts -1224 -334 -1226 -417
+newcurve cfill 0 1 0 marktype circle pts -1224 -418
+newline pts -1224 -334 -1224 -418
+newcurve cfill 0 1 0 marktype circle pts -1222 -419
+newline pts -1224 -334 -1222 -419
+newcurve cfill 0 1 0 marktype circle pts -1220 -420
+newline pts -1224 -334 -1220 -420
+newcurve cfill 0 1 0 marktype circle pts -1218 -421
+newline pts -1224 -334 -1218 -421
+newline pts -1218 -253 -1224 -334
+newcurve cfill 1 0 0 marktype circle pts -1213 -335
+newcurve cfill 0 1 0 marktype circle pts -1221 -415
+newline pts -1213 -335 -1221 -415
+newcurve cfill 0 1 0 marktype circle pts -1219 -416
+newline pts -1213 -335 -1219 -416
+newcurve cfill 0 1 0 marktype circle pts -1217 -417
+newline pts -1213 -335 -1217 -417
+newcurve cfill 0 1 0 marktype circle pts -1215 -418
+newline pts -1213 -335 -1215 -418
+newcurve cfill 0 1 0 marktype circle pts -1213 -419
+newline pts -1213 -335 -1213 -419
+newcurve cfill 0 1 0 marktype circle pts -1211 -420
+newline pts -1213 -335 -1211 -420
+newcurve cfill 0 1 0 marktype circle pts -1209 -421
+newline pts -1213 -335 -1209 -421
+newcurve cfill 0 1 0 marktype circle pts -1207 -422
+newline pts -1213 -335 -1207 -422
+newline pts -1218 -253 -1213 -335
+newline pts -1257 -163 -1218 -253
+newcurve cfill 1 0 0 marktype circle pts -1203 -254
+newcurve cfill 1 0 0 marktype circle pts -1205 -334
+newcurve cfill 0 1 0 marktype circle pts -1207 -414
+newline pts -1205 -334 -1207 -414
+newcurve cfill 0 1 0 marktype circle pts -1205 -415
+newline pts -1205 -334 -1205 -415
+newline pts -1203 -254 -1205 -334
+newline pts -1257 -163 -1203 -254
+newcurve cfill 1 0 0 marktype circle pts -1188 -255
+newcurve cfill 1 0 0 marktype circle pts -1192 -335
+newcurve cfill 0 1 0 marktype circle pts -1193 -415
+newline pts -1192 -335 -1193 -415
+newline pts -1188 -255 -1192 -335
+newcurve cfill 1 0 0 marktype circle pts -1188 -336
+newcurve cfill 0 1 0 marktype circle pts -1191 -416
+newline pts -1188 -336 -1191 -416
+newcurve cfill 0 1 0 marktype circle pts -1189 -417
+newline pts -1188 -336 -1189 -417
+newcurve cfill 0 1 0 marktype circle pts -1187 -418
+newline pts -1188 -336 -1187 -418
+newline pts -1188 -255 -1188 -336
+newline pts -1257 -163 -1188 -255
+newcurve cfill 1 0 0 marktype circle pts -1173 -256
+newcurve cfill 1 0 0 marktype circle pts -1177 -336
+newcurve cfill 0 1 0 marktype circle pts -1178 -416
+newline pts -1177 -336 -1178 -416
+newline pts -1173 -256 -1177 -336
+newcurve cfill 1 0 0 marktype circle pts -1173 -337
+newcurve cfill 0 1 0 marktype circle pts -1176 -417
+newline pts -1173 -337 -1176 -417
+newcurve cfill 0 1 0 marktype circle pts -1174 -418
+newline pts -1173 -337 -1174 -418
+newcurve cfill 0 1 0 marktype circle pts -1172 -419
+newline pts -1173 -337 -1172 -419
+newline pts -1173 -256 -1173 -337
+newline pts -1257 -163 -1173 -256
+newline pts -1122 -80 -1257 -163
+newcurve cfill 1 0 0 marktype circle pts -991 -164
+newcurve cfill 0 1 0 marktype circle pts -1431 -244
+newline pts -991 -164 -1431 -244
+newcurve cfill 1 0 0 marktype circle pts -1358 -245
+newcurve cfill 0 1 0 marktype circle pts -1362 -325
+newline pts -1358 -245 -1362 -325
+newcurve cfill 0 1 0 marktype circle pts -1360 -326
+newline pts -1358 -245 -1360 -326
+newcurve cfill 0 1 0 marktype circle pts -1358 -327
+newline pts -1358 -245 -1358 -327
+newcurve cfill 0 1 0 marktype circle pts -1356 -328
+newline pts -1358 -245 -1356 -328
+newline pts -991 -164 -1358 -245
+newcurve cfill 1 0 0 marktype circle pts -1285 -246
+newcurve cfill 0 1 0 marktype circle pts -1290 -326
+newline pts -1285 -246 -1290 -326
+newcurve cfill 1 0 0 marktype circle pts -1288 -327
+newcurve cfill 0 1 0 marktype circle pts -1289 -407
+newline pts -1288 -327 -1289 -407
+newline pts -1285 -246 -1288 -327
+newcurve cfill 1 0 0 marktype circle pts -1286 -328
+newcurve cfill 0 1 0 marktype circle pts -1287 -408
+newline pts -1286 -328 -1287 -408
+newline pts -1285 -246 -1286 -328
+newcurve cfill 1 0 0 marktype circle pts -1284 -329
+newcurve cfill 0 1 0 marktype circle pts -1286 -409
+newline pts -1284 -329 -1286 -409
+newcurve cfill 0 1 0 marktype circle pts -1284 -410
+newline pts -1284 -329 -1284 -410
+newline pts -1285 -246 -1284 -329
+newline pts -991 -164 -1285 -246
+newcurve cfill 1 0 0 marktype circle pts -1212 -247
+newcurve cfill 0 1 0 marktype circle pts -1228 -327
+newline pts -1212 -247 -1228 -327
+newcurve cfill 0 1 0 marktype circle pts -1226 -328
+newline pts -1212 -247 -1226 -328
+newcurve cfill 0 1 0 marktype circle pts -1224 -329
+newline pts -1212 -247 -1224 -329
+newcurve cfill 0 1 0 marktype circle pts -1222 -330
+newline pts -1212 -247 -1222 -330
+newcurve cfill 0 1 0 marktype circle pts -1220 -331
+newline pts -1212 -247 -1220 -331
+newcurve cfill 0 1 0 marktype circle pts -1218 -332
+newline pts -1212 -247 -1218 -332
+newcurve cfill 0 1 0 marktype circle pts -1216 -333
+newline pts -1212 -247 -1216 -333
+newcurve cfill 0 1 0 marktype circle pts -1214 -334
+newline pts -1212 -247 -1214 -334
+newcurve cfill 0 1 0 marktype circle pts -1212 -335
+newline pts -1212 -247 -1212 -335
+newcurve cfill 0 1 0 marktype circle pts -1210 -336
+newline pts -1212 -247 -1210 -336
+newcurve cfill 0 1 0 marktype circle pts -1208 -337
+newline pts -1212 -247 -1208 -337
+newcurve cfill 0 1 0 marktype circle pts -1206 -338
+newline pts -1212 -247 -1206 -338
+newcurve cfill 0 1 0 marktype circle pts -1204 -339
+newline pts -1212 -247 -1204 -339
+newcurve cfill 0 1 0 marktype circle pts -1202 -340
+newline pts -1212 -247 -1202 -340
+newcurve cfill 0 1 0 marktype circle pts -1200 -341
+newline pts -1212 -247 -1200 -341
+newcurve cfill 0 1 0 marktype circle pts -1198 -342
+newline pts -1212 -247 -1198 -342
+newline pts -991 -164 -1212 -247
+newcurve cfill 1 0 0 marktype circle pts -1139 -248
+newcurve cfill 0 1 0 marktype circle pts -1141 -328
+newline pts -1139 -248 -1141 -328
+newcurve cfill 0 1 0 marktype circle pts -1139 -329
+newline pts -1139 -248 -1139 -329
+newline pts -991 -164 -1139 -248
+newcurve cfill 1 0 0 marktype circle pts -1066 -249
+newcurve cfill 0 1 0 marktype circle pts -1099 -329
+newline pts -1066 -249 -1099 -329
+newcurve cfill 0 1 0 marktype circle pts -1094 -330
+newline pts -1066 -249 -1094 -330
+newcurve cfill 0 1 0 marktype circle pts -1089 -331
+newline pts -1066 -249 -1089 -331
+newcurve cfill 0 1 0 marktype circle pts -1084 -332
+newline pts -1066 -249 -1084 -332
+newcurve cfill 0 1 0 marktype circle pts -1079 -333
+newline pts -1066 -249 -1079 -333
+newcurve cfill 0 1 0 marktype circle pts -1074 -334
+newline pts -1066 -249 -1074 -334
+newcurve cfill 0 1 0 marktype circle pts -1069 -335
+newline pts -1066 -249 -1069 -335
+newcurve cfill 0 1 0 marktype circle pts -1064 -336
+newline pts -1066 -249 -1064 -336
+newcurve cfill 1 0 0 marktype circle pts -1059 -337
+newcurve cfill 0 1 0 marktype circle pts -1063 -417
+newline pts -1059 -337 -1063 -417
+newcurve cfill 0 1 0 marktype circle pts -1061 -418
+newline pts -1059 -337 -1061 -418
+newcurve cfill 0 1 0 marktype circle pts -1059 -419
+newline pts -1059 -337 -1059 -419
+newcurve cfill 0 1 0 marktype circle pts -1057 -420
+newline pts -1059 -337 -1057 -420
+newline pts -1066 -249 -1059 -337
+newcurve cfill 1 0 0 marktype circle pts -1054 -338
+newcurve cfill 0 1 0 marktype circle pts -1062 -418
+newline pts -1054 -338 -1062 -418
+newcurve cfill 0 1 0 marktype circle pts -1060 -419
+newline pts -1054 -338 -1060 -419
+newcurve cfill 1 0 0 marktype circle pts -1058 -420
+newcurve cfill 0 1 0 marktype circle pts -1059 -500
+newline pts -1058 -420 -1059 -500
+newline pts -1054 -338 -1058 -420
+newcurve cfill 1 0 0 marktype circle pts -1056 -421
+newcurve cfill 0 1 0 marktype circle pts -1057 -501
+newline pts -1056 -421 -1057 -501
+newline pts -1054 -338 -1056 -421
+newcurve cfill 1 0 0 marktype circle pts -1054 -422
+newcurve cfill 0 1 0 marktype circle pts -1056 -502
+newline pts -1054 -422 -1056 -502
+newcurve cfill 0 1 0 marktype circle pts -1054 -503
+newline pts -1054 -422 -1054 -503
+newline pts -1054 -338 -1054 -422
+newcurve cfill 1 0 0 marktype circle pts -1052 -423
+newcurve cfill 0 1 0 marktype circle pts -1054 -503
+newline pts -1052 -423 -1054 -503
+newcurve cfill 0 1 0 marktype circle pts -1052 -504
+newline pts -1052 -423 -1052 -504
+newline pts -1054 -338 -1052 -423
+newline pts -1066 -249 -1054 -338
+newcurve cfill 1 0 0 marktype circle pts -1049 -339
+newcurve cfill 0 1 0 marktype circle pts -1053 -419
+newline pts -1049 -339 -1053 -419
+newcurve cfill 0 1 0 marktype circle pts -1051 -420
+newline pts -1049 -339 -1051 -420
+newcurve cfill 0 1 0 marktype circle pts -1049 -421
+newline pts -1049 -339 -1049 -421
+newcurve cfill 0 1 0 marktype circle pts -1047 -422
+newline pts -1049 -339 -1047 -422
+newline pts -1066 -249 -1049 -339
+newcurve cfill 1 0 0 marktype circle pts -1044 -340
+newcurve cfill 0 1 0 marktype circle pts -1050 -420
+newline pts -1044 -340 -1050 -420
+newcurve cfill 0 1 0 marktype circle pts -1048 -421
+newline pts -1044 -340 -1048 -421
+newcurve cfill 0 1 0 marktype circle pts -1046 -422
+newline pts -1044 -340 -1046 -422
+newcurve cfill 0 1 0 marktype circle pts -1044 -423
+newline pts -1044 -340 -1044 -423
+newcurve cfill 0 1 0 marktype circle pts -1042 -424
+newline pts -1044 -340 -1042 -424
+newcurve cfill 0 1 0 marktype circle pts -1040 -425
+newline pts -1044 -340 -1040 -425
+newline pts -1066 -249 -1044 -340
+newcurve cfill 1 0 0 marktype circle pts -1039 -341
+newcurve cfill 0 1 0 marktype circle pts -1042 -421
+newline pts -1039 -341 -1042 -421
+newcurve cfill 0 1 0 marktype circle pts -1040 -422
+newline pts -1039 -341 -1040 -422
+newcurve cfill 0 1 0 marktype circle pts -1038 -423
+newline pts -1039 -341 -1038 -423
+newline pts -1066 -249 -1039 -341
+newline pts -991 -164 -1066 -249
+newcurve cfill 1 0 0 marktype circle pts -993 -250
+newcurve cfill 0 1 0 marktype circle pts -1003 -330
+newline pts -993 -250 -1003 -330
+newcurve cfill 1 0 0 marktype circle pts -999 -331
+newcurve cfill 0 1 0 marktype circle pts -1001 -411
+newline pts -999 -331 -1001 -411
+newcurve cfill 0 1 0 marktype circle pts -999 -412
+newline pts -999 -331 -999 -412
+newline pts -993 -250 -999 -331
+newcurve cfill 1 0 0 marktype circle pts -995 -332
+newcurve cfill 0 1 0 marktype circle pts -996 -412
+newline pts -995 -332 -996 -412
+newline pts -993 -250 -995 -332
+newcurve cfill 1 0 0 marktype circle pts -991 -333
+newcurve cfill 0 1 0 marktype circle pts -994 -413
+newline pts -991 -333 -994 -413
+newcurve cfill 0 1 0 marktype circle pts -992 -414
+newline pts -991 -333 -992 -414
+newcurve cfill 0 1 0 marktype circle pts -990 -415
+newline pts -991 -333 -990 -415
+newline pts -993 -250 -991 -333
+newcurve cfill 1 0 0 marktype circle pts -987 -334
+newcurve cfill 0 1 0 marktype circle pts -990 -414
+newline pts -987 -334 -990 -414
+newcurve cfill 0 1 0 marktype circle pts -988 -415
+newline pts -987 -334 -988 -415
+newcurve cfill 0 1 0 marktype circle pts -986 -416
+newline pts -987 -334 -986 -416
+newline pts -993 -250 -987 -334
+newline pts -991 -164 -993 -250
+newcurve cfill 1 0 0 marktype circle pts -920 -251
+newcurve cfill 0 1 0 marktype circle pts -1129 -331
+newline pts -920 -251 -1129 -331
+newcurve cfill 0 1 0 marktype circle pts -1095 -332
+newline pts -920 -251 -1095 -332
+newcurve cfill 0 1 0 marktype circle pts -1061 -333
+newline pts -920 -251 -1061 -333
+newcurve cfill 0 1 0 marktype circle pts -1027 -334
+newline pts -920 -251 -1027 -334
+newcurve cfill 0 1 0 marktype circle pts -993 -335
+newline pts -920 -251 -993 -335
+newcurve cfill 0 1 0 marktype circle pts -959 -336
+newline pts -920 -251 -959 -336
+newcurve cfill 0 1 0 marktype circle pts -925 -337
+newline pts -920 -251 -925 -337
+newcurve cfill 0 1 0 marktype circle pts -891 -338
+newline pts -920 -251 -891 -338
+newcurve cfill 0 1 0 marktype circle pts -857 -339
+newline pts -920 -251 -857 -339
+newcurve cfill 0 1 0 marktype circle pts -823 -340
+newline pts -920 -251 -823 -340
+newcurve cfill 1 0 0 marktype circle pts -789 -341
+newcurve cfill 0 1 0 marktype circle pts -796 -421
+newline pts -789 -341 -796 -421
+newcurve cfill 0 1 0 marktype circle pts -794 -422
+newline pts -789 -341 -794 -422
+newcurve cfill 0 1 0 marktype circle pts -792 -423
+newline pts -789 -341 -792 -423
+newcurve cfill 0 1 0 marktype circle pts -790 -424
+newline pts -789 -341 -790 -424
+newcurve cfill 0 1 0 marktype circle pts -788 -425
+newline pts -789 -341 -788 -425
+newcurve cfill 0 1 0 marktype circle pts -786 -426
+newline pts -789 -341 -786 -426
+newcurve cfill 0 1 0 marktype circle pts -784 -427
+newline pts -789 -341 -784 -427
+newline pts -920 -251 -789 -341
+newcurve cfill 1 0 0 marktype circle pts -755 -342
+newcurve cfill 0 1 0 marktype circle pts -947 -422
+newline pts -755 -342 -947 -422
+newcurve cfill 0 1 0 marktype circle pts -945 -423
+newline pts -755 -342 -945 -423
+newcurve cfill 0 1 0 marktype circle pts -943 -424
+newline pts -755 -342 -943 -424
+newcurve cfill 0 1 0 marktype circle pts -941 -425
+newline pts -755 -342 -941 -425
+newcurve cfill 0 1 0 marktype circle pts -939 -426
+newline pts -755 -342 -939 -426
+newcurve cfill 0 1 0 marktype circle pts -937 -427
+newline pts -755 -342 -937 -427
+newcurve cfill 0 1 0 marktype circle pts -935 -428
+newline pts -755 -342 -935 -428
+newcurve cfill 0 1 0 marktype circle pts -933 -429
+newline pts -755 -342 -933 -429
+newcurve cfill 0 1 0 marktype circle pts -931 -430
+newline pts -755 -342 -931 -430
+newcurve cfill 0 1 0 marktype circle pts -929 -431
+newline pts -755 -342 -929 -431
+newcurve cfill 0 1 0 marktype circle pts -927 -432
+newline pts -755 -342 -927 -432
+newcurve cfill 0 1 0 marktype circle pts -925 -433
+newline pts -755 -342 -925 -433
+newcurve cfill 0 1 0 marktype circle pts -923 -434
+newline pts -755 -342 -923 -434
+newcurve cfill 0 1 0 marktype circle pts -921 -435
+newline pts -755 -342 -921 -435
+newcurve cfill 0 1 0 marktype circle pts -919 -436
+newline pts -755 -342 -919 -436
+newcurve cfill 0 1 0 marktype circle pts -917 -437
+newline pts -755 -342 -917 -437
+newcurve cfill 0 1 0 marktype circle pts -915 -438
+newline pts -755 -342 -915 -438
+newcurve cfill 0 1 0 marktype circle pts -913 -439
+newline pts -755 -342 -913 -439
+newcurve cfill 0 1 0 marktype circle pts -911 -440
+newline pts -755 -342 -911 -440
+newcurve cfill 0 1 0 marktype circle pts -909 -441
+newline pts -755 -342 -909 -441
+newcurve cfill 0 1 0 marktype circle pts -907 -442
+newline pts -755 -342 -907 -442
+newcurve cfill 0 1 0 marktype circle pts -905 -443
+newline pts -755 -342 -905 -443
+newcurve cfill 0 1 0 marktype circle pts -903 -444
+newline pts -755 -342 -903 -444
+newcurve cfill 0 1 0 marktype circle pts -901 -445
+newline pts -755 -342 -901 -445
+newcurve cfill 0 1 0 marktype circle pts -899 -446
+newline pts -755 -342 -899 -446
+newcurve cfill 0 1 0 marktype circle pts -897 -447
+newline pts -755 -342 -897 -447
+newcurve cfill 0 1 0 marktype circle pts -895 -448
+newline pts -755 -342 -895 -448
+newcurve cfill 0 1 0 marktype circle pts -893 -449
+newline pts -755 -342 -893 -449
+newcurve cfill 0 1 0 marktype circle pts -891 -450
+newline pts -755 -342 -891 -450
+newcurve cfill 0 1 0 marktype circle pts -889 -451
+newline pts -755 -342 -889 -451
+newcurve cfill 0 1 0 marktype circle pts -887 -452
+newline pts -755 -342 -887 -452
+newcurve cfill 0 1 0 marktype circle pts -885 -453
+newline pts -755 -342 -885 -453
+newcurve cfill 0 1 0 marktype circle pts -883 -454
+newline pts -755 -342 -883 -454
+newcurve cfill 0 1 0 marktype circle pts -881 -455
+newline pts -755 -342 -881 -455
+newcurve cfill 0 1 0 marktype circle pts -879 -456
+newline pts -755 -342 -879 -456
+newcurve cfill 0 1 0 marktype circle pts -877 -457
+newline pts -755 -342 -877 -457
+newcurve cfill 0 1 0 marktype circle pts -875 -458
+newline pts -755 -342 -875 -458
+newcurve cfill 0 1 0 marktype circle pts -873 -459
+newline pts -755 -342 -873 -459
+newcurve cfill 0 1 0 marktype circle pts -871 -460
+newline pts -755 -342 -871 -460
+newcurve cfill 0 1 0 marktype circle pts -869 -461
+newline pts -755 -342 -869 -461
+newcurve cfill 0 1 0 marktype circle pts -867 -462
+newline pts -755 -342 -867 -462
+newcurve cfill 0 1 0 marktype circle pts -865 -463
+newline pts -755 -342 -865 -463
+newcurve cfill 0 1 0 marktype circle pts -863 -464
+newline pts -755 -342 -863 -464
+newcurve cfill 0 1 0 marktype circle pts -861 -465
+newline pts -755 -342 -861 -465
+newcurve cfill 0 1 0 marktype circle pts -859 -466
+newline pts -755 -342 -859 -466
+newcurve cfill 0 1 0 marktype circle pts -857 -467
+newline pts -755 -342 -857 -467
+newcurve cfill 0 1 0 marktype circle pts -855 -468
+newline pts -755 -342 -855 -468
+newcurve cfill 0 1 0 marktype circle pts -853 -469
+newline pts -755 -342 -853 -469
+newcurve cfill 0 1 0 marktype circle pts -851 -470
+newline pts -755 -342 -851 -470
+newcurve cfill 0 1 0 marktype circle pts -849 -471
+newline pts -755 -342 -849 -471
+newcurve cfill 0 1 0 marktype circle pts -847 -472
+newline pts -755 -342 -847 -472
+newcurve cfill 0 1 0 marktype circle pts -845 -473
+newline pts -755 -342 -845 -473
+newcurve cfill 0 1 0 marktype circle pts -843 -474
+newline pts -755 -342 -843 -474
+newcurve cfill 0 1 0 marktype circle pts -841 -475
+newline pts -755 -342 -841 -475
+newcurve cfill 0 1 0 marktype circle pts -839 -476
+newline pts -755 -342 -839 -476
+newcurve cfill 0 1 0 marktype circle pts -837 -477
+newline pts -755 -342 -837 -477
+newcurve cfill 0 1 0 marktype circle pts -835 -478
+newline pts -755 -342 -835 -478
+newcurve cfill 0 1 0 marktype circle pts -833 -479
+newline pts -755 -342 -833 -479
+newcurve cfill 0 1 0 marktype circle pts -831 -480
+newline pts -755 -342 -831 -480
+newcurve cfill 0 1 0 marktype circle pts -829 -481
+newline pts -755 -342 -829 -481
+newcurve cfill 0 1 0 marktype circle pts -827 -482
+newline pts -755 -342 -827 -482
+newcurve cfill 0 1 0 marktype circle pts -825 -483
+newline pts -755 -342 -825 -483
+newcurve cfill 0 1 0 marktype circle pts -823 -484
+newline pts -755 -342 -823 -484
+newcurve cfill 0 1 0 marktype circle pts -821 -485
+newline pts -755 -342 -821 -485
+newcurve cfill 0 1 0 marktype circle pts -819 -486
+newline pts -755 -342 -819 -486
+newcurve cfill 0 1 0 marktype circle pts -817 -487
+newline pts -755 -342 -817 -487
+newcurve cfill 0 1 0 marktype circle pts -815 -488
+newline pts -755 -342 -815 -488
+newcurve cfill 0 1 0 marktype circle pts -813 -489
+newline pts -755 -342 -813 -489
+newcurve cfill 0 1 0 marktype circle pts -811 -490
+newline pts -755 -342 -811 -490
+newcurve cfill 0 1 0 marktype circle pts -809 -491
+newline pts -755 -342 -809 -491
+newcurve cfill 0 1 0 marktype circle pts -807 -492
+newline pts -755 -342 -807 -492
+newcurve cfill 0 1 0 marktype circle pts -805 -493
+newline pts -755 -342 -805 -493
+newcurve cfill 0 1 0 marktype circle pts -803 -494
+newline pts -755 -342 -803 -494
+newcurve cfill 0 1 0 marktype circle pts -801 -495
+newline pts -755 -342 -801 -495
+newcurve cfill 0 1 0 marktype circle pts -799 -496
+newline pts -755 -342 -799 -496
+newcurve cfill 0 1 0 marktype circle pts -797 -497
+newline pts -755 -342 -797 -497
+newcurve cfill 0 1 0 marktype circle pts -795 -498
+newline pts -755 -342 -795 -498
+newcurve cfill 0 1 0 marktype circle pts -793 -499
+newline pts -755 -342 -793 -499
+newcurve cfill 0 1 0 marktype circle pts -791 -500
+newline pts -755 -342 -791 -500
+newcurve cfill 0 1 0 marktype circle pts -789 -501
+newline pts -755 -342 -789 -501
+newcurve cfill 0 1 0 marktype circle pts -787 -502
+newline pts -755 -342 -787 -502
+newcurve cfill 0 1 0 marktype circle pts -785 -503
+newline pts -755 -342 -785 -503
+newcurve cfill 0 1 0 marktype circle pts -783 -504
+newline pts -755 -342 -783 -504
+newcurve cfill 0 1 0 marktype circle pts -781 -505
+newline pts -755 -342 -781 -505
+newcurve cfill 0 1 0 marktype circle pts -779 -506
+newline pts -755 -342 -779 -506
+newcurve cfill 0 1 0 marktype circle pts -777 -507
+newline pts -755 -342 -777 -507
+newcurve cfill 0 1 0 marktype circle pts -775 -508
+newline pts -755 -342 -775 -508
+newcurve cfill 0 1 0 marktype circle pts -773 -509
+newline pts -755 -342 -773 -509
+newcurve cfill 0 1 0 marktype circle pts -771 -510
+newline pts -755 -342 -771 -510
+newcurve cfill 0 1 0 marktype circle pts -769 -511
+newline pts -755 -342 -769 -511
+newcurve cfill 0 1 0 marktype circle pts -767 -512
+newline pts -755 -342 -767 -512
+newcurve cfill 0 1 0 marktype circle pts -765 -513
+newline pts -755 -342 -765 -513
+newcurve cfill 0 1 0 marktype circle pts -763 -514
+newline pts -755 -342 -763 -514
+newcurve cfill 0 1 0 marktype circle pts -761 -515
+newline pts -755 -342 -761 -515
+newcurve cfill 0 1 0 marktype circle pts -759 -516
+newline pts -755 -342 -759 -516
+newcurve cfill 0 1 0 marktype circle pts -757 -517
+newline pts -755 -342 -757 -517
+newcurve cfill 0 1 0 marktype circle pts -755 -518
+newline pts -755 -342 -755 -518
+newcurve cfill 0 1 0 marktype circle pts -753 -519
+newline pts -755 -342 -753 -519
+newcurve cfill 0 1 0 marktype circle pts -751 -520
+newline pts -755 -342 -751 -520
+newcurve cfill 0 1 0 marktype circle pts -749 -521
+newline pts -755 -342 -749 -521
+newcurve cfill 0 1 0 marktype circle pts -747 -522
+newline pts -755 -342 -747 -522
+newcurve cfill 0 1 0 marktype circle pts -745 -523
+newline pts -755 -342 -745 -523
+newcurve cfill 0 1 0 marktype circle pts -743 -524
+newline pts -755 -342 -743 -524
+newcurve cfill 0 1 0 marktype circle pts -741 -525
+newline pts -755 -342 -741 -525
+newcurve cfill 0 1 0 marktype circle pts -739 -526
+newline pts -755 -342 -739 -526
+newcurve cfill 0 1 0 marktype circle pts -737 -527
+newline pts -755 -342 -737 -527
+newcurve cfill 0 1 0 marktype circle pts -735 -528
+newline pts -755 -342 -735 -528
+newcurve cfill 0 1 0 marktype circle pts -733 -529
+newline pts -755 -342 -733 -529
+newcurve cfill 0 1 0 marktype circle pts -731 -530
+newline pts -755 -342 -731 -530
+newcurve cfill 0 1 0 marktype circle pts -729 -531
+newline pts -755 -342 -729 -531
+newcurve cfill 0 1 0 marktype circle pts -727 -532
+newline pts -755 -342 -727 -532
+newcurve cfill 0 1 0 marktype circle pts -725 -533
+newline pts -755 -342 -725 -533
+newcurve cfill 0 1 0 marktype circle pts -723 -534
+newline pts -755 -342 -723 -534
+newcurve cfill 0 1 0 marktype circle pts -721 -535
+newline pts -755 -342 -721 -535
+newcurve cfill 0 1 0 marktype circle pts -719 -536
+newline pts -755 -342 -719 -536
+newcurve cfill 0 1 0 marktype circle pts -717 -537
+newline pts -755 -342 -717 -537
+newcurve cfill 0 1 0 marktype circle pts -715 -538
+newline pts -755 -342 -715 -538
+newcurve cfill 0 1 0 marktype circle pts -713 -539
+newline pts -755 -342 -713 -539
+newcurve cfill 0 1 0 marktype circle pts -711 -540
+newline pts -755 -342 -711 -540
+newcurve cfill 0 1 0 marktype circle pts -709 -541
+newline pts -755 -342 -709 -541
+newcurve cfill 0 1 0 marktype circle pts -707 -542
+newline pts -755 -342 -707 -542
+newcurve cfill 0 1 0 marktype circle pts -705 -543
+newline pts -755 -342 -705 -543
+newcurve cfill 0 1 0 marktype circle pts -703 -544
+newline pts -755 -342 -703 -544
+newcurve cfill 0 1 0 marktype circle pts -701 -545
+newline pts -755 -342 -701 -545
+newcurve cfill 0 1 0 marktype circle pts -699 -546
+newline pts -755 -342 -699 -546
+newcurve cfill 0 1 0 marktype circle pts -697 -547
+newline pts -755 -342 -697 -547
+newcurve cfill 0 1 0 marktype circle pts -695 -548
+newline pts -755 -342 -695 -548
+newcurve cfill 0 1 0 marktype circle pts -693 -549
+newline pts -755 -342 -693 -549
+newcurve cfill 0 1 0 marktype circle pts -691 -550
+newline pts -755 -342 -691 -550
+newcurve cfill 0 1 0 marktype circle pts -689 -551
+newline pts -755 -342 -689 -551
+newcurve cfill 0 1 0 marktype circle pts -687 -552
+newline pts -755 -342 -687 -552
+newcurve cfill 0 1 0 marktype circle pts -685 -553
+newline pts -755 -342 -685 -553
+newcurve cfill 0 1 0 marktype circle pts -683 -554
+newline pts -755 -342 -683 -554
+newcurve cfill 0 1 0 marktype circle pts -681 -555
+newline pts -755 -342 -681 -555
+newcurve cfill 0 1 0 marktype circle pts -679 -556
+newline pts -755 -342 -679 -556
+newcurve cfill 0 1 0 marktype circle pts -677 -557
+newline pts -755 -342 -677 -557
+newcurve cfill 0 1 0 marktype circle pts -675 -558
+newline pts -755 -342 -675 -558
+newcurve cfill 0 1 0 marktype circle pts -673 -559
+newline pts -755 -342 -673 -559
+newcurve cfill 0 1 0 marktype circle pts -671 -560
+newline pts -755 -342 -671 -560
+newcurve cfill 0 1 0 marktype circle pts -669 -561
+newline pts -755 -342 -669 -561
+newcurve cfill 0 1 0 marktype circle pts -667 -562
+newline pts -755 -342 -667 -562
+newcurve cfill 0 1 0 marktype circle pts -665 -563
+newline pts -755 -342 -665 -563
+newcurve cfill 0 1 0 marktype circle pts -663 -564
+newline pts -755 -342 -663 -564
+newcurve cfill 0 1 0 marktype circle pts -661 -565
+newline pts -755 -342 -661 -565
+newcurve cfill 0 1 0 marktype circle pts -659 -566
+newline pts -755 -342 -659 -566
+newcurve cfill 0 1 0 marktype circle pts -657 -567
+newline pts -755 -342 -657 -567
+newcurve cfill 0 1 0 marktype circle pts -655 -568
+newline pts -755 -342 -655 -568
+newcurve cfill 0 1 0 marktype circle pts -653 -569
+newline pts -755 -342 -653 -569
+newcurve cfill 0 1 0 marktype circle pts -651 -570
+newline pts -755 -342 -651 -570
+newcurve cfill 0 1 0 marktype circle pts -649 -571
+newline pts -755 -342 -649 -571
+newcurve cfill 0 1 0 marktype circle pts -647 -572
+newline pts -755 -342 -647 -572
+newcurve cfill 0 1 0 marktype circle pts -645 -573
+newline pts -755 -342 -645 -573
+newcurve cfill 0 1 0 marktype circle pts -643 -574
+newline pts -755 -342 -643 -574
+newcurve cfill 0 1 0 marktype circle pts -641 -575
+newline pts -755 -342 -641 -575
+newcurve cfill 0 1 0 marktype circle pts -639 -576
+newline pts -755 -342 -639 -576
+newcurve cfill 0 1 0 marktype circle pts -637 -577
+newline pts -755 -342 -637 -577
+newcurve cfill 0 1 0 marktype circle pts -635 -578
+newline pts -755 -342 -635 -578
+newcurve cfill 0 1 0 marktype circle pts -633 -579
+newline pts -755 -342 -633 -579
+newcurve cfill 0 1 0 marktype circle pts -631 -580
+newline pts -755 -342 -631 -580
+newcurve cfill 0 1 0 marktype circle pts -629 -581
+newline pts -755 -342 -629 -581
+newcurve cfill 0 1 0 marktype circle pts -627 -582
+newline pts -755 -342 -627 -582
+newcurve cfill 0 1 0 marktype circle pts -625 -583
+newline pts -755 -342 -625 -583
+newcurve cfill 0 1 0 marktype circle pts -623 -584
+newline pts -755 -342 -623 -584
+newcurve cfill 0 1 0 marktype circle pts -621 -585
+newline pts -755 -342 -621 -585
+newcurve cfill 0 1 0 marktype circle pts -619 -586
+newline pts -755 -342 -619 -586
+newcurve cfill 0 1 0 marktype circle pts -617 -587
+newline pts -755 -342 -617 -587
+newcurve cfill 0 1 0 marktype circle pts -615 -588
+newline pts -755 -342 -615 -588
+newcurve cfill 0 1 0 marktype circle pts -613 -589
+newline pts -755 -342 -613 -589
+newcurve cfill 0 1 0 marktype circle pts -611 -590
+newline pts -755 -342 -611 -590
+newcurve cfill 0 1 0 marktype circle pts -609 -591
+newline pts -755 -342 -609 -591
+newcurve cfill 0 1 0 marktype circle pts -607 -592
+newline pts -755 -342 -607 -592
+newcurve cfill 0 1 0 marktype circle pts -605 -593
+newline pts -755 -342 -605 -593
+newcurve cfill 0 1 0 marktype circle pts -603 -594
+newline pts -755 -342 -603 -594
+newcurve cfill 0 1 0 marktype circle pts -601 -595
+newline pts -755 -342 -601 -595
+newcurve cfill 0 1 0 marktype circle pts -599 -596
+newline pts -755 -342 -599 -596
+newcurve cfill 0 1 0 marktype circle pts -597 -597
+newline pts -755 -342 -597 -597
+newcurve cfill 0 1 0 marktype circle pts -595 -598
+newline pts -755 -342 -595 -598
+newcurve cfill 0 1 0 marktype circle pts -593 -599
+newline pts -755 -342 -593 -599
+newcurve cfill 0 1 0 marktype circle pts -591 -600
+newline pts -755 -342 -591 -600
+newcurve cfill 0 1 0 marktype circle pts -589 -601
+newline pts -755 -342 -589 -601
+newcurve cfill 0 1 0 marktype circle pts -587 -602
+newline pts -755 -342 -587 -602
+newcurve cfill 0 1 0 marktype circle pts -585 -603
+newline pts -755 -342 -585 -603
+newcurve cfill 0 1 0 marktype circle pts -583 -604
+newline pts -755 -342 -583 -604
+newcurve cfill 0 1 0 marktype circle pts -581 -605
+newline pts -755 -342 -581 -605
+newcurve cfill 0 1 0 marktype circle pts -579 -606
+newline pts -755 -342 -579 -606
+newcurve cfill 0 1 0 marktype circle pts -577 -607
+newline pts -755 -342 -577 -607
+newcurve cfill 0 1 0 marktype circle pts -575 -608
+newline pts -755 -342 -575 -608
+newcurve cfill 0 1 0 marktype circle pts -573 -609
+newline pts -755 -342 -573 -609
+newcurve cfill 0 1 0 marktype circle pts -571 -610
+newline pts -755 -342 -571 -610
+newcurve cfill 0 1 0 marktype circle pts -569 -611
+newline pts -755 -342 -569 -611
+newcurve cfill 0 1 0 marktype circle pts -567 -612
+newline pts -755 -342 -567 -612
+newcurve cfill 0 1 0 marktype circle pts -565 -613
+newline pts -755 -342 -565 -613
+newline pts -920 -251 -755 -342
+newline pts -991 -164 -920 -251
+newcurve cfill 1 0 0 marktype circle pts -847 -252
+newcurve cfill 0 1 0 marktype circle pts -862 -332
+newline pts -847 -252 -862 -332
+newcurve cfill 0 1 0 marktype circle pts -860 -333
+newline pts -847 -252 -860 -333
+newcurve cfill 0 1 0 marktype circle pts -858 -334
+newline pts -847 -252 -858 -334
+newcurve cfill 0 1 0 marktype circle pts -856 -335
+newline pts -847 -252 -856 -335
+newcurve cfill 0 1 0 marktype circle pts -854 -336
+newline pts -847 -252 -854 -336
+newcurve cfill 0 1 0 marktype circle pts -852 -337
+newline pts -847 -252 -852 -337
+newcurve cfill 0 1 0 marktype circle pts -850 -338
+newline pts -847 -252 -850 -338
+newcurve cfill 0 1 0 marktype circle pts -848 -339
+newline pts -847 -252 -848 -339
+newcurve cfill 0 1 0 marktype circle pts -846 -340
+newline pts -847 -252 -846 -340
+newcurve cfill 1 0 0 marktype circle pts -844 -341
+newcurve cfill 0 1 0 marktype circle pts -845 -421
+newline pts -844 -341 -845 -421
+newline pts -847 -252 -844 -341
+newcurve cfill 1 0 0 marktype circle pts -842 -342
+newcurve cfill 0 1 0 marktype circle pts -843 -422
+newline pts -842 -342 -843 -422
+newline pts -847 -252 -842 -342
+newcurve cfill 1 0 0 marktype circle pts -840 -343
+newcurve cfill 0 1 0 marktype circle pts -844 -423
+newline pts -840 -343 -844 -423
+newcurve cfill 0 1 0 marktype circle pts -842 -424
+newline pts -840 -343 -842 -424
+newcurve cfill 0 1 0 marktype circle pts -840 -425
+newline pts -840 -343 -840 -425
+newcurve cfill 0 1 0 marktype circle pts -838 -426
+newline pts -840 -343 -838 -426
+newline pts -847 -252 -840 -343
+newline pts -991 -164 -847 -252
+newcurve cfill 1 0 0 marktype circle pts -774 -253
+newcurve cfill 0 1 0 marktype circle pts -784 -333
+newline pts -774 -253 -784 -333
+newcurve cfill 0 1 0 marktype circle pts -782 -334
+newline pts -774 -253 -782 -334
+newcurve cfill 0 1 0 marktype circle pts -780 -335
+newline pts -774 -253 -780 -335
+newcurve cfill 0 1 0 marktype circle pts -778 -336
+newline pts -774 -253 -778 -336
+newcurve cfill 0 1 0 marktype circle pts -776 -337
+newline pts -774 -253 -776 -337
+newcurve cfill 0 1 0 marktype circle pts -774 -338
+newline pts -774 -253 -774 -338
+newcurve cfill 0 1 0 marktype circle pts -772 -339
+newline pts -774 -253 -772 -339
+newcurve cfill 0 1 0 marktype circle pts -770 -340
+newline pts -774 -253 -770 -340
+newcurve cfill 0 1 0 marktype circle pts -768 -341
+newline pts -774 -253 -768 -341
+newcurve cfill 0 1 0 marktype circle pts -766 -342
+newline pts -774 -253 -766 -342
+newline pts -991 -164 -774 -253
+newcurve cfill 1 0 0 marktype circle pts -701 -254
+newcurve cfill 0 1 0 marktype circle pts -713 -334
+newline pts -701 -254 -713 -334
+newcurve cfill 0 1 0 marktype circle pts -711 -335
+newline pts -701 -254 -711 -335
+newcurve cfill 0 1 0 marktype circle pts -709 -336
+newline pts -701 -254 -709 -336
+newcurve cfill 0 1 0 marktype circle pts -707 -337
+newline pts -701 -254 -707 -337
+newcurve cfill 0 1 0 marktype circle pts -705 -338
+newline pts -701 -254 -705 -338
+newcurve cfill 0 1 0 marktype circle pts -703 -339
+newline pts -701 -254 -703 -339
+newcurve cfill 0 1 0 marktype circle pts -701 -340
+newline pts -701 -254 -701 -340
+newcurve cfill 0 1 0 marktype circle pts -699 -341
+newline pts -701 -254 -699 -341
+newcurve cfill 0 1 0 marktype circle pts -697 -342
+newline pts -701 -254 -697 -342
+newcurve cfill 0 1 0 marktype circle pts -695 -343
+newline pts -701 -254 -695 -343
+newcurve cfill 0 1 0 marktype circle pts -693 -344
+newline pts -701 -254 -693 -344
+newcurve cfill 0 1 0 marktype circle pts -691 -345
+newline pts -701 -254 -691 -345
+newline pts -991 -164 -701 -254
+newcurve cfill 1 0 0 marktype circle pts -628 -255
+newcurve cfill 1 0 0 marktype circle pts -751 -335
+newcurve cfill 0 1 0 marktype circle pts -756 -415
+newline pts -751 -335 -756 -415
+newcurve cfill 0 1 0 marktype circle pts -754 -416
+newline pts -751 -335 -754 -416
+newcurve cfill 0 1 0 marktype circle pts -752 -417
+newline pts -751 -335 -752 -417
+newcurve cfill 0 1 0 marktype circle pts -750 -418
+newline pts -751 -335 -750 -418
+newcurve cfill 0 1 0 marktype circle pts -748 -419
+newline pts -751 -335 -748 -419
+newline pts -628 -255 -751 -335
+newcurve cfill 1 0 0 marktype circle pts -733 -336
+newcurve cfill 0 1 0 marktype circle pts -790 -416
+newline pts -733 -336 -790 -416
+newcurve cfill 0 1 0 marktype circle pts -774 -417
+newline pts -733 -336 -774 -417
+newcurve cfill 0 1 0 marktype circle pts -758 -418
+newline pts -733 -336 -758 -418
+newcurve cfill 0 1 0 marktype circle pts -742 -419
+newline pts -733 -336 -742 -419
+newcurve cfill 0 1 0 marktype circle pts -726 -420
+newline pts -733 -336 -726 -420
+newcurve cfill 0 1 0 marktype circle pts -710 -421
+newline pts -733 -336 -710 -421
+newcurve cfill 1 0 0 marktype circle pts -694 -422
+newcurve cfill 0 1 0 marktype circle pts -745 -502
+newline pts -694 -422 -745 -502
+newcurve cfill 0 1 0 marktype circle pts -743 -503
+newline pts -694 -422 -743 -503
+newcurve cfill 0 1 0 marktype circle pts -741 -504
+newline pts -694 -422 -741 -504
+newcurve cfill 0 1 0 marktype circle pts -739 -505
+newline pts -694 -422 -739 -505
+newcurve cfill 0 1 0 marktype circle pts -737 -506
+newline pts -694 -422 -737 -506
+newcurve cfill 0 1 0 marktype circle pts -735 -507
+newline pts -694 -422 -735 -507
+newcurve cfill 0 1 0 marktype circle pts -733 -508
+newline pts -694 -422 -733 -508
+newcurve cfill 0 1 0 marktype circle pts -731 -509
+newline pts -694 -422 -731 -509
+newcurve cfill 0 1 0 marktype circle pts -729 -510
+newline pts -694 -422 -729 -510
+newcurve cfill 0 1 0 marktype circle pts -727 -511
+newline pts -694 -422 -727 -511
+newcurve cfill 0 1 0 marktype circle pts -725 -512
+newline pts -694 -422 -725 -512
+newcurve cfill 0 1 0 marktype circle pts -723 -513
+newline pts -694 -422 -723 -513
+newcurve cfill 0 1 0 marktype circle pts -721 -514
+newline pts -694 -422 -721 -514
+newcurve cfill 0 1 0 marktype circle pts -719 -515
+newline pts -694 -422 -719 -515
+newcurve cfill 0 1 0 marktype circle pts -717 -516
+newline pts -694 -422 -717 -516
+newcurve cfill 0 1 0 marktype circle pts -715 -517
+newline pts -694 -422 -715 -517
+newcurve cfill 0 1 0 marktype circle pts -713 -518
+newline pts -694 -422 -713 -518
+newcurve cfill 0 1 0 marktype circle pts -711 -519
+newline pts -694 -422 -711 -519
+newcurve cfill 0 1 0 marktype circle pts -709 -520
+newline pts -694 -422 -709 -520
+newcurve cfill 0 1 0 marktype circle pts -707 -521
+newline pts -694 -422 -707 -521
+newcurve cfill 0 1 0 marktype circle pts -705 -522
+newline pts -694 -422 -705 -522
+newcurve cfill 0 1 0 marktype circle pts -703 -523
+newline pts -694 -422 -703 -523
+newcurve cfill 0 1 0 marktype circle pts -701 -524
+newline pts -694 -422 -701 -524
+newcurve cfill 0 1 0 marktype circle pts -699 -525
+newline pts -694 -422 -699 -525
+newcurve cfill 0 1 0 marktype circle pts -697 -526
+newline pts -694 -422 -697 -526
+newcurve cfill 0 1 0 marktype circle pts -695 -527
+newline pts -694 -422 -695 -527
+newcurve cfill 0 1 0 marktype circle pts -693 -528
+newline pts -694 -422 -693 -528
+newcurve cfill 0 1 0 marktype circle pts -691 -529
+newline pts -694 -422 -691 -529
+newcurve cfill 0 1 0 marktype circle pts -689 -530
+newline pts -694 -422 -689 -530
+newcurve cfill 0 1 0 marktype circle pts -687 -531
+newline pts -694 -422 -687 -531
+newcurve cfill 0 1 0 marktype circle pts -685 -532
+newline pts -694 -422 -685 -532
+newcurve cfill 0 1 0 marktype circle pts -683 -533
+newline pts -694 -422 -683 -533
+newcurve cfill 0 1 0 marktype circle pts -681 -534
+newline pts -694 -422 -681 -534
+newcurve cfill 0 1 0 marktype circle pts -679 -535
+newline pts -694 -422 -679 -535
+newcurve cfill 0 1 0 marktype circle pts -677 -536
+newline pts -694 -422 -677 -536
+newcurve cfill 0 1 0 marktype circle pts -675 -537
+newline pts -694 -422 -675 -537
+newcurve cfill 0 1 0 marktype circle pts -673 -538
+newline pts -694 -422 -673 -538
+newcurve cfill 0 1 0 marktype circle pts -671 -539
+newline pts -694 -422 -671 -539
+newcurve cfill 0 1 0 marktype circle pts -669 -540
+newline pts -694 -422 -669 -540
+newcurve cfill 0 1 0 marktype circle pts -667 -541
+newline pts -694 -422 -667 -541
+newcurve cfill 0 1 0 marktype circle pts -665 -542
+newline pts -694 -422 -665 -542
+newcurve cfill 0 1 0 marktype circle pts -663 -543
+newline pts -694 -422 -663 -543
+newcurve cfill 0 1 0 marktype circle pts -661 -544
+newline pts -694 -422 -661 -544
+newcurve cfill 0 1 0 marktype circle pts -659 -545
+newline pts -694 -422 -659 -545
+newcurve cfill 0 1 0 marktype circle pts -657 -546
+newline pts -694 -422 -657 -546
+newcurve cfill 0 1 0 marktype circle pts -655 -547
+newline pts -694 -422 -655 -547
+newcurve cfill 0 1 0 marktype circle pts -653 -548
+newline pts -694 -422 -653 -548
+newcurve cfill 0 1 0 marktype circle pts -651 -549
+newline pts -694 -422 -651 -549
+newcurve cfill 0 1 0 marktype circle pts -649 -550
+newline pts -694 -422 -649 -550
+newcurve cfill 0 1 0 marktype circle pts -647 -551
+newline pts -694 -422 -647 -551
+newcurve cfill 0 1 0 marktype circle pts -645 -552
+newline pts -694 -422 -645 -552
+newline pts -733 -336 -694 -422
+newline pts -628 -255 -733 -336
+newcurve cfill 1 0 0 marktype circle pts -715 -337
+newcurve cfill 0 1 0 marktype circle pts -721 -417
+newline pts -715 -337 -721 -417
+newcurve cfill 0 1 0 marktype circle pts -719 -418
+newline pts -715 -337 -719 -418
+newcurve cfill 0 1 0 marktype circle pts -717 -419
+newline pts -715 -337 -717 -419
+newcurve cfill 0 1 0 marktype circle pts -715 -420
+newline pts -715 -337 -715 -420
+newcurve cfill 0 1 0 marktype circle pts -713 -421
+newline pts -715 -337 -713 -421
+newcurve cfill 0 1 0 marktype circle pts -711 -422
+newline pts -715 -337 -711 -422
+newline pts -628 -255 -715 -337
+newcurve cfill 1 0 0 marktype circle pts -697 -338
+newcurve cfill 0 1 0 marktype circle pts -702 -418
+newline pts -697 -338 -702 -418
+newcurve cfill 0 1 0 marktype circle pts -700 -419
+newline pts -697 -338 -700 -419
+newcurve cfill 0 1 0 marktype circle pts -698 -420
+newline pts -697 -338 -698 -420
+newcurve cfill 0 1 0 marktype circle pts -696 -421
+newline pts -697 -338 -696 -421
+newcurve cfill 0 1 0 marktype circle pts -694 -422
+newline pts -697 -338 -694 -422
+newline pts -628 -255 -697 -338
+newcurve cfill 1 0 0 marktype circle pts -679 -339
+newcurve cfill 0 1 0 marktype circle pts -684 -419
+newline pts -679 -339 -684 -419
+newcurve cfill 0 1 0 marktype circle pts -682 -420
+newline pts -679 -339 -682 -420
+newcurve cfill 0 1 0 marktype circle pts -680 -421
+newline pts -679 -339 -680 -421
+newcurve cfill 0 1 0 marktype circle pts -678 -422
+newline pts -679 -339 -678 -422
+newcurve cfill 0 1 0 marktype circle pts -676 -423
+newline pts -679 -339 -676 -423
+newline pts -628 -255 -679 -339
+newcurve cfill 1 0 0 marktype circle pts -661 -340
+newcurve cfill 0 1 0 marktype circle pts -664 -420
+newline pts -661 -340 -664 -420
+newcurve cfill 0 1 0 marktype circle pts -662 -421
+newline pts -661 -340 -662 -421
+newcurve cfill 0 1 0 marktype circle pts -660 -422
+newline pts -661 -340 -660 -422
+newline pts -628 -255 -661 -340
+newcurve cfill 1 0 0 marktype circle pts -643 -341
+newcurve cfill 0 1 0 marktype circle pts -649 -421
+newline pts -643 -341 -649 -421
+newcurve cfill 0 1 0 marktype circle pts -647 -422
+newline pts -643 -341 -647 -422
+newcurve cfill 0 1 0 marktype circle pts -645 -423
+newline pts -643 -341 -645 -423
+newcurve cfill 0 1 0 marktype circle pts -643 -424
+newline pts -643 -341 -643 -424
+newcurve cfill 0 1 0 marktype circle pts -641 -425
+newline pts -643 -341 -641 -425
+newcurve cfill 0 1 0 marktype circle pts -639 -426
+newline pts -643 -341 -639 -426
+newline pts -628 -255 -643 -341
+newcurve cfill 1 0 0 marktype circle pts -625 -342
+newcurve cfill 0 1 0 marktype circle pts -631 -422
+newline pts -625 -342 -631 -422
+newcurve cfill 0 1 0 marktype circle pts -629 -423
+newline pts -625 -342 -629 -423
+newcurve cfill 0 1 0 marktype circle pts -627 -424
+newline pts -625 -342 -627 -424
+newcurve cfill 0 1 0 marktype circle pts -625 -425
+newline pts -625 -342 -625 -425
+newcurve cfill 0 1 0 marktype circle pts -623 -426
+newline pts -625 -342 -623 -426
+newcurve cfill 0 1 0 marktype circle pts -621 -427
+newline pts -625 -342 -621 -427
+newline pts -628 -255 -625 -342
+newcurve cfill 1 0 0 marktype circle pts -607 -343
+newcurve cfill 0 1 0 marktype circle pts -613 -423
+newline pts -607 -343 -613 -423
+newcurve cfill 0 1 0 marktype circle pts -611 -424
+newline pts -607 -343 -611 -424
+newcurve cfill 0 1 0 marktype circle pts -609 -425
+newline pts -607 -343 -609 -425
+newcurve cfill 0 1 0 marktype circle pts -607 -426
+newline pts -607 -343 -607 -426
+newcurve cfill 0 1 0 marktype circle pts -605 -427
+newline pts -607 -343 -605 -427
+newcurve cfill 0 1 0 marktype circle pts -603 -428
+newline pts -607 -343 -603 -428
+newline pts -628 -255 -607 -343
+newcurve cfill 1 0 0 marktype circle pts -589 -344
+newcurve cfill 0 1 0 marktype circle pts -595 -424
+newline pts -589 -344 -595 -424
+newcurve cfill 0 1 0 marktype circle pts -593 -425
+newline pts -589 -344 -593 -425
+newcurve cfill 0 1 0 marktype circle pts -591 -426
+newline pts -589 -344 -591 -426
+newcurve cfill 0 1 0 marktype circle pts -589 -427
+newline pts -589 -344 -589 -427
+newcurve cfill 0 1 0 marktype circle pts -587 -428
+newline pts -589 -344 -587 -428
+newcurve cfill 0 1 0 marktype circle pts -585 -429
+newline pts -589 -344 -585 -429
+newline pts -628 -255 -589 -344
+newcurve cfill 1 0 0 marktype circle pts -571 -345
+newcurve cfill 0 1 0 marktype circle pts -577 -425
+newline pts -571 -345 -577 -425
+newcurve cfill 0 1 0 marktype circle pts -575 -426
+newline pts -571 -345 -575 -426
+newcurve cfill 0 1 0 marktype circle pts -573 -427
+newline pts -571 -345 -573 -427
+newcurve cfill 0 1 0 marktype circle pts -571 -428
+newline pts -571 -345 -571 -428
+newcurve cfill 0 1 0 marktype circle pts -569 -429
+newline pts -571 -345 -569 -429
+newcurve cfill 0 1 0 marktype circle pts -567 -430
+newline pts -571 -345 -567 -430
+newline pts -628 -255 -571 -345
+newcurve cfill 1 0 0 marktype circle pts -553 -346
+newcurve cfill 0 1 0 marktype circle pts -559 -426
+newline pts -553 -346 -559 -426
+newcurve cfill 0 1 0 marktype circle pts -557 -427
+newline pts -553 -346 -557 -427
+newcurve cfill 0 1 0 marktype circle pts -555 -428
+newline pts -553 -346 -555 -428
+newcurve cfill 0 1 0 marktype circle pts -553 -429
+newline pts -553 -346 -553 -429
+newcurve cfill 0 1 0 marktype circle pts -551 -430
+newline pts -553 -346 -551 -430
+newcurve cfill 0 1 0 marktype circle pts -549 -431
+newline pts -553 -346 -549 -431
+newline pts -628 -255 -553 -346
+newcurve cfill 1 0 0 marktype circle pts -535 -347
+newcurve cfill 0 1 0 marktype circle pts -541 -427
+newline pts -535 -347 -541 -427
+newcurve cfill 0 1 0 marktype circle pts -539 -428
+newline pts -535 -347 -539 -428
+newcurve cfill 0 1 0 marktype circle pts -537 -429
+newline pts -535 -347 -537 -429
+newcurve cfill 0 1 0 marktype circle pts -535 -430
+newline pts -535 -347 -535 -430
+newcurve cfill 0 1 0 marktype circle pts -533 -431
+newline pts -535 -347 -533 -431
+newcurve cfill 0 1 0 marktype circle pts -531 -432
+newline pts -535 -347 -531 -432
+newline pts -628 -255 -535 -347
+newline pts -991 -164 -628 -255
+newline pts -1122 -80 -991 -164
+newcurve cfill 1 0 0 marktype circle pts -725 -165
+newcurve cfill 0 1 0 marktype circle pts -949 -245
+newline pts -725 -165 -949 -245
+newcurve cfill 0 1 0 marktype circle pts -939 -246
+newline pts -725 -165 -939 -246
+newcurve cfill 0 1 0 marktype circle pts -929 -247
+newline pts -725 -165 -929 -247
+newcurve cfill 0 1 0 marktype circle pts -919 -248
+newline pts -725 -165 -919 -248
+newcurve cfill 0 1 0 marktype circle pts -909 -249
+newline pts -725 -165 -909 -249
+newcurve cfill 0 1 0 marktype circle pts -899 -250
+newline pts -725 -165 -899 -250
+newcurve cfill 0 1 0 marktype circle pts -889 -251
+newline pts -725 -165 -889 -251
+newcurve cfill 0 1 0 marktype circle pts -879 -252
+newline pts -725 -165 -879 -252
+newcurve cfill 0 1 0 marktype circle pts -869 -253
+newline pts -725 -165 -869 -253
+newcurve cfill 0 1 0 marktype circle pts -859 -254
+newline pts -725 -165 -859 -254
+newcurve cfill 0 1 0 marktype circle pts -849 -255
+newline pts -725 -165 -849 -255
+newcurve cfill 0 1 0 marktype circle pts -839 -256
+newline pts -725 -165 -839 -256
+newcurve cfill 0 1 0 marktype circle pts -829 -257
+newline pts -725 -165 -829 -257
+newcurve cfill 0 1 0 marktype circle pts -819 -258
+newline pts -725 -165 -819 -258
+newcurve cfill 0 1 0 marktype circle pts -809 -259
+newline pts -725 -165 -809 -259
+newcurve cfill 0 1 0 marktype circle pts -799 -260
+newline pts -725 -165 -799 -260
+newcurve cfill 0 1 0 marktype circle pts -789 -261
+newline pts -725 -165 -789 -261
+newcurve cfill 0 1 0 marktype circle pts -779 -262
+newline pts -725 -165 -779 -262
+newcurve cfill 0 1 0 marktype circle pts -769 -263
+newline pts -725 -165 -769 -263
+newcurve cfill 0 1 0 marktype circle pts -759 -264
+newline pts -725 -165 -759 -264
+newcurve cfill 0 1 0 marktype circle pts -749 -265
+newline pts -725 -165 -749 -265
+newcurve cfill 0 1 0 marktype circle pts -739 -266
+newline pts -725 -165 -739 -266
+newcurve cfill 0 1 0 marktype circle pts -729 -267
+newline pts -725 -165 -729 -267
+newcurve cfill 0 1 0 marktype circle pts -719 -268
+newline pts -725 -165 -719 -268
+newcurve cfill 0 1 0 marktype circle pts -709 -269
+newline pts -725 -165 -709 -269
+newcurve cfill 0 1 0 marktype circle pts -699 -270
+newline pts -725 -165 -699 -270
+newcurve cfill 0 1 0 marktype circle pts -689 -271
+newline pts -725 -165 -689 -271
+newcurve cfill 0 1 0 marktype circle pts -679 -272
+newline pts -725 -165 -679 -272
+newcurve cfill 0 1 0 marktype circle pts -669 -273
+newline pts -725 -165 -669 -273
+newcurve cfill 0 1 0 marktype circle pts -659 -274
+newline pts -725 -165 -659 -274
+newcurve cfill 0 1 0 marktype circle pts -649 -275
+newline pts -725 -165 -649 -275
+newcurve cfill 0 1 0 marktype circle pts -639 -276
+newline pts -725 -165 -639 -276
+newcurve cfill 0 1 0 marktype circle pts -629 -277
+newline pts -725 -165 -629 -277
+newcurve cfill 0 1 0 marktype circle pts -619 -278
+newline pts -725 -165 -619 -278
+newcurve cfill 0 1 0 marktype circle pts -609 -279
+newline pts -725 -165 -609 -279
+newcurve cfill 0 1 0 marktype circle pts -599 -280
+newline pts -725 -165 -599 -280
+newcurve cfill 0 1 0 marktype circle pts -589 -281
+newline pts -725 -165 -589 -281
+newcurve cfill 0 1 0 marktype circle pts -579 -282
+newline pts -725 -165 -579 -282
+newcurve cfill 1 0 0 marktype circle pts -569 -283
+newcurve cfill 0 1 0 marktype circle pts -650 -363
+newline pts -569 -283 -650 -363
+newcurve cfill 0 1 0 marktype circle pts -648 -364
+newline pts -569 -283 -648 -364
+newcurve cfill 0 1 0 marktype circle pts -646 -365
+newline pts -569 -283 -646 -365
+newcurve cfill 0 1 0 marktype circle pts -644 -366
+newline pts -569 -283 -644 -366
+newcurve cfill 0 1 0 marktype circle pts -642 -367
+newline pts -569 -283 -642 -367
+newcurve cfill 0 1 0 marktype circle pts -640 -368
+newline pts -569 -283 -640 -368
+newcurve cfill 0 1 0 marktype circle pts -638 -369
+newline pts -569 -283 -638 -369
+newcurve cfill 0 1 0 marktype circle pts -636 -370
+newline pts -569 -283 -636 -370
+newcurve cfill 0 1 0 marktype circle pts -634 -371
+newline pts -569 -283 -634 -371
+newcurve cfill 0 1 0 marktype circle pts -632 -372
+newline pts -569 -283 -632 -372
+newcurve cfill 0 1 0 marktype circle pts -630 -373
+newline pts -569 -283 -630 -373
+newcurve cfill 0 1 0 marktype circle pts -628 -374
+newline pts -569 -283 -628 -374
+newcurve cfill 0 1 0 marktype circle pts -626 -375
+newline pts -569 -283 -626 -375
+newcurve cfill 0 1 0 marktype circle pts -624 -376
+newline pts -569 -283 -624 -376
+newcurve cfill 0 1 0 marktype circle pts -622 -377
+newline pts -569 -283 -622 -377
+newcurve cfill 0 1 0 marktype circle pts -620 -378
+newline pts -569 -283 -620 -378
+newcurve cfill 0 1 0 marktype circle pts -618 -379
+newline pts -569 -283 -618 -379
+newcurve cfill 0 1 0 marktype circle pts -616 -380
+newline pts -569 -283 -616 -380
+newcurve cfill 0 1 0 marktype circle pts -614 -381
+newline pts -569 -283 -614 -381
+newcurve cfill 0 1 0 marktype circle pts -612 -382
+newline pts -569 -283 -612 -382
+newcurve cfill 0 1 0 marktype circle pts -610 -383
+newline pts -569 -283 -610 -383
+newcurve cfill 0 1 0 marktype circle pts -608 -384
+newline pts -569 -283 -608 -384
+newcurve cfill 0 1 0 marktype circle pts -606 -385
+newline pts -569 -283 -606 -385
+newcurve cfill 0 1 0 marktype circle pts -604 -386
+newline pts -569 -283 -604 -386
+newcurve cfill 0 1 0 marktype circle pts -602 -387
+newline pts -569 -283 -602 -387
+newcurve cfill 0 1 0 marktype circle pts -600 -388
+newline pts -569 -283 -600 -388
+newcurve cfill 0 1 0 marktype circle pts -598 -389
+newline pts -569 -283 -598 -389
+newcurve cfill 0 1 0 marktype circle pts -596 -390
+newline pts -569 -283 -596 -390
+newcurve cfill 0 1 0 marktype circle pts -594 -391
+newline pts -569 -283 -594 -391
+newcurve cfill 0 1 0 marktype circle pts -592 -392
+newline pts -569 -283 -592 -392
+newcurve cfill 0 1 0 marktype circle pts -590 -393
+newline pts -569 -283 -590 -393
+newcurve cfill 0 1 0 marktype circle pts -588 -394
+newline pts -569 -283 -588 -394
+newcurve cfill 0 1 0 marktype circle pts -586 -395
+newline pts -569 -283 -586 -395
+newcurve cfill 0 1 0 marktype circle pts -584 -396
+newline pts -569 -283 -584 -396
+newcurve cfill 0 1 0 marktype circle pts -582 -397
+newline pts -569 -283 -582 -397
+newcurve cfill 0 1 0 marktype circle pts -580 -398
+newline pts -569 -283 -580 -398
+newcurve cfill 0 1 0 marktype circle pts -578 -399
+newline pts -569 -283 -578 -399
+newcurve cfill 0 1 0 marktype circle pts -576 -400
+newline pts -569 -283 -576 -400
+newcurve cfill 0 1 0 marktype circle pts -574 -401
+newline pts -569 -283 -574 -401
+newcurve cfill 0 1 0 marktype circle pts -572 -402
+newline pts -569 -283 -572 -402
+newcurve cfill 0 1 0 marktype circle pts -570 -403
+newline pts -569 -283 -570 -403
+newcurve cfill 0 1 0 marktype circle pts -568 -404
+newline pts -569 -283 -568 -404
+newcurve cfill 0 1 0 marktype circle pts -566 -405
+newline pts -569 -283 -566 -405
+newcurve cfill 0 1 0 marktype circle pts -564 -406
+newline pts -569 -283 -564 -406
+newcurve cfill 0 1 0 marktype circle pts -562 -407
+newline pts -569 -283 -562 -407
+newcurve cfill 0 1 0 marktype circle pts -560 -408
+newline pts -569 -283 -560 -408
+newcurve cfill 0 1 0 marktype circle pts -558 -409
+newline pts -569 -283 -558 -409
+newcurve cfill 0 1 0 marktype circle pts -556 -410
+newline pts -569 -283 -556 -410
+newcurve cfill 0 1 0 marktype circle pts -554 -411
+newline pts -569 -283 -554 -411
+newcurve cfill 0 1 0 marktype circle pts -552 -412
+newline pts -569 -283 -552 -412
+newcurve cfill 0 1 0 marktype circle pts -550 -413
+newline pts -569 -283 -550 -413
+newcurve cfill 0 1 0 marktype circle pts -548 -414
+newline pts -569 -283 -548 -414
+newcurve cfill 0 1 0 marktype circle pts -546 -415
+newline pts -569 -283 -546 -415
+newcurve cfill 0 1 0 marktype circle pts -544 -416
+newline pts -569 -283 -544 -416
+newcurve cfill 0 1 0 marktype circle pts -542 -417
+newline pts -569 -283 -542 -417
+newcurve cfill 0 1 0 marktype circle pts -540 -418
+newline pts -569 -283 -540 -418
+newcurve cfill 0 1 0 marktype circle pts -538 -419
+newline pts -569 -283 -538 -419
+newcurve cfill 0 1 0 marktype circle pts -536 -420
+newline pts -569 -283 -536 -420
+newcurve cfill 0 1 0 marktype circle pts -534 -421
+newline pts -569 -283 -534 -421
+newcurve cfill 0 1 0 marktype circle pts -532 -422
+newline pts -569 -283 -532 -422
+newcurve cfill 0 1 0 marktype circle pts -530 -423
+newline pts -569 -283 -530 -423
+newcurve cfill 0 1 0 marktype circle pts -528 -424
+newline pts -569 -283 -528 -424
+newcurve cfill 0 1 0 marktype circle pts -526 -425
+newline pts -569 -283 -526 -425
+newcurve cfill 0 1 0 marktype circle pts -524 -426
+newline pts -569 -283 -524 -426
+newcurve cfill 0 1 0 marktype circle pts -522 -427
+newline pts -569 -283 -522 -427
+newcurve cfill 0 1 0 marktype circle pts -520 -428
+newline pts -569 -283 -520 -428
+newcurve cfill 0 1 0 marktype circle pts -518 -429
+newline pts -569 -283 -518 -429
+newcurve cfill 0 1 0 marktype circle pts -516 -430
+newline pts -569 -283 -516 -430
+newcurve cfill 0 1 0 marktype circle pts -514 -431
+newline pts -569 -283 -514 -431
+newcurve cfill 0 1 0 marktype circle pts -512 -432
+newline pts -569 -283 -512 -432
+newcurve cfill 0 1 0 marktype circle pts -510 -433
+newline pts -569 -283 -510 -433
+newcurve cfill 0 1 0 marktype circle pts -508 -434
+newline pts -569 -283 -508 -434
+newcurve cfill 0 1 0 marktype circle pts -506 -435
+newline pts -569 -283 -506 -435
+newcurve cfill 0 1 0 marktype circle pts -504 -436
+newline pts -569 -283 -504 -436
+newcurve cfill 0 1 0 marktype circle pts -502 -437
+newline pts -569 -283 -502 -437
+newcurve cfill 0 1 0 marktype circle pts -500 -438
+newline pts -569 -283 -500 -438
+newcurve cfill 0 1 0 marktype circle pts -498 -439
+newline pts -569 -283 -498 -439
+newcurve cfill 0 1 0 marktype circle pts -496 -440
+newline pts -569 -283 -496 -440
+newcurve cfill 0 1 0 marktype circle pts -494 -441
+newline pts -569 -283 -494 -441
+newcurve cfill 0 1 0 marktype circle pts -492 -442
+newline pts -569 -283 -492 -442
+newcurve cfill 0 1 0 marktype circle pts -490 -443
+newline pts -569 -283 -490 -443
+newline pts -725 -165 -569 -283
+newcurve cfill 1 0 0 marktype circle pts -559 -284
+newcurve cfill 0 1 0 marktype circle pts -663 -364
+newline pts -559 -284 -663 -364
+newcurve cfill 0 1 0 marktype circle pts -661 -365
+newline pts -559 -284 -661 -365
+newcurve cfill 0 1 0 marktype circle pts -659 -366
+newline pts -559 -284 -659 -366
+newcurve cfill 0 1 0 marktype circle pts -657 -367
+newline pts -559 -284 -657 -367
+newcurve cfill 0 1 0 marktype circle pts -655 -368
+newline pts -559 -284 -655 -368
+newcurve cfill 0 1 0 marktype circle pts -653 -369
+newline pts -559 -284 -653 -369
+newcurve cfill 0 1 0 marktype circle pts -651 -370
+newline pts -559 -284 -651 -370
+newcurve cfill 0 1 0 marktype circle pts -649 -371
+newline pts -559 -284 -649 -371
+newcurve cfill 0 1 0 marktype circle pts -647 -372
+newline pts -559 -284 -647 -372
+newcurve cfill 0 1 0 marktype circle pts -645 -373
+newline pts -559 -284 -645 -373
+newcurve cfill 0 1 0 marktype circle pts -643 -374
+newline pts -559 -284 -643 -374
+newcurve cfill 0 1 0 marktype circle pts -641 -375
+newline pts -559 -284 -641 -375
+newcurve cfill 0 1 0 marktype circle pts -639 -376
+newline pts -559 -284 -639 -376
+newcurve cfill 0 1 0 marktype circle pts -637 -377
+newline pts -559 -284 -637 -377
+newcurve cfill 0 1 0 marktype circle pts -635 -378
+newline pts -559 -284 -635 -378
+newcurve cfill 0 1 0 marktype circle pts -633 -379
+newline pts -559 -284 -633 -379
+newcurve cfill 0 1 0 marktype circle pts -631 -380
+newline pts -559 -284 -631 -380
+newcurve cfill 0 1 0 marktype circle pts -629 -381
+newline pts -559 -284 -629 -381
+newcurve cfill 0 1 0 marktype circle pts -627 -382
+newline pts -559 -284 -627 -382
+newcurve cfill 0 1 0 marktype circle pts -625 -383
+newline pts -559 -284 -625 -383
+newcurve cfill 0 1 0 marktype circle pts -623 -384
+newline pts -559 -284 -623 -384
+newcurve cfill 0 1 0 marktype circle pts -621 -385
+newline pts -559 -284 -621 -385
+newcurve cfill 0 1 0 marktype circle pts -619 -386
+newline pts -559 -284 -619 -386
+newcurve cfill 0 1 0 marktype circle pts -617 -387
+newline pts -559 -284 -617 -387
+newcurve cfill 0 1 0 marktype circle pts -615 -388
+newline pts -559 -284 -615 -388
+newcurve cfill 0 1 0 marktype circle pts -613 -389
+newline pts -559 -284 -613 -389
+newcurve cfill 0 1 0 marktype circle pts -611 -390
+newline pts -559 -284 -611 -390
+newcurve cfill 0 1 0 marktype circle pts -609 -391
+newline pts -559 -284 -609 -391
+newcurve cfill 0 1 0 marktype circle pts -607 -392
+newline pts -559 -284 -607 -392
+newcurve cfill 0 1 0 marktype circle pts -605 -393
+newline pts -559 -284 -605 -393
+newcurve cfill 0 1 0 marktype circle pts -603 -394
+newline pts -559 -284 -603 -394
+newcurve cfill 0 1 0 marktype circle pts -601 -395
+newline pts -559 -284 -601 -395
+newcurve cfill 0 1 0 marktype circle pts -599 -396
+newline pts -559 -284 -599 -396
+newcurve cfill 0 1 0 marktype circle pts -597 -397
+newline pts -559 -284 -597 -397
+newcurve cfill 0 1 0 marktype circle pts -595 -398
+newline pts -559 -284 -595 -398
+newcurve cfill 0 1 0 marktype circle pts -593 -399
+newline pts -559 -284 -593 -399
+newcurve cfill 0 1 0 marktype circle pts -591 -400
+newline pts -559 -284 -591 -400
+newcurve cfill 0 1 0 marktype circle pts -589 -401
+newline pts -559 -284 -589 -401
+newcurve cfill 0 1 0 marktype circle pts -587 -402
+newline pts -559 -284 -587 -402
+newcurve cfill 0 1 0 marktype circle pts -585 -403
+newline pts -559 -284 -585 -403
+newcurve cfill 0 1 0 marktype circle pts -583 -404
+newline pts -559 -284 -583 -404
+newcurve cfill 0 1 0 marktype circle pts -581 -405
+newline pts -559 -284 -581 -405
+newcurve cfill 0 1 0 marktype circle pts -579 -406
+newline pts -559 -284 -579 -406
+newcurve cfill 0 1 0 marktype circle pts -577 -407
+newline pts -559 -284 -577 -407
+newcurve cfill 0 1 0 marktype circle pts -575 -408
+newline pts -559 -284 -575 -408
+newcurve cfill 0 1 0 marktype circle pts -573 -409
+newline pts -559 -284 -573 -409
+newcurve cfill 0 1 0 marktype circle pts -571 -410
+newline pts -559 -284 -571 -410
+newcurve cfill 0 1 0 marktype circle pts -569 -411
+newline pts -559 -284 -569 -411
+newcurve cfill 0 1 0 marktype circle pts -567 -412
+newline pts -559 -284 -567 -412
+newcurve cfill 0 1 0 marktype circle pts -565 -413
+newline pts -559 -284 -565 -413
+newcurve cfill 0 1 0 marktype circle pts -563 -414
+newline pts -559 -284 -563 -414
+newcurve cfill 0 1 0 marktype circle pts -561 -415
+newline pts -559 -284 -561 -415
+newcurve cfill 0 1 0 marktype circle pts -559 -416
+newline pts -559 -284 -559 -416
+newcurve cfill 0 1 0 marktype circle pts -557 -417
+newline pts -559 -284 -557 -417
+newcurve cfill 0 1 0 marktype circle pts -555 -418
+newline pts -559 -284 -555 -418
+newcurve cfill 0 1 0 marktype circle pts -553 -419
+newline pts -559 -284 -553 -419
+newcurve cfill 0 1 0 marktype circle pts -551 -420
+newline pts -559 -284 -551 -420
+newcurve cfill 0 1 0 marktype circle pts -549 -421
+newline pts -559 -284 -549 -421
+newcurve cfill 0 1 0 marktype circle pts -547 -422
+newline pts -559 -284 -547 -422
+newcurve cfill 0 1 0 marktype circle pts -545 -423
+newline pts -559 -284 -545 -423
+newcurve cfill 0 1 0 marktype circle pts -543 -424
+newline pts -559 -284 -543 -424
+newcurve cfill 0 1 0 marktype circle pts -541 -425
+newline pts -559 -284 -541 -425
+newcurve cfill 0 1 0 marktype circle pts -539 -426
+newline pts -559 -284 -539 -426
+newcurve cfill 0 1 0 marktype circle pts -537 -427
+newline pts -559 -284 -537 -427
+newcurve cfill 0 1 0 marktype circle pts -535 -428
+newline pts -559 -284 -535 -428
+newcurve cfill 0 1 0 marktype circle pts -533 -429
+newline pts -559 -284 -533 -429
+newcurve cfill 0 1 0 marktype circle pts -531 -430
+newline pts -559 -284 -531 -430
+newcurve cfill 0 1 0 marktype circle pts -529 -431
+newline pts -559 -284 -529 -431
+newcurve cfill 0 1 0 marktype circle pts -527 -432
+newline pts -559 -284 -527 -432
+newcurve cfill 0 1 0 marktype circle pts -525 -433
+newline pts -559 -284 -525 -433
+newcurve cfill 0 1 0 marktype circle pts -523 -434
+newline pts -559 -284 -523 -434
+newcurve cfill 0 1 0 marktype circle pts -521 -435
+newline pts -559 -284 -521 -435
+newcurve cfill 0 1 0 marktype circle pts -519 -436
+newline pts -559 -284 -519 -436
+newcurve cfill 0 1 0 marktype circle pts -517 -437
+newline pts -559 -284 -517 -437
+newcurve cfill 0 1 0 marktype circle pts -515 -438
+newline pts -559 -284 -515 -438
+newcurve cfill 0 1 0 marktype circle pts -513 -439
+newline pts -559 -284 -513 -439
+newcurve cfill 0 1 0 marktype circle pts -511 -440
+newline pts -559 -284 -511 -440
+newcurve cfill 0 1 0 marktype circle pts -509 -441
+newline pts -559 -284 -509 -441
+newcurve cfill 0 1 0 marktype circle pts -507 -442
+newline pts -559 -284 -507 -442
+newcurve cfill 0 1 0 marktype circle pts -505 -443
+newline pts -559 -284 -505 -443
+newcurve cfill 0 1 0 marktype circle pts -503 -444
+newline pts -559 -284 -503 -444
+newcurve cfill 0 1 0 marktype circle pts -501 -445
+newline pts -559 -284 -501 -445
+newcurve cfill 0 1 0 marktype circle pts -499 -446
+newline pts -559 -284 -499 -446
+newcurve cfill 0 1 0 marktype circle pts -497 -447
+newline pts -559 -284 -497 -447
+newcurve cfill 0 1 0 marktype circle pts -495 -448
+newline pts -559 -284 -495 -448
+newcurve cfill 0 1 0 marktype circle pts -493 -449
+newline pts -559 -284 -493 -449
+newcurve cfill 0 1 0 marktype circle pts -491 -450
+newline pts -559 -284 -491 -450
+newcurve cfill 0 1 0 marktype circle pts -489 -451
+newline pts -559 -284 -489 -451
+newcurve cfill 0 1 0 marktype circle pts -487 -452
+newline pts -559 -284 -487 -452
+newcurve cfill 0 1 0 marktype circle pts -485 -453
+newline pts -559 -284 -485 -453
+newcurve cfill 0 1 0 marktype circle pts -483 -454
+newline pts -559 -284 -483 -454
+newcurve cfill 0 1 0 marktype circle pts -481 -455
+newline pts -559 -284 -481 -455
+newcurve cfill 0 1 0 marktype circle pts -479 -456
+newline pts -559 -284 -479 -456
+newcurve cfill 0 1 0 marktype circle pts -477 -457
+newline pts -559 -284 -477 -457
+newcurve cfill 0 1 0 marktype circle pts -475 -458
+newline pts -559 -284 -475 -458
+newcurve cfill 0 1 0 marktype circle pts -473 -459
+newline pts -559 -284 -473 -459
+newcurve cfill 0 1 0 marktype circle pts -471 -460
+newline pts -559 -284 -471 -460
+newcurve cfill 0 1 0 marktype circle pts -469 -461
+newline pts -559 -284 -469 -461
+newcurve cfill 0 1 0 marktype circle pts -467 -462
+newline pts -559 -284 -467 -462
+newcurve cfill 0 1 0 marktype circle pts -465 -463
+newline pts -559 -284 -465 -463
+newcurve cfill 0 1 0 marktype circle pts -463 -464
+newline pts -559 -284 -463 -464
+newcurve cfill 1 0 0 marktype circle pts -461 -465
+newcurve cfill 0 1 0 marktype circle pts -464 -545
+newline pts -461 -465 -464 -545
+newcurve cfill 0 1 0 marktype circle pts -462 -546
+newline pts -461 -465 -462 -546
+newcurve cfill 0 1 0 marktype circle pts -460 -547
+newline pts -461 -465 -460 -547
+newline pts -559 -284 -461 -465
+newline pts -725 -165 -559 -284
+newcurve cfill 1 0 0 marktype circle pts -549 -285
+newcurve cfill 0 1 0 marktype circle pts -550 -365
+newline pts -549 -285 -550 -365
+newline pts -725 -165 -549 -285
+newline pts -1122 -80 -725 -165
+newcurve cfill 1 0 0 marktype circle pts -459 -166
+newcurve cfill 0 1 0 marktype circle pts -501 -246
+newline pts -459 -166 -501 -246
+newcurve cfill 0 1 0 marktype circle pts -498 -247
+newline pts -459 -166 -498 -247
+newcurve cfill 0 1 0 marktype circle pts -495 -248
+newline pts -459 -166 -495 -248
+newcurve cfill 0 1 0 marktype circle pts -492 -249
+newline pts -459 -166 -492 -249
+newcurve cfill 0 1 0 marktype circle pts -489 -250
+newline pts -459 -166 -489 -250
+newcurve cfill 0 1 0 marktype circle pts -486 -251
+newline pts -459 -166 -486 -251
+newcurve cfill 0 1 0 marktype circle pts -483 -252
+newline pts -459 -166 -483 -252
+newcurve cfill 0 1 0 marktype circle pts -480 -253
+newline pts -459 -166 -480 -253
+newcurve cfill 0 1 0 marktype circle pts -477 -254
+newline pts -459 -166 -477 -254
+newcurve cfill 0 1 0 marktype circle pts -474 -255
+newline pts -459 -166 -474 -255
+newcurve cfill 0 1 0 marktype circle pts -471 -256
+newline pts -459 -166 -471 -256
+newcurve cfill 0 1 0 marktype circle pts -468 -257
+newline pts -459 -166 -468 -257
+newcurve cfill 0 1 0 marktype circle pts -465 -258
+newline pts -459 -166 -465 -258
+newcurve cfill 0 1 0 marktype circle pts -462 -259
+newline pts -459 -166 -462 -259
+newcurve cfill 0 1 0 marktype circle pts -459 -260
+newline pts -459 -166 -459 -260
+newcurve cfill 0 1 0 marktype circle pts -456 -261
+newline pts -459 -166 -456 -261
+newcurve cfill 0 1 0 marktype circle pts -453 -262
+newline pts -459 -166 -453 -262
+newcurve cfill 0 1 0 marktype circle pts -450 -263
+newline pts -459 -166 -450 -263
+newcurve cfill 0 1 0 marktype circle pts -447 -264
+newline pts -459 -166 -447 -264
+newcurve cfill 0 1 0 marktype circle pts -444 -265
+newline pts -459 -166 -444 -265
+newcurve cfill 0 1 0 marktype circle pts -441 -266
+newline pts -459 -166 -441 -266
+newcurve cfill 0 1 0 marktype circle pts -438 -267
+newline pts -459 -166 -438 -267
+newcurve cfill 0 1 0 marktype circle pts -435 -268
+newline pts -459 -166 -435 -268
+newcurve cfill 0 1 0 marktype circle pts -432 -269
+newline pts -459 -166 -432 -269
+newcurve cfill 0 1 0 marktype circle pts -429 -270
+newline pts -459 -166 -429 -270
+newcurve cfill 0 1 0 marktype circle pts -426 -271
+newline pts -459 -166 -426 -271
+newcurve cfill 0 1 0 marktype circle pts -423 -272
+newline pts -459 -166 -423 -272
+newcurve cfill 1 0 0 marktype circle pts -420 -273
+newcurve cfill 0 1 0 marktype circle pts -435 -353
+newline pts -420 -273 -435 -353
+newcurve cfill 0 1 0 marktype circle pts -433 -354
+newline pts -420 -273 -433 -354
+newcurve cfill 0 1 0 marktype circle pts -431 -355
+newline pts -420 -273 -431 -355
+newcurve cfill 0 1 0 marktype circle pts -429 -356
+newline pts -420 -273 -429 -356
+newcurve cfill 0 1 0 marktype circle pts -427 -357
+newline pts -420 -273 -427 -357
+newcurve cfill 0 1 0 marktype circle pts -425 -358
+newline pts -420 -273 -425 -358
+newcurve cfill 0 1 0 marktype circle pts -423 -359
+newline pts -420 -273 -423 -359
+newcurve cfill 0 1 0 marktype circle pts -421 -360
+newline pts -420 -273 -421 -360
+newcurve cfill 0 1 0 marktype circle pts -419 -361
+newline pts -420 -273 -419 -361
+newcurve cfill 0 1 0 marktype circle pts -417 -362
+newline pts -420 -273 -417 -362
+newcurve cfill 0 1 0 marktype circle pts -415 -363
+newline pts -420 -273 -415 -363
+newcurve cfill 0 1 0 marktype circle pts -413 -364
+newline pts -420 -273 -413 -364
+newcurve cfill 1 0 0 marktype circle pts -411 -365
+newcurve cfill 0 1 0 marktype circle pts -414 -445
+newline pts -411 -365 -414 -445
+newcurve cfill 0 1 0 marktype circle pts -412 -446
+newline pts -411 -365 -412 -446
+newcurve cfill 0 1 0 marktype circle pts -410 -447
+newline pts -411 -365 -410 -447
+newline pts -420 -273 -411 -365
+newline pts -459 -166 -420 -273
+newline pts -1122 -80 -459 -166
+newline pts 0 0 -1122 -80
+newcurve cfill 1 0 0 marktype circle pts -561 -81
+newcurve cfill 0 1 0 marktype circle pts -649 -161
+newline pts -561 -81 -649 -161
+newcurve cfill 0 1 0 marktype circle pts -632 -162
+newline pts -561 -81 -632 -162
+newcurve cfill 0 1 0 marktype circle pts -615 -163
+newline pts -561 -81 -615 -163
+newcurve cfill 0 1 0 marktype circle pts -598 -164
+newline pts -561 -81 -598 -164
+newcurve cfill 0 1 0 marktype circle pts -581 -165
+newline pts -561 -81 -581 -165
+newcurve cfill 0 1 0 marktype circle pts -564 -166
+newline pts -561 -81 -564 -166
+newcurve cfill 0 1 0 marktype circle pts -547 -167
+newline pts -561 -81 -547 -167
+newcurve cfill 0 1 0 marktype circle pts -530 -168
+newline pts -561 -81 -530 -168
+newcurve cfill 0 1 0 marktype circle pts -513 -169
+newline pts -561 -81 -513 -169
+newcurve cfill 1 0 0 marktype circle pts -496 -170
+newcurve cfill 0 1 0 marktype circle pts -575 -250
+newline pts -496 -170 -575 -250
+newcurve cfill 0 1 0 marktype circle pts -573 -251
+newline pts -496 -170 -573 -251
+newcurve cfill 0 1 0 marktype circle pts -571 -252
+newline pts -496 -170 -571 -252
+newcurve cfill 0 1 0 marktype circle pts -569 -253
+newline pts -496 -170 -569 -253
+newcurve cfill 0 1 0 marktype circle pts -567 -254
+newline pts -496 -170 -567 -254
+newcurve cfill 0 1 0 marktype circle pts -565 -255
+newline pts -496 -170 -565 -255
+newcurve cfill 0 1 0 marktype circle pts -563 -256
+newline pts -496 -170 -563 -256
+newcurve cfill 0 1 0 marktype circle pts -561 -257
+newline pts -496 -170 -561 -257
+newcurve cfill 0 1 0 marktype circle pts -559 -258
+newline pts -496 -170 -559 -258
+newcurve cfill 0 1 0 marktype circle pts -557 -259
+newline pts -496 -170 -557 -259
+newcurve cfill 0 1 0 marktype circle pts -555 -260
+newline pts -496 -170 -555 -260
+newcurve cfill 0 1 0 marktype circle pts -553 -261
+newline pts -496 -170 -553 -261
+newcurve cfill 0 1 0 marktype circle pts -551 -262
+newline pts -496 -170 -551 -262
+newcurve cfill 0 1 0 marktype circle pts -549 -263
+newline pts -496 -170 -549 -263
+newcurve cfill 0 1 0 marktype circle pts -547 -264
+newline pts -496 -170 -547 -264
+newcurve cfill 0 1 0 marktype circle pts -545 -265
+newline pts -496 -170 -545 -265
+newcurve cfill 0 1 0 marktype circle pts -543 -266
+newline pts -496 -170 -543 -266
+newcurve cfill 0 1 0 marktype circle pts -541 -267
+newline pts -496 -170 -541 -267
+newcurve cfill 0 1 0 marktype circle pts -539 -268
+newline pts -496 -170 -539 -268
+newcurve cfill 0 1 0 marktype circle pts -537 -269
+newline pts -496 -170 -537 -269
+newcurve cfill 0 1 0 marktype circle pts -535 -270
+newline pts -496 -170 -535 -270
+newcurve cfill 0 1 0 marktype circle pts -533 -271
+newline pts -496 -170 -533 -271
+newcurve cfill 0 1 0 marktype circle pts -531 -272
+newline pts -496 -170 -531 -272
+newcurve cfill 0 1 0 marktype circle pts -529 -273
+newline pts -496 -170 -529 -273
+newcurve cfill 0 1 0 marktype circle pts -527 -274
+newline pts -496 -170 -527 -274
+newcurve cfill 0 1 0 marktype circle pts -525 -275
+newline pts -496 -170 -525 -275
+newcurve cfill 0 1 0 marktype circle pts -523 -276
+newline pts -496 -170 -523 -276
+newcurve cfill 0 1 0 marktype circle pts -521 -277
+newline pts -496 -170 -521 -277
+newcurve cfill 0 1 0 marktype circle pts -519 -278
+newline pts -496 -170 -519 -278
+newcurve cfill 0 1 0 marktype circle pts -517 -279
+newline pts -496 -170 -517 -279
+newcurve cfill 0 1 0 marktype circle pts -515 -280
+newline pts -496 -170 -515 -280
+newcurve cfill 0 1 0 marktype circle pts -513 -281
+newline pts -496 -170 -513 -281
+newcurve cfill 0 1 0 marktype circle pts -511 -282
+newline pts -496 -170 -511 -282
+newcurve cfill 0 1 0 marktype circle pts -509 -283
+newline pts -496 -170 -509 -283
+newcurve cfill 0 1 0 marktype circle pts -507 -284
+newline pts -496 -170 -507 -284
+newcurve cfill 0 1 0 marktype circle pts -505 -285
+newline pts -496 -170 -505 -285
+newcurve cfill 0 1 0 marktype circle pts -503 -286
+newline pts -496 -170 -503 -286
+newcurve cfill 0 1 0 marktype circle pts -501 -287
+newline pts -496 -170 -501 -287
+newcurve cfill 0 1 0 marktype circle pts -499 -288
+newline pts -496 -170 -499 -288
+newcurve cfill 0 1 0 marktype circle pts -497 -289
+newline pts -496 -170 -497 -289
+newcurve cfill 0 1 0 marktype circle pts -495 -290
+newline pts -496 -170 -495 -290
+newcurve cfill 0 1 0 marktype circle pts -493 -291
+newline pts -496 -170 -493 -291
+newcurve cfill 0 1 0 marktype circle pts -491 -292
+newline pts -496 -170 -491 -292
+newcurve cfill 0 1 0 marktype circle pts -489 -293
+newline pts -496 -170 -489 -293
+newcurve cfill 0 1 0 marktype circle pts -487 -294
+newline pts -496 -170 -487 -294
+newcurve cfill 0 1 0 marktype circle pts -485 -295
+newline pts -496 -170 -485 -295
+newcurve cfill 0 1 0 marktype circle pts -483 -296
+newline pts -496 -170 -483 -296
+newcurve cfill 0 1 0 marktype circle pts -481 -297
+newline pts -496 -170 -481 -297
+newcurve cfill 0 1 0 marktype circle pts -479 -298
+newline pts -496 -170 -479 -298
+newcurve cfill 0 1 0 marktype circle pts -477 -299
+newline pts -496 -170 -477 -299
+newcurve cfill 0 1 0 marktype circle pts -475 -300
+newline pts -496 -170 -475 -300
+newcurve cfill 0 1 0 marktype circle pts -473 -301
+newline pts -496 -170 -473 -301
+newcurve cfill 0 1 0 marktype circle pts -471 -302
+newline pts -496 -170 -471 -302
+newcurve cfill 0 1 0 marktype circle pts -469 -303
+newline pts -496 -170 -469 -303
+newcurve cfill 0 1 0 marktype circle pts -467 -304
+newline pts -496 -170 -467 -304
+newcurve cfill 0 1 0 marktype circle pts -465 -305
+newline pts -496 -170 -465 -305
+newcurve cfill 0 1 0 marktype circle pts -463 -306
+newline pts -496 -170 -463 -306
+newcurve cfill 0 1 0 marktype circle pts -461 -307
+newline pts -496 -170 -461 -307
+newcurve cfill 0 1 0 marktype circle pts -459 -308
+newline pts -496 -170 -459 -308
+newcurve cfill 0 1 0 marktype circle pts -457 -309
+newline pts -496 -170 -457 -309
+newcurve cfill 0 1 0 marktype circle pts -455 -310
+newline pts -496 -170 -455 -310
+newcurve cfill 0 1 0 marktype circle pts -453 -311
+newline pts -496 -170 -453 -311
+newcurve cfill 0 1 0 marktype circle pts -451 -312
+newline pts -496 -170 -451 -312
+newcurve cfill 1 0 0 marktype circle pts -449 -313
+newcurve cfill 0 1 0 marktype circle pts -465 -393
+newline pts -449 -313 -465 -393
+newcurve cfill 0 1 0 marktype circle pts -463 -394
+newline pts -449 -313 -463 -394
+newcurve cfill 0 1 0 marktype circle pts -461 -395
+newline pts -449 -313 -461 -395
+newcurve cfill 0 1 0 marktype circle pts -459 -396
+newline pts -449 -313 -459 -396
+newcurve cfill 0 1 0 marktype circle pts -457 -397
+newline pts -449 -313 -457 -397
+newcurve cfill 0 1 0 marktype circle pts -455 -398
+newline pts -449 -313 -455 -398
+newcurve cfill 0 1 0 marktype circle pts -453 -399
+newline pts -449 -313 -453 -399
+newcurve cfill 0 1 0 marktype circle pts -451 -400
+newline pts -449 -313 -451 -400
+newcurve cfill 0 1 0 marktype circle pts -449 -401
+newline pts -449 -313 -449 -401
+newcurve cfill 0 1 0 marktype circle pts -447 -402
+newline pts -449 -313 -447 -402
+newcurve cfill 0 1 0 marktype circle pts -445 -403
+newline pts -449 -313 -445 -403
+newcurve cfill 0 1 0 marktype circle pts -443 -404
+newline pts -449 -313 -443 -404
+newcurve cfill 0 1 0 marktype circle pts -441 -405
+newline pts -449 -313 -441 -405
+newcurve cfill 0 1 0 marktype circle pts -439 -406
+newline pts -449 -313 -439 -406
+newcurve cfill 0 1 0 marktype circle pts -437 -407
+newline pts -449 -313 -437 -407
+newcurve cfill 0 1 0 marktype circle pts -435 -408
+newline pts -449 -313 -435 -408
+newline pts -496 -170 -449 -313
+newline pts -561 -81 -496 -170
+newline pts 0 0 -561 -81
+newcurve cfill 1 0 0 marktype circle pts 0 -82
+newcurve cfill 1 0 0 marktype circle pts -23 -162
+newcurve cfill 0 1 0 marktype circle pts -26 -242
+newline pts -23 -162 -26 -242
+newcurve cfill 0 1 0 marktype circle pts -24 -243
+newline pts -23 -162 -24 -243
+newcurve cfill 0 1 0 marktype circle pts -22 -244
+newline pts -23 -162 -22 -244
+newline pts 0 -82 -23 -162
+newcurve cfill 1 0 0 marktype circle pts -12 -163
+newcurve cfill 0 1 0 marktype circle pts -24 -243
+newline pts -12 -163 -24 -243
+newcurve cfill 0 1 0 marktype circle pts -22 -244
+newline pts -12 -163 -22 -244
+newcurve cfill 0 1 0 marktype circle pts -20 -245
+newline pts -12 -163 -20 -245
+newcurve cfill 0 1 0 marktype circle pts -18 -246
+newline pts -12 -163 -18 -246
+newcurve cfill 0 1 0 marktype circle pts -16 -247
+newline pts -12 -163 -16 -247
+newcurve cfill 0 1 0 marktype circle pts -14 -248
+newline pts -12 -163 -14 -248
+newcurve cfill 0 1 0 marktype circle pts -12 -249
+newline pts -12 -163 -12 -249
+newcurve cfill 0 1 0 marktype circle pts -10 -250
+newline pts -12 -163 -10 -250
+newcurve cfill 0 1 0 marktype circle pts -8 -251
+newline pts -12 -163 -8 -251
+newcurve cfill 0 1 0 marktype circle pts -6 -252
+newline pts -12 -163 -6 -252
+newcurve cfill 1 0 0 marktype circle pts -4 -253
+newcurve cfill 0 1 0 marktype circle pts -5 -333
+newline pts -4 -253 -5 -333
+newline pts -12 -163 -4 -253
+newcurve cfill 1 0 0 marktype circle pts -2 -254
+newcurve cfill 0 1 0 marktype circle pts -3 -334
+newline pts -2 -254 -3 -334
+newline pts -12 -163 -2 -254
+newline pts 0 -82 -12 -163
+newcurve cfill 1 0 0 marktype circle pts -1 -164
+newcurve cfill 0 1 0 marktype circle pts -8 -244
+newline pts -1 -164 -8 -244
+newcurve cfill 0 1 0 marktype circle pts -6 -245
+newline pts -1 -164 -6 -245
+newcurve cfill 0 1 0 marktype circle pts -4 -246
+newline pts -1 -164 -4 -246
+newcurve cfill 0 1 0 marktype circle pts -2 -247
+newline pts -1 -164 -2 -247
+newcurve cfill 0 1 0 marktype circle pts 0 -248
+newline pts -1 -164 0 -248
+newcurve cfill 1 0 0 marktype circle pts 2 -249
+newcurve cfill 0 1 0 marktype circle pts 1 -329
+newline pts 2 -249 1 -329
+newline pts -1 -164 2 -249
+newcurve cfill 1 0 0 marktype circle pts 4 -250
+newline pts -1 -164 4 -250
+newline pts 0 -82 -1 -164
+newcurve cfill 1 0 0 marktype circle pts 10 -165
+newcurve cfill 0 1 0 marktype circle pts 9 -245
+newline pts 10 -165 9 -245
+newline pts 0 -82 10 -165
+newline pts 0 0 0 -82
+newcurve cfill 1 0 0 marktype circle pts 561 -83
+newcurve cfill 1 0 0 marktype circle pts 483 -163
+newcurve cfill 0 1 0 marktype circle pts 405 -243
+newline pts 483 -163 405 -243
+newcurve cfill 0 1 0 marktype circle pts 414 -244
+newline pts 483 -163 414 -244
+newcurve cfill 0 1 0 marktype circle pts 423 -245
+newline pts 483 -163 423 -245
+newcurve cfill 0 1 0 marktype circle pts 432 -246
+newline pts 483 -163 432 -246
+newcurve cfill 0 1 0 marktype circle pts 441 -247
+newline pts 483 -163 441 -247
+newcurve cfill 0 1 0 marktype circle pts 450 -248
+newline pts 483 -163 450 -248
+newcurve cfill 0 1 0 marktype circle pts 459 -249
+newline pts 483 -163 459 -249
+newcurve cfill 0 1 0 marktype circle pts 468 -250
+newline pts 483 -163 468 -250
+newcurve cfill 0 1 0 marktype circle pts 477 -251
+newline pts 483 -163 477 -251
+newcurve cfill 0 1 0 marktype circle pts 486 -252
+newline pts 483 -163 486 -252
+newcurve cfill 0 1 0 marktype circle pts 495 -253
+newline pts 483 -163 495 -253
+newcurve cfill 0 1 0 marktype circle pts 504 -254
+newline pts 483 -163 504 -254
+newcurve cfill 0 1 0 marktype circle pts 513 -255
+newline pts 483 -163 513 -255
+newcurve cfill 0 1 0 marktype circle pts 522 -256
+newline pts 483 -163 522 -256
+newcurve cfill 0 1 0 marktype circle pts 531 -257
+newline pts 483 -163 531 -257
+newcurve cfill 1 0 0 marktype circle pts 540 -258
+newcurve cfill 0 1 0 marktype circle pts 477 -338
+newline pts 540 -258 477 -338
+newcurve cfill 0 1 0 marktype circle pts 479 -339
+newline pts 540 -258 479 -339
+newcurve cfill 0 1 0 marktype circle pts 481 -340
+newline pts 540 -258 481 -340
+newcurve cfill 0 1 0 marktype circle pts 483 -341
+newline pts 540 -258 483 -341
+newcurve cfill 0 1 0 marktype circle pts 485 -342
+newline pts 540 -258 485 -342
+newcurve cfill 0 1 0 marktype circle pts 487 -343
+newline pts 540 -258 487 -343
+newcurve cfill 0 1 0 marktype circle pts 489 -344
+newline pts 540 -258 489 -344
+newcurve cfill 0 1 0 marktype circle pts 491 -345
+newline pts 540 -258 491 -345
+newcurve cfill 0 1 0 marktype circle pts 493 -346
+newline pts 540 -258 493 -346
+newcurve cfill 0 1 0 marktype circle pts 495 -347
+newline pts 540 -258 495 -347
+newcurve cfill 0 1 0 marktype circle pts 497 -348
+newline pts 540 -258 497 -348
+newcurve cfill 0 1 0 marktype circle pts 499 -349
+newline pts 540 -258 499 -349
+newcurve cfill 0 1 0 marktype circle pts 501 -350
+newline pts 540 -258 501 -350
+newcurve cfill 0 1 0 marktype circle pts 503 -351
+newline pts 540 -258 503 -351
+newcurve cfill 0 1 0 marktype circle pts 505 -352
+newline pts 540 -258 505 -352
+newcurve cfill 0 1 0 marktype circle pts 507 -353
+newline pts 540 -258 507 -353
+newcurve cfill 0 1 0 marktype circle pts 509 -354
+newline pts 540 -258 509 -354
+newcurve cfill 0 1 0 marktype circle pts 511 -355
+newline pts 540 -258 511 -355
+newcurve cfill 0 1 0 marktype circle pts 513 -356
+newline pts 540 -258 513 -356
+newcurve cfill 0 1 0 marktype circle pts 515 -357
+newline pts 540 -258 515 -357
+newcurve cfill 0 1 0 marktype circle pts 517 -358
+newline pts 540 -258 517 -358
+newcurve cfill 0 1 0 marktype circle pts 519 -359
+newline pts 540 -258 519 -359
+newcurve cfill 0 1 0 marktype circle pts 521 -360
+newline pts 540 -258 521 -360
+newcurve cfill 0 1 0 marktype circle pts 523 -361
+newline pts 540 -258 523 -361
+newcurve cfill 0 1 0 marktype circle pts 525 -362
+newline pts 540 -258 525 -362
+newcurve cfill 0 1 0 marktype circle pts 527 -363
+newline pts 540 -258 527 -363
+newcurve cfill 0 1 0 marktype circle pts 529 -364
+newline pts 540 -258 529 -364
+newcurve cfill 0 1 0 marktype circle pts 531 -365
+newline pts 540 -258 531 -365
+newcurve cfill 0 1 0 marktype circle pts 533 -366
+newline pts 540 -258 533 -366
+newcurve cfill 0 1 0 marktype circle pts 535 -367
+newline pts 540 -258 535 -367
+newcurve cfill 0 1 0 marktype circle pts 537 -368
+newline pts 540 -258 537 -368
+newcurve cfill 0 1 0 marktype circle pts 539 -369
+newline pts 540 -258 539 -369
+newcurve cfill 0 1 0 marktype circle pts 541 -370
+newline pts 540 -258 541 -370
+newcurve cfill 0 1 0 marktype circle pts 543 -371
+newline pts 540 -258 543 -371
+newcurve cfill 0 1 0 marktype circle pts 545 -372
+newline pts 540 -258 545 -372
+newcurve cfill 0 1 0 marktype circle pts 547 -373
+newline pts 540 -258 547 -373
+newcurve cfill 0 1 0 marktype circle pts 549 -374
+newline pts 540 -258 549 -374
+newcurve cfill 0 1 0 marktype circle pts 551 -375
+newline pts 540 -258 551 -375
+newcurve cfill 0 1 0 marktype circle pts 553 -376
+newline pts 540 -258 553 -376
+newcurve cfill 0 1 0 marktype circle pts 555 -377
+newline pts 540 -258 555 -377
+newcurve cfill 0 1 0 marktype circle pts 557 -378
+newline pts 540 -258 557 -378
+newcurve cfill 0 1 0 marktype circle pts 559 -379
+newline pts 540 -258 559 -379
+newcurve cfill 0 1 0 marktype circle pts 561 -380
+newline pts 540 -258 561 -380
+newcurve cfill 0 1 0 marktype circle pts 563 -381
+newline pts 540 -258 563 -381
+newcurve cfill 0 1 0 marktype circle pts 565 -382
+newline pts 540 -258 565 -382
+newcurve cfill 0 1 0 marktype circle pts 567 -383
+newline pts 540 -258 567 -383
+newcurve cfill 0 1 0 marktype circle pts 569 -384
+newline pts 540 -258 569 -384
+newcurve cfill 0 1 0 marktype circle pts 571 -385
+newline pts 540 -258 571 -385
+newcurve cfill 0 1 0 marktype circle pts 573 -386
+newline pts 540 -258 573 -386
+newcurve cfill 0 1 0 marktype circle pts 575 -387
+newline pts 540 -258 575 -387
+newcurve cfill 0 1 0 marktype circle pts 577 -388
+newline pts 540 -258 577 -388
+newcurve cfill 0 1 0 marktype circle pts 579 -389
+newline pts 540 -258 579 -389
+newcurve cfill 0 1 0 marktype circle pts 581 -390
+newline pts 540 -258 581 -390
+newcurve cfill 0 1 0 marktype circle pts 583 -391
+newline pts 540 -258 583 -391
+newcurve cfill 0 1 0 marktype circle pts 585 -392
+newline pts 540 -258 585 -392
+newcurve cfill 0 1 0 marktype circle pts 587 -393
+newline pts 540 -258 587 -393
+newcurve cfill 0 1 0 marktype circle pts 589 -394
+newline pts 540 -258 589 -394
+newcurve cfill 0 1 0 marktype circle pts 591 -395
+newline pts 540 -258 591 -395
+newcurve cfill 0 1 0 marktype circle pts 593 -396
+newline pts 540 -258 593 -396
+newcurve cfill 0 1 0 marktype circle pts 595 -397
+newline pts 540 -258 595 -397
+newcurve cfill 0 1 0 marktype circle pts 597 -398
+newline pts 540 -258 597 -398
+newcurve cfill 0 1 0 marktype circle pts 599 -399
+newline pts 540 -258 599 -399
+newcurve cfill 0 1 0 marktype circle pts 601 -400
+newline pts 540 -258 601 -400
+newline pts 483 -163 540 -258
+newline pts 561 -83 483 -163
+newline pts 0 0 561 -83

@@ -15,11 +15,11 @@ public:
   int childrenPrinted;
   int x, y;
   int depth;
+  bool isDrawn;
+  int totalChildrenWidth;
 };
 
-string getNthWord(
-    int n,
-    string s) { // if n is longer than the words in s, returns the last word
+string getNthWord(int n, string s) { // if n is longer than the words in s, returns the last word
   istringstream sin(s);
   int i = 1;
   while (sin >> s) {
@@ -39,6 +39,53 @@ int countChars(string s, char c) { // counts the amount of c in s
   }
   return ret;
 }
+
+int calcNodeWidth(File* f){
+  int width = 0;
+  int i;
+  if(!f->isDir) {
+    f->totalChildrenWidth = 1;
+    return 1;
+  }
+  for(i = 0; i < f->children.size(); i++){
+    width += calcNodeWidth(f->children[i]);
+  }
+  if(width == 0) width = 1;
+  f->totalChildrenWidth = width;
+  return width;
+}
+
+void draw_nodes(File *f, int x, int y){
+  int i;
+  int offset;
+  int spacing = 3;
+  int fontSize = 12;
+  int widthNeeded = 0;
+  if(!f->isDrawn){
+    if(f->isDir){
+      printf("newcurve cfill 1 0 0 marktype circle pts %d %d\n", x, y);
+      // printf("newstring hjr vjc rotate -45 fontsize %d x %d y %d : %d\n", fontSize, x, y, f->totalChildrenWidth);
+    }else{
+      printf("newcurve cfill 0 1 0 marktype circle pts %d %d\n", x, y);
+    }
+  }else{
+
+  }
+  f->isDrawn = true;
+  widthNeeded = f->totalChildrenWidth;
+  for(i = 0; i < f->children.size(); i++){
+    widthNeeded += f->children[i]->totalChildrenWidth;
+  }
+  if(widthNeeded <= 0) widthNeeded = 1;
+  for(i = 0; i < f->children.size(); i++){
+    offset = x - (widthNeeded/2) + (i * (widthNeeded/f->children.size()));
+    draw_nodes(f->children[i], offset, y-80-i);
+    // printf("newstring hjl vjc fontsize %d x %d y %d : %d\n", fontSize, offset, y-10, widthNeeded);
+    printf("newline pts %d %d %d %d\n", x, y, offset, y-80-i);
+  }
+}
+
+
 
 int main(int argc, char **argv) {
   string s;
@@ -66,6 +113,8 @@ int main(int argc, char **argv) {
   currParent->depth = 0;
   currParent->isDir = true;
   currParent->childrenPrinted = 0;
+  currParent->totalChildrenWidth = -1;
+  currParent->isDrawn = false;
   currParent->parent = senti;
   currParent->size = -1;
   files.push_back(currParent);
@@ -116,12 +165,35 @@ int main(int argc, char **argv) {
       currDepth++;
     }
   }
+
   for (i = 1; i < files.size(); i++) {
+    files[i]->totalChildrenWidth = -1;
     files[i]->parent->children.push_back(files[i]);
+    cerr << files[i]->name << endl;
   }
-  printf("newgraph xaxis size 7 yaxis size 7\n");
+  printf("newgraph xaxis size 7 nodraw yaxis size 7 nodraw \n");
 
 
+  //trying to do a topological printing of the nodes, they should be topologically sorted so this should be a BFS right :)
+
+  
+  //recursively draw every node
+  
+
+
+
+
+  files[0]->totalChildrenWidth = calcNodeWidth(files[0]);
+  draw_nodes(files[0], 0, 0);
+
+  for(i = 0; i < files.size(); i++){
+    cerr << files[i]->name << "  ----  ";
+    cerr << files[i]->totalChildrenWidth << endl;
+  }
+
+
+
+/*
   x = 0;
   y = 0;
   for(i = 0; i < files.size(); i++){
@@ -150,6 +222,14 @@ int main(int argc, char **argv) {
     }
 
   }
+
+  printf("newpage newgraph xaxis size 7 yaxis size 7\n");
+
+  printf("newcurve cfill 1 0 0 marktype circle pts %d %d\n", files[0]->x, files[0]->y);
+  // cerr << files[0]->name << endl;
+*/
+
+
 
   /*mostly for debugging now, should be obsolete
   for (i = 0; i < files.size(); i++) {
