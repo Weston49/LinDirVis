@@ -191,6 +191,29 @@ string get_random_color(string seed){ //gets the same color every time for a giv
   return ret;
 }
 
+string get_readable_filesize(long bytes){
+  string ret;
+  if(bytes < 1000) return to_string(bytes) + " B";
+  if(bytes < 1000000){
+    ret = to_string(bytes / 1000.0);
+    ret = ret.substr(0, ret.find('.')+3) + " KB";
+    return ret;
+  }
+  if(bytes > 500000000){
+    ret = to_string(bytes / 1000000000.0);
+    ret = ret.substr(0, ret.find('.')+3) + " GB";
+    return ret;
+  }
+  if(bytes < 1000000000){
+    ret = to_string(bytes / 1000000.0);
+    ret = ret.substr(0, ret.find('.')+3) + " MB";
+    return ret;
+  }
+  ret = to_string(bytes / 1000000000.0);
+  ret = ret.substr(0, ret.find('.')+3) + " GB";
+  return ret;
+}
+
 int main(int argc, char **argv) {
   string s, bdStr, bfStr, extColor;
 
@@ -349,7 +372,7 @@ int main(int argc, char **argv) {
 
 
     string rootStr = "Root File: " + files[0]->name;
-    string sizeStr = "Total Size: " + to_string(files[0]->size) + " bytes";
+    string sizeStr = "Total Size: " + get_readable_filesize(files[0]->size);
     printf("newstring hjl vjb fontsize %f x %d y %d : %s\n", fontSize, 0, 12, rootStr.c_str());
     printf("newline poly pcfill 1 1 0 pts 0.02 17  0.04 17  0.04 20  0.02 20\n");
     printf("newstring hjl vjb fontsize %f x %f y %d : %s\n", fontSize, 0.05, 17, sizeStr.c_str());
@@ -361,9 +384,9 @@ int main(int argc, char **argv) {
     printf("newstring hjl vjb fontsize %f x %f y %d : %s\n", fontSize, 0.05, 22, "Largest File");
 
 
-    if(biggestDir != NULL) bdStr = biggestDir->name + " " + to_string(biggestDir->size) + " bytes";
+    if(biggestDir != NULL) bdStr = biggestDir->name + " " + get_readable_filesize(biggestDir->size);
     else bdStr = "No directory found";
-    if(biggestFile != NULL) bfStr = biggestFile->name + " " + to_string(biggestFile->size) + " bytes";
+    if(biggestFile != NULL) bfStr = biggestFile->name + " " + get_readable_filesize(biggestFile->size);
     else bfStr = "No file found";
 
     int rotateAmt = -25;
