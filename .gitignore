@@ -35,3 +35,6 @@
 
 jgraph/
 bin
+./bin
+
+junk*
