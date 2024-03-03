@@ -331,7 +331,7 @@ int main(int argc, char **argv) {
 
   minX = 0;
 
-  /*FIRST PAGE File tree vizualization, my favorite part personally*/
+  /*FIRST PAGE File tree visualization, my favorite part personally*/
   if(mode & (1)){
     printf("newgraph xaxis size 7 nodraw yaxis size 7 nodraw \n");
     draw_nodes(files[0], 0, 0);
