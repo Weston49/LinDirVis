@@ -2,6 +2,7 @@
 #include <sstream>
 #include <string>
 #include <vector>
+#include <unordered_map>
 
 using namespace std;
 
@@ -126,7 +127,64 @@ void draw_nodes(File *f, int x, int y){
   }
 }
 
+string get_extention(string s){
+  if(s[0] == '.') return "other"; //just makes things simpler, not ideal but works 
+  string ret;
+  int originalSize = s.size();
+  if(s.find('.') == string::npos) return "other";
+  reverse(s.begin(), s.end());
+  ret = s.substr(0, s.find('.')+1);
+  reverse(ret.begin(), ret.end());
+  if(ret.size() == originalSize) return "other";
+  return ret;
+}
 
+unordered_map<string, int> get_file_dist(vector<File*> files){
+  unordered_map<string, int> ret;
+  int i;
+  string tmp;
+  for(i = 0; i < files.size(); i++){
+    tmp = get_extention(files[i]->name);
+    if(files[i]->isDir && tmp == "other"){
+      //we do not count regular directories
+    }else{
+      if(ret.find(tmp) != ret.end()){
+        ret.find(tmp)->second++;
+      }else{
+        ret.insert(make_pair(tmp,1));
+      }
+    }
+  }
+
+
+  return ret;
+}
+
+
+string get_random_color(string seed){
+  string ret;
+  int i;
+  int seedVal = 0;
+  ostringstream out;
+
+  for(i = 0; i < seed.size(); i++){
+    seedVal += seed[i];
+  }
+
+  srand(seedVal);
+  int junk = rand();
+  double r = (double)rand() / RAND_MAX;
+  double g = (double)rand() / RAND_MAX;
+  double b = (double)rand() / RAND_MAX;
+  
+  out.precision(2);
+  out << fixed << r << " " << g << " " << b;
+
+  ret = out.str();
+  // cerr << ret << endl;
+
+  return ret;
+}
 
 int main(int argc, char **argv) {
   string s;
@@ -138,6 +196,9 @@ int main(int argc, char **argv) {
   File *senti = new File;
   senti->name = "///SENTI///";
   int i, j, pn, pos, rootDepth, currDepth, lastDepth, x, y;
+  double tmpX;
+  double tmpY;
+  int column;
   long long rootSize;
   File *biggestFile;
   File *biggestDir;
@@ -148,14 +209,32 @@ int main(int argc, char **argv) {
   double fontSize = 14;
   double bfPercent;
   double bdPercent;
+  string extColor;
   int minX;
+  int mode;
   int offset;
+  int filesFound;
+  double fileDistOffset;
+  double extPercent;
+  unordered_map<string, int> file_dist;
+  unordered_map<string, int>::iterator umit;
   string bdStr;
   string bfStr;
   pn = 0;
   int yMax = (i * linePadding + 1) + ((linesPerPage * linePadding));
   string graphDef = "yaxis max 5 min -" + to_string(yMax) +
                     " size 10 \nxaxis min 0 max 20 size 8.5 \n";
+
+
+
+  if(argc > 2){
+    mode = stoi(argv[2]);
+  }else{
+    mode = 31; //this will do everything by default
+  }
+
+
+  
 
   currParent = new File;
   string tmpStr = argv[1];
@@ -167,7 +246,7 @@ int main(int argc, char **argv) {
   currParent->totalChildrenWidth = -1;
   currParent->isDrawn = false;
   currParent->parent = senti;
-  currParent->size = -1;
+  currParent->size = 0;
   files.push_back(currParent);
   parentTrace.push_back(currParent);
 
@@ -210,7 +289,7 @@ int main(int argc, char **argv) {
         currParent->parent = senti;
       }
       currParent->isDir = true;
-      currParent->size = -1;
+      currParent->size = 0;
       currParent->name = s;
       currParent->depth = currDepth;
       files.push_back(currParent);
@@ -225,14 +304,13 @@ int main(int argc, char **argv) {
     files[i]->parent->children.push_back(files[i]);
     // cerr << files[i]->name << endl;
   }
-  printf("newgraph xaxis size 7 nodraw yaxis size 7 nodraw \n");
 
 
 
   find_dir_sizes(files[0]);
 
   rootSize = files[0]->size;
-  cerr << rootSize << endl;
+  // cerr << rootSize << endl;
 
   for(i = 1; i < files.size(); i++){ //finds the biggest dir not including the root
     if(files[i]->isDir){
@@ -245,196 +323,125 @@ int main(int argc, char **argv) {
   
 
   files[0]->totalChildrenWidth = calcNodeWidth(files[0]);
-  draw_nodes(files[0], 0, 0);
 
   bool firstDir = true;
   bool firstFile = true;
   
   minX = 0;
 
-  for(i = 0; i < files.size(); i++){
-    x = files[i]->x;
-    y = files[i]->y;
-    if(x < minX) minX = x;
-    if(files[i]->isDir){
-      if(firstDir){
-        printf("newcurve color 1 0 0 marktype circle label : Directory\n pts %d %d\n", x, y);
-        firstDir = false;
-      }else{
-        printf("newcurve color 1 0 0 marktype circle pts %d %d\n", x, y);
-      }
-      // printf("newstring hjr vjc rotate -45 fontsize %d x %d y %d : %d\n", fontSize, x, y, f->totalChildrenWidth);
-    }else{
-      if(firstFile){
-        printf("newcurve color 0 1 0 marktype circle label : File\n pts %d %d\n", x, y);
-        firstFile = false;
-      }else{
-        printf("newcurve color 0 1 0 marktype circle pts %d %d\n", x, y);
-      }
-    }
-  }
-
-  printf("legend defaults fontsize 14 hjl vjt x %d y 0\n", minX);
   
-  
-  if(biggestFile != NULL) printf("newcurve cfill 0 1 1 marktype box label : Largest File \npts %d %d\n", biggestFile->x, biggestFile->y);
-  if(biggestDir != NULL) printf("newcurve cfill 1 0 1 marktype box label : Largest Directory \npts %d %d\n", biggestDir->x, biggestDir->y);
-
-  for(i = 0; i < files.size(); i++){
-    // cerr << files[i]->name << "  ----  ";
-    // cerr << files[i]->totalChildrenWidth << endl;
-  }
-
-
-
-  printf("newpage newgraph xaxis nodraw size 7 yaxis nodraw min -50\n");
-  printf("newline poly pfill 1 pts 0 0  1 0  1 10  0 10\n");
-
-  // cerr << biggestFile->size << " " << biggestFile->name << endl;
-  // cerr << biggestDir->size << " " << biggestDir->name << endl;
-  // cerr << "root size: " << rootSize << endl;
-
-
-  if(biggestDir != NULL) bdPercent = (double)biggestDir->size / (double)rootSize;
-  else bdPercent = 0;
-  if(biggestFile != NULL) bfPercent = (double)biggestFile->size / (double)rootSize;
-  else bfPercent = 0;
-
-  // cerr << bdPercent << endl;
-  // cerr << bfPercent << endl;
-
-  string rootStr = "Root File: " + files[0]->name;
-  string sizeStr = "Total Size: " + to_string(files[0]->size) + " bytes";
-  printf("newstring hjl vjb fontsize %f x %d y %d : %s\n", fontSize, 0, 15, rootStr.c_str());
-  printf("newstring hjl vjt fontsize %f x %d y %d : %s\n", fontSize, 0, 14, sizeStr.c_str());
-
-
-  if(biggestDir != NULL) bdStr = biggestDir->name + " " + to_string(biggestDir->size) + " bytes";
-  else bdStr = "No directory found";
-  if(biggestFile != NULL) bfStr = biggestFile->name + " " + to_string(biggestFile->size) + " bytes";
-  else bfStr = "No file found";
-
-  int rotateAmt = -25;
-  if(bdStr.size() > 30) rotateAmt = -90;
-  if(bfStr.size() > 30) rotateAmt = -90;
-
-  printf("newline poly pcfill 1 0 0 pts 0 0  %f 0  %f 10  0 10\n", bdPercent, bdPercent);
-  printf("newstring hjl vjt rotate %d fontsize %f x %f y %d : %s\n", rotateAmt, fontSize, (bdPercent/4)*3, 0, bdStr.c_str());
-  printf("newline poly pcfill 0 1 0 pts 0 0  %f 0  %f 5  0 5\n", bfPercent, bfPercent);
-  printf("newstring hjl vjt rotate %d fontsize %f x %f y %d : %s\n", rotateAmt, fontSize, bfPercent/2, 0, bfStr.c_str());
-
-
-
-
-/*
-  x = 0;
-  y = 0;
-  for(i = 0; i < files.size(); i++){
-    if(files[i]->isDir){
-      if(files[i]->parent != NULL){
-        y = files[i]->parent->y - 10;
-      }
-      printf("newcurve cfill 1 0 0 marktype circle pts %d %d\n", x, y);
-      files[i]->x = x;
-      files[i]->y = y;
-      if(files[i]->parent != NULL){
-        printf("newline pts %d %d %d %d\n", x, y, files[i]->parent->x, files[i]->parent->y);
-      }
-    }else{
-      y = files[i]->parent->y - 10;
-      if(files[i]->parent->childrenPrinted < files[i]->parent->children.size()/2){
-        x = files[i]->parent->x - (5 * files[i]->parent->childrenPrinted);
-      }else{
-        x = files[i]->parent->x + (5 * (files[i]->parent->childrenPrinted - (files[i]->parent->children.size()/2)));
-      }
-      files[i]->parent->childrenPrinted += 1;
-      printf("newcurve cfill 0 1 0 marktype circle pts %d %d\n", x, y);
-      files[i]->x = x;
-      files[i]->y = y;
-      printf("newline pts %d %d %d %d\n", x, y, files[i]->parent->x, files[i]->parent->y);
-    }
-
-  }
-
-  printf("newpage newgraph xaxis size 7 yaxis size 7\n");
-
-  printf("newcurve cfill 1 0 0 marktype circle pts %d %d\n", files[0]->x, files[0]->y);
-  // cerr << files[0]->name << endl;
-*/
-
-
-
-  /*mostly for debugging now, should be obsolete
-  for (i = 0; i < files.size(); i++) {
-    if (i == linesPerPage * pn) {
-      if (i)
-        printf("newpage\n");
-      printf("newgraph\n");
-      cout << graphDef;
-      pn++;
-    }
-    offset = files[i]->depth;
-    string tmpName = files[i]->name;
-    tmpName += "     ";
-    if (files[i]->parent != NULL)
-      tmpName += files[i]->parent->name;
-    int yPos =
-        (-1) * ((i * linePadding) - ((linesPerPage * linePadding) * (pn - 1)));
-    string color;
-    color = "0 1 0";
-    if (files[i]->isDir)
-      color = "1 0 0";
-    printf("newcurve cfill %s marktype box marksize 0.5 2 pts %d %d\n",
-           color.c_str(), offset, yPos);
-    printf("newstring hjl vjc rotate 0 fontsize %lf x %d y %d : %s\n", fontSize,
-           offset, yPos, tmpName.c_str());
-  }
-
-
-  for(i = 0; i < senti->children.size(); i++){
-    files[0]->children.push_back(senti->children[i]);
-  }
-
-  f = files[0];
-  printf("newgraph\n yaxis min 0 max 10 nodraw xaxis nodraw\n");
-  double xPos = (f->children.size()-1)/2.0;
-  printf("newstring hjc vjb rotate 0 fontsize %d x %lf y %d : %s\n",
-    fontSize, xPos, 5, files[0]->name.c_str());
-  printf("newcurve marktype box color 1 1 1 pts %lf %d\n", xPos, 5);
-  for(i = 0; i < f->children.size(); i++){
-    printf("newcurve marktype box color 1 1 1 pts %d %d\n", i, 3);
-    string n = f->children[i]->name.substr(f->name.size());
-    n = n.substr(0, n.size()-1);
-    printf("newstring hjl vjc rotate -45 fontsize %d x %d y %d : %s\n",
-      fontSize, i, 3, n.c_str());
-    printf("newline pts %d %d %lf 5\n", i, 3, xPos);
-  }
-
-
-  for(i = 1; i < files.size(); i++){
-    if(files[i]->isDir){
-      printf("newpage\n");
-      f = files[i];
-      printf("newgraph\n yaxis min 0 max 10 nodraw xaxis nodraw size 8\n");
-      double xPos = (f->children.size()-1)/2.0;
-      printf("newstring hjc vjb rotate 0 fontsize %d x %lf y %d : %s\n",
-      fontSize, xPos, 5, f->name.c_str());
-      printf("newcurve marktype box color 1 1 1 pts %lf %d\n", xPos, 5);
-      for(j = 0; j < f->children.size(); j++){
-        printf("newcurve marktype box color 1 1 1 pts %d %d\n", j, 3);
-        string n;
-        if(f->children[j]->isDir){
-          n = f->children[j]->name.substr(f->name.size());
-          n = n.substr(0, n.size()-1);
+  /*FIRST PAGE TREE*/
+  if(mode & (1)){
+    printf("newgraph xaxis size 7 nodraw yaxis size 7 nodraw \n");
+    draw_nodes(files[0], 0, 0);
+    for(i = 0; i < files.size(); i++){
+      x = files[i]->x;
+      y = files[i]->y;
+      if(x < minX) minX = x;
+      if(files[i]->isDir){
+        if(firstDir){
+          printf("newcurve color 1 0 0 marktype circle label : Directory\n pts %d %d\n", x, y);
+          firstDir = false;
         }else{
-          n = f->children[j]->name;
+          printf("newcurve color 1 0 0 marktype circle pts %d %d\n", x, y);
         }
-        printf("newstring hjl vjc rotate -45 fontsize %d x %d y %d : %s\n",
-          fontSize, j, 3, n.c_str());
-        printf("newline pts %d %d %lf 5\n", j, 3, xPos);
+        // printf("newstring hjr vjc rotate -45 fontsize %d x %d y %d : %d\n", fontSize, x, y, f->totalChildrenWidth);
+      }else{
+        if(firstFile){
+          printf("newcurve color 0 1 0 marktype circle label : File\n pts %d %d\n", x, y);
+          firstFile = false;
+        }else{
+          printf("newcurve color 0 1 0 marktype circle pts %d %d\n", x, y);
+        }
       }
     }
-  }*/
+    if(biggestFile != NULL) printf("newcurve cfill 0 1 1 marktype box label : Largest File \npts %d %d\n", biggestFile->x, biggestFile->y);
+    if(biggestDir != NULL) printf("newcurve cfill 1 0 1 marktype box label : Largest Directory \npts %d %d\n", biggestDir->x, biggestDir->y);
+
+    printf("legend defaults fontsize 14 hjl vjt x %d y 0\n", minX);
+  }
+  
+
+
+  /*SECOND PAGE OF INFORMATION*/
+  if(mode & (1 << 1)){
+    if(mode & 1){
+      printf("newpage\n");
+    }
+    printf("newgraph xaxis nodraw size 7 yaxis nodraw min -50\n");
+    printf("newline poly pfill 1 pts 0 0  1 0  1 10  0 10\n");
+
+
+    if(biggestDir != NULL) bdPercent = (double)biggestDir->size / (double)rootSize;
+    else bdPercent = 0;
+    if(biggestFile != NULL) bfPercent = (double)biggestFile->size / (double)rootSize;
+    else bfPercent = 0;
+
+
+    string rootStr = "Root File: " + files[0]->name;
+    string sizeStr = "Total Size: " + to_string(files[0]->size) + " bytes";
+    printf("newstring hjl vjb fontsize %f x %d y %d : %s\n", fontSize, 0, 15, rootStr.c_str());
+    printf("newstring hjl vjt fontsize %f x %d y %d : %s\n", fontSize, 0, 14, sizeStr.c_str());
+
+
+    if(biggestDir != NULL) bdStr = biggestDir->name + " " + to_string(biggestDir->size) + " bytes";
+    else bdStr = "No directory found";
+    if(biggestFile != NULL) bfStr = biggestFile->name + " " + to_string(biggestFile->size) + " bytes";
+    else bfStr = "No file found";
+
+    int rotateAmt = -25;
+    if(bdStr.size() > 30) rotateAmt = -90;
+    if(bfStr.size() > 30) rotateAmt = -90;
+
+    printf("newline poly pcfill 1 0 0 pts 0 0  %f 0  %f 10  0 10\n", bdPercent, bdPercent);
+    printf("newstring hjl vjt rotate %d fontsize %f x %f y %d : %s\n", rotateAmt, fontSize, (bdPercent/4)*3, 0, bdStr.c_str());
+    printf("newline poly pcfill 0 1 0 pts 0 0  %f 0  %f 5  0 5\n", bfPercent, bfPercent);
+    printf("newstring hjl vjt rotate %d fontsize %f x %f y %d : %s\n", rotateAmt, fontSize, bfPercent/2, 0, bfStr.c_str());
+  }
+
+
+  /*THIRD PAGE OF INFORMATION*/
+  if(mode & (1 << 2)){
+    if(mode & 3){
+      printf("newpage\n");
+    }
+    printf("newgraph xaxis nodraw size 7 yaxis nodraw min -50\n");
+
+    file_dist = get_file_dist(files);
+
+    filesFound = 0;
+    for(umit = file_dist.begin(); umit != file_dist.end(); umit++){
+      filesFound += umit->second;
+    }
+    
+    fileDistOffset = 0;
+    printf("newline poly pfill 1 pts 0 0  1 0  1 10  0 10\n");
+    i = 0;
+    column = 0;
+    for(umit = file_dist.begin(); umit != file_dist.end(); umit++){
+      extPercent = (double)umit->second / (double)filesFound;
+      extColor = get_random_color(umit->first);
+      printf("newline poly pcfill %s pts %f 0  %f 0  %f 10  %f 10\n",extColor.c_str(),fileDistOffset,extPercent+fileDistOffset,extPercent+fileDistOffset,fileDistOffset);
+      tmpX = column*0.25;
+      tmpY = (-1)*(i*5)-1;
+      tmpStr = to_string(extPercent*100);
+      if(tmpStr.size() > 5) tmpStr = tmpStr.substr(0, 5);
+      tmpStr = "-- %" + tmpStr;
+      if(extPercent >= 1) tmpStr = umit->first + " - %100";
+      printf("newstring hjl vjt fontsize %f x %f y %f : %s\n", fontSize, tmpX+0.01, tmpY, umit->first.c_str());
+      printf("newstring hjl vjt fontsize %f x %f y %f : %s\n", fontSize-2, tmpX+0.12, tmpY, tmpStr.c_str());
+      printf("newcurve marktype box cfill %s pts %f %f\n",extColor.c_str(), tmpX, tmpY-1.5);
+      fileDistOffset += extPercent;
+      i++;
+      if(i > 25){
+        column++;
+        i = 0;
+      }
+    }
+  }
+
+
+
 
   return 0;
 }

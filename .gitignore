@@ -33,6 +33,8 @@
 
 .DS_store
 
+*.pdf
+
 jgraph/
 bin
 ./bin
