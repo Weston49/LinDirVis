@@ -31,3 +31,5 @@ Mode is a number 0-15 where the bits determine which pages are generated.
 ## ex6.pdf
 This one will look vastly different depending on where you run it from, it calls LinDirVis on the directory above the current one and just generates the tree. Here is what it looks like on my Mac when I run it. Obviously, in many cases, lines will run into each other however I find the graph is still typically plenty clear.
 ![example pdf #6](/imgs/bigTreeEx.png)
+
+So far this has been tested on my M1 Mac Book Pro and the Hydra Linux machines at UTK that are running Red Hat Linux. If there are bugs that arise on other machines please let me know.
