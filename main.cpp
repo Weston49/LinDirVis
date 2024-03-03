@@ -367,12 +367,15 @@ int main(int argc, char **argv) {
     printf("newgraph xaxis nodraw size 7 yaxis nodraw min -50\n");
     printf("newline poly pcfill 1 1 0 pts 0 0  1 0  1 10  0 10\n");
 
+    bdPercent = 0;
+    bdPercent = 0;
 
     if(biggestDir != NULL) bdPercent = (double)biggestDir->size / (double)rootSize;
-    else bdPercent = 0;
     if(biggestFile != NULL) bfPercent = (double)biggestFile->size / (double)rootSize;
-    else bfPercent = 0;
-
+    if((double)rootSize == 0){
+      bdPercent = 0;
+      bfPercent = 0;
+    }
 
     rootStr = "Root File: " + files[0]->name;
     sizeStr = "Total Size: " + get_readable_filesize(files[0]->size);
@@ -386,11 +389,11 @@ int main(int argc, char **argv) {
     printf("newline poly pcfill 0 1 1 pts 0.02 22  0.04 22  0.04 25  0.02 25\n");
     printf("newstring hjl vjb fontsize %f x %f y %d : %s\n", fontSize, 0.05, 22, "Largest File");
 
+    bdStr = "No directory found";
+    bfStr = "No file found";
 
     if(biggestDir != NULL) bdStr = biggestDir->name + " " + get_readable_filesize(biggestDir->size);
-    else bdStr = "No directory found";
     if(biggestFile != NULL) bfStr = biggestFile->name + " " + get_readable_filesize(biggestFile->size);
-    else bfStr = "No file found";
 
     int rotateAmt = -25;
     if(bdStr.size() > 30) rotateAmt = -90;
