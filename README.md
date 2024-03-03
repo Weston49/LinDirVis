@@ -29,5 +29,5 @@ Mode is a number 0-15 where the bits determine which pages are generated.
 ![example pdf #5](/imgs/fdSize.png)
 
 ## ex6.pdf
-This one will look vastly different depending on where you run it from, it calls LinDirViz on the directory above the current one and just generates the tree. Here is what it looks like on my Mac when I run it. Obviously, in many cases, lines will run into each other however I find the graph is still typically plenty clear.
+This one will look vastly different depending on where you run it from, it calls LinDirVis on the directory above the current one and just generates the tree. Here is what it looks like on my Mac when I run it. Obviously, in many cases, lines will run into each other however I find the graph is still typically plenty clear.
 ![example pdf #6](/imgs/bigTreeEx.png)
