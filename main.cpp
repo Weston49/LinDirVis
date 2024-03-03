@@ -139,7 +139,7 @@ string get_extention(string s){
   return ret;
 }
 
-unordered_map<string, int> get_file_dist(vector<File*> files){
+unordered_map<string, int> get_file_dist_amt(vector<File*> files){
   unordered_map<string, int> ret;
   int i;
   string tmp;
@@ -155,8 +155,25 @@ unordered_map<string, int> get_file_dist(vector<File*> files){
       }
     }
   }
+  return ret;
+}
 
-
+unordered_map<string, int> get_file_dist_size(vector<File*> files){
+  unordered_map<string, int> ret;
+  int i;
+  string tmp;
+  for(i = 0; i < files.size(); i++){
+    tmp = get_extention(files[i]->name);
+    if(files[i]->isDir && tmp == "other"){
+      //we do not count regular directories
+    }else{
+      if(ret.find(tmp) != ret.end()){
+        ret.find(tmp)->second += files[i]->size;
+      }else{
+        ret.insert(make_pair(tmp,1));
+      }
+    }
+  }
   return ret;
 }
 
@@ -414,7 +431,7 @@ int main(int argc, char **argv) {
     }
     printf("newgraph xaxis nodraw size 7 yaxis nodraw min -50\n");
 
-    file_dist = get_file_dist(files);
+    file_dist = get_file_dist_amt(files);
 
     filesFound = 0;
     for(umit = file_dist.begin(); umit != file_dist.end(); umit++){
@@ -422,6 +439,7 @@ int main(int argc, char **argv) {
     }
     
     fileDistOffset = 0;
+    printf("newstring hjl vjb fontsize %f x 0 y 12 : %s\n", fontSize, "File Distribution by File Count");
     printf("newline poly pfill 1 pts 0 0  1 0  1 10  0 10\n");
     i = 0;
     column = 0;
@@ -448,8 +466,47 @@ int main(int argc, char **argv) {
     }
   }
 
+  /*FOURHT PAGE OF INFORMATION*/
+  if(mode & (1 << 3)){
+    if(mode & 7){
+      printf("newpage\n");
+    }
+    printf("newgraph xaxis nodraw size 7 yaxis nodraw min -50\n");
 
+    file_dist = get_file_dist_size(files);
 
+    filesFound = 0;
+    for(umit = file_dist.begin(); umit != file_dist.end(); umit++){
+      filesFound += umit->second;
+    }
+    
+    fileDistOffset = 0;
+    printf("newstring hjl vjb fontsize %f x 0 y 12 : %s\n", fontSize, "File Distribution by File Size");
+    printf("newline poly pfill 1 pts 0 0  1 0  1 10  0 10\n");
+    i = 0;
+    column = 0;
+    for(umit = file_dist.begin(); umit != file_dist.end(); umit++){
+      extPercent = (double)umit->second / (double)filesFound;
+      extColor = get_random_color(umit->first);
+      printf("newline poly pcfill %s pts %f 0  %f 0  %f 10  %f 10\n",extColor.c_str(),fileDistOffset,extPercent+fileDistOffset,extPercent+fileDistOffset,fileDistOffset);
+      tmpX = column*0.25;
+      tmpY = (-1)*(i*5)-1;
+      tmpStr = to_string(extPercent*100);
+      if((extPercent*100) < 10) tmpStr = "0" + tmpStr;
+      if(tmpStr.size() > 5) tmpStr = tmpStr.substr(0, 5);
+      tmpStr = "-- %" + tmpStr;
+      if(extPercent >= 1) tmpStr = umit->first + " - %100";
+      printf("newstring hjl vjt fontsize %f x %f y %f : %s\n", fontSize, tmpX+0.01, tmpY, umit->first.c_str());
+      printf("newstring hjl vjt fontsize %f x %f y %f : %s\n", fontSize-2, tmpX+0.12, tmpY, tmpStr.c_str());
+      printf("newcurve marktype box cfill %s pts %f %f\n",extColor.c_str(), tmpX, tmpY-1.5);
+      fileDistOffset += extPercent;
+      i++;
+      if(i > 25){
+        column++;
+        i = 0;
+      }
+    }
+  }
 
   return 0;
 }
