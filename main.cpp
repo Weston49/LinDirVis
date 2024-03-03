@@ -369,7 +369,7 @@ int main(int argc, char **argv) {
       printf("newpage\n");
     }
     printf("newgraph xaxis nodraw size 7 yaxis nodraw min -50\n");
-    printf("newline poly pfill 1 pts 0 0  1 0  1 10  0 10\n");
+    printf("newline poly pcfill 1 1 0 pts 0 0  1 0  1 10  0 10\n");
 
 
     if(biggestDir != NULL) bdPercent = (double)biggestDir->size / (double)rootSize;
@@ -380,8 +380,15 @@ int main(int argc, char **argv) {
 
     string rootStr = "Root File: " + files[0]->name;
     string sizeStr = "Total Size: " + to_string(files[0]->size) + " bytes";
-    printf("newstring hjl vjb fontsize %f x %d y %d : %s\n", fontSize, 0, 15, rootStr.c_str());
-    printf("newstring hjl vjt fontsize %f x %d y %d : %s\n", fontSize, 0, 14, sizeStr.c_str());
+    printf("newstring hjl vjb fontsize %f x %d y %d : %s\n", fontSize, 0, 12, rootStr.c_str());
+    printf("newline poly pcfill 1 1 0 pts 0.02 17  0.04 17  0.04 20  0.02 20\n");
+    printf("newstring hjl vjb fontsize %f x %f y %d : %s\n", fontSize, 0.05, 17, sizeStr.c_str());
+
+
+    printf("newline poly pcfill 1 0 1 pts 0.02 27  0.04 27  0.04 30  0.02 30\n");
+    printf("newstring hjl vjb fontsize %f x %f y %d : %s\n", fontSize, 0.05, 27, "Largest Directory");
+    printf("newline poly pcfill 0 1 1 pts 0.02 22  0.04 22  0.04 25  0.02 25\n");
+    printf("newstring hjl vjb fontsize %f x %f y %d : %s\n", fontSize, 0.05, 22, "Largest File");
 
 
     if(biggestDir != NULL) bdStr = biggestDir->name + " " + to_string(biggestDir->size) + " bytes";
@@ -393,9 +400,9 @@ int main(int argc, char **argv) {
     if(bdStr.size() > 30) rotateAmt = -90;
     if(bfStr.size() > 30) rotateAmt = -90;
 
-    printf("newline poly pcfill 1 0 0 pts 0 0  %f 0  %f 10  0 10\n", bdPercent, bdPercent);
+    printf("newline poly pcfill 1 0 1 pts 0 0  %f 0  %f 10  0 10\n", bdPercent, bdPercent);
     printf("newstring hjl vjt rotate %d fontsize %f x %f y %d : %s\n", rotateAmt, fontSize, (bdPercent/4)*3, 0, bdStr.c_str());
-    printf("newline poly pcfill 0 1 0 pts 0 0  %f 0  %f 5  0 5\n", bfPercent, bfPercent);
+    printf("newline poly pcfill 0 1 1 pts 0 0  %f 0  %f 5  0 5\n", bfPercent, bfPercent);
     printf("newstring hjl vjt rotate %d fontsize %f x %f y %d : %s\n", rotateAmt, fontSize, bfPercent/2, 0, bfStr.c_str());
   }
 
