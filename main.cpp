@@ -268,6 +268,8 @@ int main(int argc, char **argv) {
 
   biggestFile->size = 0;
 
+  cin << junk; //throwing out the first line because of a weird difference in the output of ls -lR on different machines
+
   while (getline(cin, s)) {
     if(s.size() == 0) continue;
     if (s[0] == '-') { //does not handle solf links or hard links as of now, might cause weird behavior
