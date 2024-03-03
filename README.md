@@ -1,4 +1,4 @@
-# LinDirViz
+# LinDirVis - Linux Directory Visualizer
 ## Prerequisites
 The shell scripts in this project assume that you have jgraph installed and added to your path. If you do not then you will need to install jgraph from [Jgraph Home Page](https://web.eecs.utk.edu/~jplank/plank/jgraph/jgraph.html) and you can temporarily put jgraph into your PATH with the command:\
 `export PATH="/your/file/path/to/jgraph:$PATH"`
@@ -6,7 +6,7 @@ The shell scripts in this project assume that you have jgraph installed and adde
 ## Usage
 To get started just run `make` which compiles the main file and runs the example shell script. This should make some ex\*.pdf files that show off the different visualizations you can generate. ex1.pdf is just showing that given no mode, the program will put all of the different graphs into one pdf file.
 
-Aside from just running the example scripts you can run the command `sh viz.sh <filepath> [mode]` which will create a junk.jgr and a junk.pdf with your output.
+Aside from just running the example scripts you can run the command `sh vis.sh <filepath> [mode]` which will create a junk.jgr and a junk.pdf with your output.
 Mode is a number 0-15 where the bits determine which pages are generated.
 ### Mode Examples:
 &nbsp; 0  [0000] will generate nothing\
