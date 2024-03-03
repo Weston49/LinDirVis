@@ -1,5 +1,5 @@
-ls -lR . | ./bin . 1 | jgraph -P | ps2pdf - > curDirGraph.pdf
-ls -lR ../ | ./bin ../ 1 | jgraph -P | ps2pdf - > upOneDirGraph.pdf
-ls -lR ./testDir | ./bin ./testDir | jgraph -P | ps2pdf - > testDirAll.pdf
-ls -lR . | ./bin . 2 | jgraph -P | ps2pdf - > curDirMaxSize.pdf
-ls -lR . | ./bin . 4 | jgraph -P | ps2pdf - > curDirFileDist.pdf
+ls -lR . | ./bin . 1 | jgraph -P | ps2pdf - > ex1.pdf
+ls -lR ./testDir | ./bin ./testDir | jgraph -P | ps2pdf - > ex2.pdf
+ls -lR . | ./bin . 2 | jgraph -P | ps2pdf - > ex3.pdf
+ls -lR . | ./bin . 4 | jgraph -P | ps2pdf - > ex4.pdf
+ls -lR ../ | ./bin ../ 1 | jgraph -P | ps2pdf - > ex5.pdf

@@ -425,6 +425,7 @@ int main(int argc, char **argv) {
       tmpX = column*0.25;
       tmpY = (-1)*(i*5)-1;
       tmpStr = to_string(extPercent*100);
+      if((extPercent*100) < 10) tmpStr = "0" + tmpStr;
       if(tmpStr.size() > 5) tmpStr = tmpStr.substr(0, 5);
       tmpStr = "-- %" + tmpStr;
       if(extPercent >= 1) tmpStr = umit->first + " - %100";
