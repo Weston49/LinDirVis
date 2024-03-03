@@ -1,0 +1,1 @@
+All of the contents in this directory are simply to test and show off the program since it is not nearly as visually interesting or cool if it runs on an empty or nearly empty directory. However I still wanted the default mode to be for the program to run on the current directory and not something like / because that would take far too long on most machines. 
