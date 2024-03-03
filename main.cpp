@@ -8,7 +8,7 @@ using namespace std;
 class File {
 public:
   bool isDir;
-  int size; // size is init to -1 if it is a dir, is default in bytes?
+  long long size;
   string name;
   File *parent;            // for now the root will point to NULL
   vector<File *> children; // should always be of size 0 when isDir is false
@@ -73,9 +73,9 @@ int calcNodeWidth(File* f){
   return width;
 }
 
-int find_dir_sizes(File* f){
+long long find_dir_sizes(File* f){
   int i;
-  int total = 0; 
+  long long total = 0; 
   if(!f->isDir) return f->size;
   total += f->size;
   for(i = 0; i < f->children.size(); i++){
@@ -137,7 +137,8 @@ int main(int argc, char **argv) {
   File *f;
   File *senti = new File;
   senti->name = "///SENTI///";
-  int i, j, pn, pos, rootDepth, currDepth, lastDepth, x, y, rootSize;
+  int i, j, pn, pos, rootDepth, currDepth, lastDepth, x, y;
+  long long rootSize;
   File *biggestFile;
   File *biggestDir;
   currDepth = 0;
@@ -198,7 +199,7 @@ int main(int argc, char **argv) {
       currDepth = countChars(s, '/') - rootDepth;
       // cerr << "depth info: " << currDepth << endl;
       while (lastDepth >= currDepth && parentTrace.size() > 0) {
-        cerr << lastDepth << endl;
+        // cerr << lastDepth << endl;
         parentTrace.pop_back();
         lastDepth--;
       }
@@ -231,6 +232,7 @@ int main(int argc, char **argv) {
   find_dir_sizes(files[0]);
 
   rootSize = files[0]->size;
+  cerr << rootSize << endl;
 
   for(i = 1; i < files.size(); i++){ //finds the biggest dir not including the root
     if(files[i]->isDir){
