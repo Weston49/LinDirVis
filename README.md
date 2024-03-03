@@ -11,7 +11,7 @@ Mode is a number 0-15 where the bits determine which pages are generated.
 ### Mode Examples:
 &nbsp; 0  [0000] will generate nothing\
 &nbsp; 15 [1111] will generate all 4 pages\
-&nbsp; 5  [0101] will generate pages 1 and 2\
+&nbsp; 5  [0101] will generate pages 1 and 3\
 &nbsp; etc.
 
 # Here are what the different example PDFs should look like
