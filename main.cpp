@@ -196,7 +196,7 @@ int main(int argc, char **argv) {
     }
     if (s[s.size() - 1] == ':') {
       currDepth = countChars(s, '/') - rootDepth;
-      cerr << "depth info: " << currDepth << endl;
+      // cerr << "depth info: " << currDepth << endl;
       while (lastDepth >= currDepth && parentTrace.size() > 0) {
         cerr << lastDepth << endl;
         parentTrace.pop_back();
@@ -207,7 +207,6 @@ int main(int argc, char **argv) {
         currParent->parent = parentTrace[parentTrace.size() - 1];
       } else {
         currParent->parent = senti;
-        cerr << "this shouldn't happen too much" << endl;
       }
       currParent->isDir = true;
       currParent->size = -1;
