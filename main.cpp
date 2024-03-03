@@ -216,7 +216,7 @@ string get_readable_filesize(long bytes){
 }
 
 int main(int argc, char **argv) {
-  string s, bdStr, bfStr, extColor, rootStr, sizeStr;
+  string s, bdStr, bfStr, extColor, rootStr, sizeStr, junk;
 
   vector<string> v;
   vector<File *> files;
@@ -268,7 +268,7 @@ int main(int argc, char **argv) {
 
   biggestFile->size = 0;
 
-  cin << junk; //throwing out the first line because of a weird difference in the output of ls -lR on different machines
+  getline(cin, s); //throwing out the first line because of a weird difference in the output of ls -lR on different machines
 
   while (getline(cin, s)) {
     if(s.size() == 0) continue;
