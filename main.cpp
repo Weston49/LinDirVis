@@ -17,6 +17,7 @@ public:
   int depth;
   bool isDrawn;
   int totalChildrenWidth;
+  bool widthFound;
 };
 
 string getNthWord(int n, string s) { // if n is longer than the words in s, returns the last word
@@ -28,6 +29,21 @@ string getNthWord(int n, string s) { // if n is longer than the words in s, retu
     i++;
   }
   return s;
+}
+
+string getFileName(string s){
+  istringstream sin(s);
+  string ret = "";
+  int i = 0;
+  while(sin >> s){
+    i++;
+    if(i >= 9){
+      ret += s;
+      ret += " "; //this is a janky way of doing this but for most files it should be fine enough for now
+    }
+  }
+  if(ret[ret.size()-1] == ' ') ret.pop_back();
+  return ret;
 }
 
 int countChars(string s, char c) { // counts the amount of c in s
@@ -43,6 +59,8 @@ int countChars(string s, char c) { // counts the amount of c in s
 int calcNodeWidth(File* f){
   int width = 0;
   int i;
+  if(f->widthFound) return f->totalChildrenWidth;
+  f->widthFound = true;
   if(!f->isDir) {
     f->totalChildrenWidth = 1;
     return 1;
@@ -55,18 +73,39 @@ int calcNodeWidth(File* f){
   return width;
 }
 
+int find_dir_sizes(File* f){
+  int i;
+  int total = 0; 
+  if(!f->isDir) return f->size;
+  total += f->size;
+  for(i = 0; i < f->children.size(); i++){
+    if(f->children[i]->isDir){
+      total += find_dir_sizes(f->children[i]);
+    }else{
+      total += f->children[i]->size;
+    }
+  }
+  f->size = total;
+  return total;
+}
+
 void draw_nodes(File *f, int x, int y){
   int i;
   int offset;
   int spacing = 3;
   int fontSize = 12;
   int widthNeeded = 0;
+  int vertOffset = 1;
+  vector<double> spacePercents;
+  int curRightOffset = 0;
+  f->x = x;
+  f->y = y;
   if(!f->isDrawn){
     if(f->isDir){
-      printf("newcurve cfill 1 0 0 marktype circle pts %d %d\n", x, y);
+      // printf("newcurve cfill 1 0 0 marktype circle pts %d %d\n", x, y);
       // printf("newstring hjr vjc rotate -45 fontsize %d x %d y %d : %d\n", fontSize, x, y, f->totalChildrenWidth);
     }else{
-      printf("newcurve cfill 0 1 0 marktype circle pts %d %d\n", x, y);
+      // printf("newcurve cfill 0 1 0 marktype circle pts %d %d\n", x, y);
     }
   }else{
 
@@ -74,14 +113,16 @@ void draw_nodes(File *f, int x, int y){
   f->isDrawn = true;
   widthNeeded = f->totalChildrenWidth;
   for(i = 0; i < f->children.size(); i++){
-    widthNeeded += f->children[i]->totalChildrenWidth;
+    spacePercents.push_back((double)f->children[i]->totalChildrenWidth/(double)widthNeeded);
   }
+
   if(widthNeeded <= 0) widthNeeded = 1;
   for(i = 0; i < f->children.size(); i++){
-    offset = x - (widthNeeded/2) + (i * (widthNeeded/f->children.size()));
-    draw_nodes(f->children[i], offset, y-80-i);
+    offset = x - (widthNeeded/2) + ((spacePercents[i]/2) * widthNeeded) + curRightOffset;
+    draw_nodes(f->children[i], offset, y-vertOffset);
+    printf("newline pts %d %d %d %d\n", x, y, offset, y-vertOffset);
+    curRightOffset += spacePercents[i]*widthNeeded;
     // printf("newstring hjl vjc fontsize %d x %d y %d : %d\n", fontSize, offset, y-10, widthNeeded);
-    printf("newline pts %d %d %d %d\n", x, y, offset, y-80-i);
   }
 }
 
@@ -96,20 +137,29 @@ int main(int argc, char **argv) {
   File *f;
   File *senti = new File;
   senti->name = "///SENTI///";
-  int i, j, pn, pos, rootDepth, currDepth, lastDepth, x, y;
+  int i, j, pn, pos, rootDepth, currDepth, lastDepth, x, y, rootSize;
+  File *biggestFile;
+  File *biggestDir;
   currDepth = 0;
   /* these params effect the sizes and styling of the graph */
   int linesPerPage = 30;
   int linePadding = 8;
-  double fontSize = 1;
+  double fontSize = 14;
+  double bfPercent;
+  double bdPercent;
+  int minX;
   int offset;
+  string bdStr;
+  string bfStr;
   pn = 0;
   int yMax = (i * linePadding + 1) + ((linesPerPage * linePadding));
   string graphDef = "yaxis max 5 min -" + to_string(yMax) +
                     " size 10 \nxaxis min 0 max 20 size 8.5 \n";
 
   currParent = new File;
-  currParent->name = argv[1];
+  string tmpStr = argv[1];
+  if(tmpStr[tmpStr.size()-1] == '/') tmpStr.pop_back();
+  currParent->name = tmpStr;
   currParent->depth = 0;
   currParent->isDir = true;
   currParent->childrenPrinted = 0;
@@ -121,18 +171,19 @@ int main(int argc, char **argv) {
   parentTrace.push_back(currParent);
 
   rootDepth = countChars(currParent->name, '/');
-  lastDepth = rootDepth - 1;
+  lastDepth = 0;
 
-  cerr << files[0]->name << endl;
-
+  // cerr << files[0]->name << endl;
+  
   while (getline(cin, s)) {
-    if (s[0] == '-') {
+    if (s[0] == '-') { //does not handle solf links or hard links as of now, might cause weird behavior
       f = new File;
-      f->name = getNthWord(9, s);
+      f->name = getFileName(s);
       // cerr << getNthWord(5,s) << endl;
       f->size = stol(getNthWord(5, s));
       f->isDir = false;
       f->depth = currDepth;
+      if(biggestFile == NULL || f->size > biggestFile->size) biggestFile = f;
       if (parentTrace.size() > 0) {
         f->parent = parentTrace[parentTrace.size() - 1];
       } else {
@@ -145,7 +196,9 @@ int main(int argc, char **argv) {
     }
     if (s[s.size() - 1] == ':') {
       currDepth = countChars(s, '/') - rootDepth;
+      cerr << "depth info: " << currDepth << endl;
       while (lastDepth >= currDepth && parentTrace.size() > 0) {
+        cerr << lastDepth << endl;
         parentTrace.pop_back();
         lastDepth--;
       }
@@ -154,6 +207,7 @@ int main(int argc, char **argv) {
         currParent->parent = parentTrace[parentTrace.size() - 1];
       } else {
         currParent->parent = senti;
+        cerr << "this shouldn't happen too much" << endl;
       }
       currParent->isDir = true;
       currParent->size = -1;
@@ -169,27 +223,105 @@ int main(int argc, char **argv) {
   for (i = 1; i < files.size(); i++) {
     files[i]->totalChildrenWidth = -1;
     files[i]->parent->children.push_back(files[i]);
-    cerr << files[i]->name << endl;
+    // cerr << files[i]->name << endl;
   }
   printf("newgraph xaxis size 7 nodraw yaxis size 7 nodraw \n");
 
 
-  //trying to do a topological printing of the nodes, they should be topologically sorted so this should be a BFS right :)
+
+  find_dir_sizes(files[0]);
+
+  rootSize = files[0]->size;
+
+  for(i = 1; i < files.size(); i++){ //finds the biggest dir not including the root
+    if(files[i]->isDir){
+      if(biggestDir == NULL || biggestDir->size < files[i]->size) biggestDir = files[i];
+    }
+  }
 
   
   //recursively draw every node
   
 
-
-
-
   files[0]->totalChildrenWidth = calcNodeWidth(files[0]);
   draw_nodes(files[0], 0, 0);
 
+  bool firstDir = true;
+  bool firstFile = true;
+  
+  minX = 0;
+
   for(i = 0; i < files.size(); i++){
-    cerr << files[i]->name << "  ----  ";
-    cerr << files[i]->totalChildrenWidth << endl;
+    x = files[i]->x;
+    y = files[i]->y;
+    if(x < minX) minX = x;
+    if(files[i]->isDir){
+      if(firstDir){
+        printf("newcurve color 1 0 0 marktype circle label : Directory\n pts %d %d\n", x, y);
+        firstDir = false;
+      }else{
+        printf("newcurve color 1 0 0 marktype circle pts %d %d\n", x, y);
+      }
+      // printf("newstring hjr vjc rotate -45 fontsize %d x %d y %d : %d\n", fontSize, x, y, f->totalChildrenWidth);
+    }else{
+      if(firstFile){
+        printf("newcurve color 0 1 0 marktype circle label : File\n pts %d %d\n", x, y);
+        firstFile = false;
+      }else{
+        printf("newcurve color 0 1 0 marktype circle pts %d %d\n", x, y);
+      }
+    }
   }
+
+  printf("legend defaults fontsize 14 hjl vjt x %d y 0\n", minX);
+  
+  
+  if(biggestFile != NULL) printf("newcurve cfill 0 1 1 marktype box label : Largest File \npts %d %d\n", biggestFile->x, biggestFile->y);
+  if(biggestDir != NULL) printf("newcurve cfill 1 0 1 marktype box label : Largest Directory \npts %d %d\n", biggestDir->x, biggestDir->y);
+
+  for(i = 0; i < files.size(); i++){
+    // cerr << files[i]->name << "  ----  ";
+    // cerr << files[i]->totalChildrenWidth << endl;
+  }
+
+
+
+  printf("newpage newgraph xaxis nodraw size 7 yaxis nodraw min -50\n");
+  printf("newline poly pfill 1 pts 0 0  1 0  1 10  0 10\n");
+
+  // cerr << biggestFile->size << " " << biggestFile->name << endl;
+  // cerr << biggestDir->size << " " << biggestDir->name << endl;
+  // cerr << "root size: " << rootSize << endl;
+
+
+  if(biggestDir != NULL) bdPercent = (double)biggestDir->size / (double)rootSize;
+  else bdPercent = 0;
+  if(biggestFile != NULL) bfPercent = (double)biggestFile->size / (double)rootSize;
+  else bfPercent = 0;
+
+  // cerr << bdPercent << endl;
+  // cerr << bfPercent << endl;
+
+  string rootStr = "Root File: " + files[0]->name;
+  string sizeStr = "Total Size: " + to_string(files[0]->size) + " bytes";
+  printf("newstring hjl vjb fontsize %f x %d y %d : %s\n", fontSize, 0, 15, rootStr.c_str());
+  printf("newstring hjl vjt fontsize %f x %d y %d : %s\n", fontSize, 0, 14, sizeStr.c_str());
+
+
+  if(biggestDir != NULL) bdStr = biggestDir->name + " " + to_string(biggestDir->size) + " bytes";
+  else bdStr = "No directory found";
+  if(biggestFile != NULL) bfStr = biggestFile->name + " " + to_string(biggestFile->size) + " bytes";
+  else bfStr = "No file found";
+
+  int rotateAmt = -25;
+  if(bdStr.size() > 30) rotateAmt = -90;
+  if(bfStr.size() > 30) rotateAmt = -90;
+
+  printf("newline poly pcfill 1 0 0 pts 0 0  %f 0  %f 10  0 10\n", bdPercent, bdPercent);
+  printf("newstring hjl vjt rotate %d fontsize %f x %f y %d : %s\n", rotateAmt, fontSize, (bdPercent/4)*3, 0, bdStr.c_str());
+  printf("newline poly pcfill 0 1 0 pts 0 0  %f 0  %f 5  0 5\n", bfPercent, bfPercent);
+  printf("newstring hjl vjt rotate %d fontsize %f x %f y %d : %s\n", rotateAmt, fontSize, bfPercent/2, 0, bfStr.c_str());
+
 
 
 
