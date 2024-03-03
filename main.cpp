@@ -216,7 +216,7 @@ string get_readable_filesize(long bytes){
 }
 
 int main(int argc, char **argv) {
-  string s, bdStr, bfStr, extColor;
+  string s, bdStr, bfStr, extColor, rootStr, sizeStr;
 
   vector<string> v;
   vector<File *> files;
@@ -224,8 +224,8 @@ int main(int argc, char **argv) {
 
   File *currParent;
   File *f;
-  File *biggestFile;
-  File *biggestDir;
+  File *biggestFile = new File;
+  File *biggestDir = new File;
   File *senti = new File;
   senti->name = "///SENTI///";
 
@@ -266,23 +266,23 @@ int main(int argc, char **argv) {
   rootDepth = countChars(currParent->name, '/');
   lastDepth = 0;
 
+  biggestFile->size = 0;
+
   while (getline(cin, s)) {
+    if(s.size() == 0) continue;
     if (s[0] == '-') { //does not handle solf links or hard links as of now, might cause weird behavior
       f = new File;
       f->name = getFileName(s);
       f->size = stol(getNthWord(5, s));
       f->isDir = false;
       f->depth = currDepth;
-      if(biggestFile == NULL || f->size > biggestFile->size) biggestFile = f;
+      if(f->size > biggestFile->size) biggestFile = f;
       if (parentTrace.size() > 0) {
         f->parent = parentTrace[parentTrace.size() - 1];
       } else {
         f->parent = senti;
       }
       files.push_back(f);
-    }
-    if (s[0] == 't') {
-      //currently does nothing, potential future feature
     }
     if (s[s.size() - 1] == ':') {
       currDepth = countChars(s, '/') - rootDepth;
@@ -317,9 +317,11 @@ int main(int argc, char **argv) {
 
   rootSize = files[0]->size;
 
+  biggestDir->size = 0;
+
   for(i = 1; i < files.size(); i++){ //finds the biggest dir not including the root
     if(files[i]->isDir){
-      if(biggestDir == NULL || biggestDir->size < files[i]->size) biggestDir = files[i];
+      if(biggestDir->size < files[i]->size) biggestDir = files[i];
     }
   }
 
@@ -372,8 +374,8 @@ int main(int argc, char **argv) {
     else bfPercent = 0;
 
 
-    string rootStr = "Root File: " + files[0]->name;
-    string sizeStr = "Total Size: " + get_readable_filesize(files[0]->size);
+    rootStr = "Root File: " + files[0]->name;
+    sizeStr = "Total Size: " + get_readable_filesize(files[0]->size);
     printf("newstring hjl vjb fontsize %f x %d y %d : %s\n", fontSize, 0, 12, rootStr.c_str());
     printf("newline poly pcfill 1 1 0 pts 0.02 17  0.04 17  0.04 20  0.02 20\n");
     printf("newstring hjl vjb fontsize %f x %f y %d : %s\n", fontSize, 0.05, 17, sizeStr.c_str());
