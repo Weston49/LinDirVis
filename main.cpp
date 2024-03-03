@@ -32,7 +32,7 @@ string getNthWord(int n, string s) { // if n is longer than the words in s, retu
   return s;
 }
 
-string getFileName(string s){
+string getFileName(string s){ //this *should* work regarless of spaces in filenames, but may not if the filename is especially odd
   istringstream sin(s);
   string ret = "";
   int i = 0;
@@ -40,7 +40,7 @@ string getFileName(string s){
     i++;
     if(i >= 9){
       ret += s;
-      ret += " "; //this is a janky way of doing this but for most files it should be fine enough for now
+      ret += " ";
     }
   }
   if(ret[ret.size()-1] == ' ') ret.pop_back();
@@ -57,7 +57,7 @@ int countChars(string s, char c) { // counts the amount of c in s
   return ret;
 }
 
-int calcNodeWidth(File* f){
+int calcNodeWidth(File* f){ //calculates how much horizontal space this node should take up in the tree drawing
   int width = 0;
   int i;
   if(f->widthFound) return f->totalChildrenWidth;
@@ -74,7 +74,8 @@ int calcNodeWidth(File* f){
   return width;
 }
 
-long long find_dir_sizes(File* f){
+/*Small note, currently directory sizes are 0, this can be fixed but for *most* practical purposes its lost in the noise*/
+long long find_dir_sizes(File* f){ //adds up the sizes of all the files recursively and sets the dir file sizes accordingly
   int i;
   long long total = 0; 
   if(!f->isDir) return f->size;
@@ -90,27 +91,16 @@ long long find_dir_sizes(File* f){
   return total;
 }
 
-void draw_nodes(File *f, int x, int y){
-  int i;
-  int offset;
+void draw_nodes(File *f, int x, int y){ //recursively finds the x and y positions each node will go, and draws the lines
+  int i, offset;
   int spacing = 3;
   int fontSize = 12;
   int widthNeeded = 0;
   int vertOffset = 1;
-  vector<double> spacePercents;
   int curRightOffset = 0;
+  vector<double> spacePercents;
   f->x = x;
   f->y = y;
-  if(!f->isDrawn){
-    if(f->isDir){
-      // printf("newcurve cfill 1 0 0 marktype circle pts %d %d\n", x, y);
-      // printf("newstring hjr vjc rotate -45 fontsize %d x %d y %d : %d\n", fontSize, x, y, f->totalChildrenWidth);
-    }else{
-      // printf("newcurve cfill 0 1 0 marktype circle pts %d %d\n", x, y);
-    }
-  }else{
-
-  }
   f->isDrawn = true;
   widthNeeded = f->totalChildrenWidth;
   for(i = 0; i < f->children.size(); i++){
@@ -123,11 +113,10 @@ void draw_nodes(File *f, int x, int y){
     draw_nodes(f->children[i], offset, y-vertOffset);
     printf("newline pts %d %d %d %d\n", x, y, offset, y-vertOffset);
     curRightOffset += spacePercents[i]*widthNeeded;
-    // printf("newstring hjl vjc fontsize %d x %d y %d : %d\n", fontSize, offset, y-10, widthNeeded);
   }
 }
 
-string get_extention(string s){
+string get_extention(string s){ //get anything after the last '.' in a string and pretends that is the true file extention
   if(s[0] == '.') return "other"; //just makes things simpler, not ideal but works 
   string ret;
   int originalSize = s.size();
@@ -139,7 +128,7 @@ string get_extention(string s){
   return ret;
 }
 
-unordered_map<string, int> get_file_dist_amt(vector<File*> files){
+unordered_map<string, int> get_file_dist_amt(vector<File*> files){ //gets all of the file extention amounts, does not sort them
   unordered_map<string, int> ret;
   int i;
   string tmp;
@@ -158,7 +147,7 @@ unordered_map<string, int> get_file_dist_amt(vector<File*> files){
   return ret;
 }
 
-unordered_map<string, int> get_file_dist_size(vector<File*> files){
+unordered_map<string, int> get_file_dist_size(vector<File*> files){ //gets how many bytes each type of file takes up in total, also not sorted
   unordered_map<string, int> ret;
   int i;
   string tmp;
@@ -178,7 +167,7 @@ unordered_map<string, int> get_file_dist_size(vector<File*> files){
 }
 
 
-string get_random_color(string seed){
+string get_random_color(string seed){ //gets the same color every time for a given string, so not really random but good enough
   string ret;
   int i;
   int seedVal = 0;
@@ -189,7 +178,7 @@ string get_random_color(string seed){
   }
 
   srand(seedVal);
-  int junk = rand();
+  int junk = rand(); //the val was always 0 for some reason so just throwing it away here
   double r = (double)rand() / RAND_MAX;
   double g = (double)rand() / RAND_MAX;
   double b = (double)rand() / RAND_MAX;
@@ -198,51 +187,36 @@ string get_random_color(string seed){
   out << fixed << r << " " << g << " " << b;
 
   ret = out.str();
-  // cerr << ret << endl;
 
   return ret;
 }
 
 int main(int argc, char **argv) {
-  string s;
+  string s, bdStr, bfStr, extColor;
+
   vector<string> v;
   vector<File *> files;
   vector<File *> parentTrace;
+
   File *currParent;
   File *f;
-  File *senti = new File;
-  senti->name = "///SENTI///";
-  int i, j, pn, pos, rootDepth, currDepth, lastDepth, x, y;
-  double tmpX;
-  double tmpY;
-  int column;
-  long long rootSize;
   File *biggestFile;
   File *biggestDir;
-  currDepth = 0;
-  /* these params effect the sizes and styling of the graph */
-  int linesPerPage = 30;
-  int linePadding = 8;
-  double fontSize = 14;
-  double bfPercent;
-  double bdPercent;
-  string extColor;
-  int minX;
-  int mode;
-  int offset;
-  int filesFound;
-  double fileDistOffset;
-  double extPercent;
+  File *senti = new File;
+  senti->name = "///SENTI///";
+
+  int i, j, rootDepth, currDepth, lastDepth, x, y, column, minX, mode, offset, filesFound;
+  double tmpX, tmpY, bfPercent, bdPercent, fileDistOffset, extPercent;
+  long long rootSize; //long long should be overkill for size in bytes, right?
+                      //
   unordered_map<string, int> file_dist;
   unordered_map<string, int>::iterator umit;
-  string bdStr;
-  string bfStr;
-  pn = 0;
-  int yMax = (i * linePadding + 1) + ((linesPerPage * linePadding));
-  string graphDef = "yaxis max 5 min -" + to_string(yMax) +
-                    " size 10 \nxaxis min 0 max 20 size 8.5 \n";
 
+  bool firstDir = true;
+  bool firstFile = true;
 
+  currDepth = 0;
+  double fontSize = 14;
 
   if(argc > 2){
     mode = stoi(argv[2]);
@@ -250,9 +224,7 @@ int main(int argc, char **argv) {
     mode = 31; //this will do everything by default
   }
 
-
-  
-
+  /*Setting up the root node as the filepath you enter*/
   currParent = new File;
   string tmpStr = argv[1];
   if(tmpStr[tmpStr.size()-1] == '/') tmpStr.pop_back();
@@ -270,13 +242,10 @@ int main(int argc, char **argv) {
   rootDepth = countChars(currParent->name, '/');
   lastDepth = 0;
 
-  // cerr << files[0]->name << endl;
-  
   while (getline(cin, s)) {
     if (s[0] == '-') { //does not handle solf links or hard links as of now, might cause weird behavior
       f = new File;
       f->name = getFileName(s);
-      // cerr << getNthWord(5,s) << endl;
       f->size = stol(getNthWord(5, s));
       f->isDir = false;
       f->depth = currDepth;
@@ -289,13 +258,11 @@ int main(int argc, char **argv) {
       files.push_back(f);
     }
     if (s[0] == 't') {
-      // do nothing with this for now
+      //currently does nothing, potential future feature
     }
     if (s[s.size() - 1] == ':') {
       currDepth = countChars(s, '/') - rootDepth;
-      // cerr << "depth info: " << currDepth << endl;
       while (lastDepth >= currDepth && parentTrace.size() > 0) {
-        // cerr << lastDepth << endl;
         parentTrace.pop_back();
         lastDepth--;
       }
@@ -316,18 +283,15 @@ int main(int argc, char **argv) {
     }
   }
 
+  /*Only the parent links have been set, this sets all the child links*/
   for (i = 1; i < files.size(); i++) {
     files[i]->totalChildrenWidth = -1;
     files[i]->parent->children.push_back(files[i]);
-    // cerr << files[i]->name << endl;
   }
-
-
 
   find_dir_sizes(files[0]);
 
   rootSize = files[0]->size;
-  // cerr << rootSize << endl;
 
   for(i = 1; i < files.size(); i++){ //finds the biggest dir not including the root
     if(files[i]->isDir){
@@ -335,19 +299,11 @@ int main(int argc, char **argv) {
     }
   }
 
-  
-  //recursively draw every node
-  
-
   files[0]->totalChildrenWidth = calcNodeWidth(files[0]);
 
-  bool firstDir = true;
-  bool firstFile = true;
-  
   minX = 0;
 
-  
-  /*FIRST PAGE TREE*/
+  /*FIRST PAGE File tree vizualization, my favorite part personally*/
   if(mode & (1)){
     printf("newgraph xaxis size 7 nodraw yaxis size 7 nodraw \n");
     draw_nodes(files[0], 0, 0);
@@ -362,7 +318,6 @@ int main(int argc, char **argv) {
         }else{
           printf("newcurve color 1 0 0 marktype circle pts %d %d\n", x, y);
         }
-        // printf("newstring hjr vjc rotate -45 fontsize %d x %d y %d : %d\n", fontSize, x, y, f->totalChildrenWidth);
       }else{
         if(firstFile){
           printf("newcurve color 0 1 0 marktype circle label : File\n pts %d %d\n", x, y);
@@ -378,9 +333,7 @@ int main(int argc, char **argv) {
     printf("legend defaults fontsize 14 hjl vjt x %d y 0\n", minX);
   }
   
-
-
-  /*SECOND PAGE OF INFORMATION*/
+  /*SECOND PAGE Largest file and directory information*/
   if(mode & (1 << 1)){
     if(mode & 1){
       printf("newpage\n");
@@ -424,7 +377,7 @@ int main(int argc, char **argv) {
   }
 
 
-  /*THIRD PAGE OF INFORMATION*/
+  /*THIRD PAGE File ext dist by file count*/
   if(mode & (1 << 2)){
     if(mode & 3){
       printf("newpage\n");
@@ -466,7 +419,7 @@ int main(int argc, char **argv) {
     }
   }
 
-  /*FOURHT PAGE OF INFORMATION*/
+  /*FOURTH PAGE File ext dist by file sizes*/
   if(mode & (1 << 3)){
     if(mode & 7){
       printf("newpage\n");
